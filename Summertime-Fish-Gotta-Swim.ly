@@ -203,7 +203,7 @@ scoreAClarinetIII = \relative c' {
     \global
     \transposition c'  
     % Music follows here.
-    r8 ef)\mf gf f ef) c( ef f |
+    r8 ef(\mf gf f ef) c( ef f |
     g2) r2 |
     R1*3
     a4 a' b, b' | 
