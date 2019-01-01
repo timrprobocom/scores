@@ -9,7 +9,7 @@ global = {
   \key c \minor
   \time 4/4
   \tempo "Swing" 4=88
-
+  \set Score.markFormatter = #format-mark-box-alphabet
 }
 
 scoreAClarinetI = \relative c' {
@@ -50,7 +50,7 @@ scoreAClarinetI = \relative c' {
     R1 |
     g4\mp g a a |
     a4 a b b |
-    g4 g g g |
+    c4 b a g |
     g4 g c c |
     r8 c\mf c c c a'~ a4 |
     r8 c, d b c af'~ af g~ |
@@ -145,7 +145,7 @@ scoreAClarinetII = \relative c'' {
     fs4 fs d d |
     e4 e e e |
     c d ef e |
-    c4 c c c |
+    f4 c c c |
     c4 c c c |
     r8 g a( g) bf( g~g4) |
     g4 g c c |
@@ -238,8 +238,8 @@ scoreAClarinetIII = \relative c' {
     e8) c( e c~c4) r4 |
     a'4\mp a a e16( f gf g) |
     af4 af af ef16( e f gf) |
-    g4 g g g |
-    c,4-> b-> a-> af-> |
+    g4 g e e |
+    c4-> b-> a-> af-> |
     
     r8\mf g' g g g d'~d ef~ |
     ef8 d~d f~f ef d4 |
