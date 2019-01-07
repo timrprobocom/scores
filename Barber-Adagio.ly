@@ -30,7 +30,7 @@ scoreAClarinetI = \relative c'' {
     % Page 2
 
     d4 ef c d ef d ef f |
-    c4\< af' af1.) |
+    d4\< af' af1.) |
     g1.\! df'2 |
     % A
     \mark \default
@@ -176,8 +176,8 @@ scoreAClarinetII = \relative c'' {
     \time 4/2
     f1 af1 |
     \mark \default
-    g2. af4 g af bf2 |
-    af1~ af4 af c bf |
+    g2. a4 g a bf2 |
+    a1~ a4 a c bf |
     g\breve
     
     \time 5/2
@@ -206,12 +206,12 @@ scoreAClarinetII = \relative c'' {
     
     c4 bf( c d bf c d c |
     d4\cresc ef c d ef d ef f |
-    d2) af'1 g2~ |
-    g1 af1\! |
+    d2) a'1 g2~ |
+    g1 a1\! |
     
     % Page 5
     
-    af1 bf2\< c |
+    a1 bf2\< c |
     d1\!\fff ef1~ |
     ef1 af,1~ |
     af\breve~ |
@@ -516,8 +516,6 @@ xarranger = "arr Jasmine Mills"
     }
 }
 
-%{
-
 \paper {
     raggied-bottom = ##t
 }
@@ -566,5 +564,3 @@ xarranger = "arr Jasmine Mills"
     }
     \score { \scoreABassClarinetPart }
 }
-
-%}
