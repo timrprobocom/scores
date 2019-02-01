@@ -149,6 +149,7 @@ scoreAClarinetII = \relative c'' {
     d1~d4 c2 bf4 |
     c1 a4\p\< a' a2~ |
     a2\!\> af1 r2 |
+    \mark \default
     R\breve |
     r1\p c,2\< f,2 |
 
@@ -227,7 +228,7 @@ scoreAClarinetII = \relative c'' {
     \time 5/2
     c1 r1 bf2 |
     \time 4/2
-    b\breve |
+    bf\breve |
     
     g\breve~ |
     g\breve |
