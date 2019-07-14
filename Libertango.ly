@@ -8,7 +8,7 @@
 global = {
   \key a \minor
   \time 4/4
-  \tempo "Tango" 4=88
+  \tempo "Tango" 4=120
   \set Score.markFormatter = #format-mark-box-alphabet
 }
 
@@ -131,21 +131,21 @@ scoreAClarinetI = \relative c' {
     \mark \default
 
     a4->\p r8 a'4 r8 a8 r8 |
-    a4->\p r8 a4 r8 a8 r8 |
-    a4->\p r8 a4 r8 a8 r8 |
-    a4->\p r8 a4 r8 a8 r8 |
-    a4->\p r8 a4 r8 a8 r8 |
-    a4->\p r8 a4 r8 a8 r8 |
-    a4->\p r8 a4 r8 a8 r8 |
-    a4->\p r8 a4 r8 a8 r8 |
-    a4->\p r8 a4 r8 a8 r8 |
-    a4->\p r8 a4 r8 a8 r8 |
-    a4->\p r8 a4 r8 a8 r8 |
-    a4->\p r8 a4 r8 a8 r8 |
-    a4->\p r8 a4 r8 a8 r8 |
-    a4->\p r8 a4 r8 a8 r8 |
-    a4->\p r8 a4 r8 a8 r8 |
-    a4->\p r8 gs4 r8 gs8 r8 |
+    a4-> r8 a4 r8 a8 r8 |
+    a4-> r8 a4 r8 a8 r8 |
+    a4-> r8 a4 r8 a8 r8 |
+    a4-> r8 a4 r8 a8 r8 |
+    a4-> r8 a4 r8 a8 r8 |
+    a4-> r8 a4 r8 a8 r8 |
+    a4-> r8 a4 r8 a8 r8 |
+    a4-> r8 a4 r8 a8 r8 |
+    a4-> r8 a4 r8 a8 r8 |
+    a4-> r8 a4 r8 a8 r8 |
+    a4-> r8 a4 r8 a8 r8 |
+    a4-> r8 a4 r8 a8 r8 |
+    a4-> r8 a4 r8 a8 r8 |
+    a4-> r8 a4 r8 a8 r8 |
+    a4-> r8 gs4 r8 gs8 r8 |
 
     a,8 b c d e f g a-> \bar "|."
 }
@@ -512,9 +512,9 @@ scoreABassClarinet = \relative c' {
     a4. e8~->e4 a4 |
     a4. ef8~->ef4 a4 |
     a4. ef8~->ef4 a4 |
-    a4. d,8~->d4 a'4 |
-    a4. d,8~->d4 a'4 |
-    a4. c,8~->c4 a'4 |
+    a4. d8~->d4 a4 |
+    a4. d8~->d4 a4 |
+    a4. c8~->c4 a4 |
     a4. c8~->c4 a4 |
     g4. e'8~->e4 g,4 |
     g4. e'8~->e4 g,4 |
@@ -543,19 +543,19 @@ scoreABassClarinet = \relative c' {
     b'16(\f c b a b4~) b2~ |
     b2~ b8 c\f b a |
     b8 a4 gs8~gs f4  e8~ |
-    e8 d4( c8~c8 b4) r8 |
+    e8 d4 c8~c8 b4 r8 |
 
     a' g f e d c b a-> \bar "|."
 }
 
 scoreAClarinetIPart = \new Staff \with {
   instrumentName = "Clarinet I"
-  midiInstrument = "clarinet"
+  midiInstrument = "violin"
 } \scoreAClarinetI
 
 scoreAClarinetIIPart = \new Staff \with {
   instrumentName = "Clarinet II"
-  midiInstrument = "clarinet"
+  midiInstrument = "flute"
 } \scoreAClarinetII
 
 scoreAClarinetIIIPart = \new Staff \with {
@@ -565,7 +565,7 @@ scoreAClarinetIIIPart = \new Staff \with {
 
 scoreABassClarinetPart = \new Staff \with {
   instrumentName = "Bass Clar"
-  midiInstrument = "clarinet"
+  midiInstrument = "saxophone"
 } \scoreABassClarinet
 
 \bookpart { 
