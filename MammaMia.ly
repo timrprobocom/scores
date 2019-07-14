@@ -133,7 +133,7 @@ clar_i = \relative c'' {
     bf8 bf bf bf bf bf bf c->~ |
     c1 |
 
-    f,4->
+    r4 g'8-^\f f-^ g-^ f-^ r8 
     
     \bar "|."
 }
@@ -252,7 +252,8 @@ clar_ii = \relative c'' {
     r4 f8 f g a g( f) |
     r4 g4 f4 r8 bf8~ |
     bf8 bf8 a f g4 f4 |
-    f4-> 
+    
+    r4 bf,8-^ a-^ bf-^ a-^ r4 
     \bar "|."
 }
 
@@ -374,7 +375,7 @@ clar_iii = \relative c' {
     bf4-> r4 r4 bf4 |
     e1 |
 
-    f4->
+    r4 c,8-^\f c-^ c-^ c-^ r4
 
     \bar "|."
 }
@@ -497,7 +498,7 @@ clar_bass = \relative c' {
     bf8 r bf r bf r bf r |
     c1 |
     
-    f,4->
+    r4 f,8-^\f f-^ f-^ f-^ r4
 
     \bar "|."
 }
