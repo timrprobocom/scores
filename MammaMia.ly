@@ -508,6 +508,7 @@ clar_bass = \relative c' {
     \header {
         title = "Mamma Mia!"
         composer = "ABBA"
+        arranger = "Arr Roberts"
         tagline = ""
     }
 
@@ -549,6 +550,7 @@ clar_bass = \relative c' {
     \header {
         title = "Mamma Mia!"
         composer = "ABBA"
+        arranger = "Arr Roberts"
         piece = "Bb Clarinet 1"
         tagline = ""
     }
@@ -562,6 +564,7 @@ clar_bass = \relative c' {
     \header {
         title = "Mamma Mia!"
         composer = "ABBA"
+        arranger = "Arr Roberts"
         piece = "Bb Clarinet 2"
         tagline = ""
     }
@@ -575,6 +578,7 @@ clar_bass = \relative c' {
     \header {
         title = "Mamma Mia!"
         composer = "ABBA"
+        arranger = "Arr Roberts"
         piece = "Bb Clarinet 3"
         tagline = ""
     }
@@ -588,6 +592,7 @@ clar_bass = \relative c' {
     \header {
         title = "Mamma Mia!"
         composer = "ABBA"
+        arranger = "Arr Roberts"
         piece = "Bass Clarinet"
         tagline = ""
     }
