@@ -133,7 +133,7 @@ clar_i = \relative c'' {
     bf8 bf bf bf bf bf bf c->~ |
     c1 |
 
-    r4 g'8-^\f f-^ g-^ f-^ r8 
+    r4 g'8-^\f f-^ g-^ f-^ r4 
     
     \bar "|."
 }
