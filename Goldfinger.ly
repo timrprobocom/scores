@@ -66,10 +66,19 @@ scoreAClarinetI = \relative c' {
         a2(\!\mp d2 |
         e2.) r4 |
 
-        % Page 4
+        % Page 5
 
-
+        fs1~ |
+        fs8 r8 bf,4->\f bf4-> bf4-> |
+    } \alternative {
+        { b1-> | r2 r4 cs8(\mf bf8) | }
+        { b1-> | r4 r8 b8-> \times 2/3 { d4-> cs4-> a-> } | }
     }
+    b1-> |
+    r2 cs4-> a-> |
+    b1~-> |
+    b4 r4 d4-> e4-> |
+    fs1-> \bar "|."
 }
 
 
@@ -130,10 +139,19 @@ scoreAClarinetII = \relative c'' {
         d4 a'8 f8 g4. d8 |
         \times 2/3 { e4 e e } c'4 b |
 
-        % Page 4
+        % Page 5
         
+        cs1~ |
+        cs8 r8 r4 r2 |
+    } \alternative {
+        { fs,2\f( g2 | af2 g2) | }
+        { fs2\f( g2 | af2 g2) | }
     }
-
+    fs2( g2 |
+    af2 g2) |
+    fs2( g2 |
+    af2 g2) |
+    cs1-> \bar "|."
 }
 
 scoreAClarinetIII = \relative c' {
@@ -190,8 +208,17 @@ scoreAClarinetIII = \relative c' {
         f2( b2 |
         c2.) g4 |
 
-        % Page 4
+        % Page 5
+        
+        bf1~ |
+        bf8 r8 r4 r2 |
+    } \alternative {
+        { d,4.\f bf'8( a4.) d,8 | \times 2/3 { f4( fs8~} fs2) r4 }
+        { d 4.\f bf'8( a4.) d,8 | \times 2/3 { f4( fs8~} fs2) r4 }
     }
+    d4.\f bf'8( a4.) d,8 | \times 2/3 { f4( fs8~} fs2) r4 |
+    d4.\f bf'8( a4.) d,8 | \times 2/3 { f4( fs8~} fs2) r4 |
+    d1-> \bar "|."    
 }
 
 scoreABassClarinet = \relative c' {
@@ -249,9 +276,17 @@ scoreABassClarinet = \relative c' {
         d4 r8 d8 g,4 r8 g8 |
         c4 r8 c8 g4 r8 c8 |
 
-        % Page 4
+        % Page 5
+        
+        f4 r8 cs8 f4 r8 cs8 |
+        f8 r8 r4 r2 |
+    } \alternative {
+      { r4 b,4\f r4 b4 | r4 b4 r4 b4 }
+      { r4 b 4\f r4 b4 | r4 b4 r4 b4 | }
     }
-
+    r4 b4 r4 b4 | r4 b4 r4 b4 |
+    r4 b4 r4 b4 | r4 b4 r4 b4 |
+    b1-> \bar "|."
 }
 
 

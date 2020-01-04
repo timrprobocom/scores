@@ -131,7 +131,7 @@ chorale_vi = \relative c' {
     fs2.\fermata as4 |
     b4 a a b |
     b4( a8 gs) a4\fermata a |
-    f4 g fs b |
+    fs4 g fs b |
     b8( a gs fs) e4\fermata fs |
     fs4 b b as |
     fs2. \fermata
