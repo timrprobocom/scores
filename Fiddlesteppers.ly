@@ -12,20 +12,27 @@ global = {
   \set Score.markFormatter = #format-mark-box-alphabet
 }
 
+% Opening chords
+%   I
+%   c d f gs
+%   c d f a
+%   d g g b
+%   I
+
 scoreAClarinetI = \relative c'' {
     \global
     \transposition c'
 
     g4 gs4 a b | 
-    c4 c8. c16 c8 r8 r4 \bar "||" |
+    c4 c8. c16 c8 r8 r16 e f fs \bar "||" |
 
     % First theme
-    g'8-. g-. g-. g-. g-. g-. g-. f-. |
+    g8-. g-. g-. g-. g-. g-. g-. f-. |
     \times 2/3 { f16( g f } e8) e e e4 r16 c16( e g) |
     \times 2/3 { e16( g e } d8) d d d4 r16 e16( f g) |
     \times 2/3 { f16( g f } e8) e e e4 r16 e16( f fs) |
 
-    g8 g g g g g g f |
+    g8-. g-. g-. g-. g-. g-. g-. f-. |
     \times 2/3 { f16( g f } e8) e e e4 r16 c16( e g) |
     \times 2/3 { e16( g e } d8) d d d4 r16 b16( d f) |
     g16( f d b)  g8-. b8-. c8-. e8-. c4 \bar "||" |
@@ -36,32 +43,55 @@ scoreAClarinetI = \relative c'' {
 }
 
 
-scoreAClarinetII = \relative c'' {
+scoreAClarinetII = \relative c' {
     \global
     \transposition c'
 
-    g4 f4 e4 d4 |
-    c4 c8. c16 c8 r8 r4 \bar "||" |
+    e4 c4 f4 g4 |
+    e4 g8. g16 g8 r8 r4 \bar "||" |
 
     % First theme
     e'8-. e-. e-. e-. e-. e-. e-. d-. |
-    \times 2/3 { d16( e d } c8) c e c4 r16 c16( d e) |
+    \times 2/3 { d16( e d } c8) c c c4 r16 c16( d e) |
     \times 2/3 { c16( d c } b8) b b b4 r16 c16( d e) |
-    \times 2/3 { d16( e d } c8) c c e4 r16 e16( f fs,) |
+    \times 2/3 { d16( e d } c8) c c c4 r16 c16( d ds) |
 
-    g8 g g g g g g f |
-    \times 2/3 { f16( g f } e8) e e e4 r16 c16( e g) |
-    \times 2/3 { e16( g e } d8) d d d4 r16 b16( d f) |
+    e8-. e-. e-. e-. e-. e-. e-. d-. |
+    \times 2/3 { d16( e d } c8) c c c4 r16 c16( d e) |
+    \times 2/3 { c16( d c } b8) b b b4 r16 g16( b d ) |
     g16( f d b)  g8-. b8-. c8-. e8-. c4 \bar "||" |
+
+    % Second theme.
+
+    c2 b8 c d c |
+    f2 r8 f e d |
+    c4 e4 c4 e4 |
+    d4 c4 r8 a bf b |
+
+    c2 b8 c d c |
+    f2 r8 f e d |
+    c4 e4 a4 g4 |
+    f4 f8. f16 f4 r4 |
+
 }
 
 
 
-scoreAClarinetIII = \relative c'' {
+scoreAClarinetIII = \relative c' {
     \global
     \transposition c'
 
-    r1-> \bar "|."
+    e4 e4 f4 f4 | 
+    g4 e8. e16 e8 r8 r4 \bar "||" |
+
+    % First theme.
+
+    c8 g' r g c, g' r g |
+    c,8 g' r g c, g' r g |
+    d8 g r g g, g' r g |
+    c,8 g' r g c, g' r g |
+
+     \bar "|."
 }
 
 
@@ -69,8 +99,19 @@ scoreAClarinetIII = \relative c'' {
 scoreABassClarinet = \relative c' {
     \global
     \transposition c'
+    
+    c4 c4 d4 d4 |
+    c4 c8. c16 c8 r8 r4 \bar "||"
 
-    r1-> \bar "|."
+    % First theme.
+
+    c8 r g r c r g r |
+    c8 r g r c r e r |
+    d8 r g, r b r g r |
+    c8 r g r c r g r |
+
+
+    \bar "|."
 }
 
 
