@@ -265,12 +265,12 @@ rall = \markup { \italic rall. }
     af2.\!\f af4 g4 f4 |
     r4 f4~\!\f f1 |
     
-    g1 ef4 ef'4 |
+    g1 ef'4 ef4 |
     c1 bf2 |
     ef2 ef1 |
     c1 bf2 |
     
-    df2 c2 ef,4-> ef'4-> |
+    df2 c2 ef4-> ef4-> |
     ef1 ef2 |
     ef1 ef2 |
     af1. |

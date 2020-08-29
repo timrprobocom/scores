@@ -26,9 +26,9 @@ subMp = \markup { sub \dynamic mp }
     c8 c8 e8 r8 r8 c8 c8 e8 |
 
     r2             r4    c8-. c8-. \bar "||" |
-    r4      f8  r8 r8 c8 r4     \bar "||" |
-    r4      bf8 r8 r8 g8 r4     \bar "||" |
-    bf8 bf8 d8  f,8 f8 c'8 r8 g8  \bar "||" |
+    r4      f8  r8 r8 c8 r4        \bar "||" |
+    r4      bf8 r8 r8 g8 r4        \bar "||" |
+    bf8 bf8 d8  f,8 f8 c'8 r8 g8   \bar "||" |
 
 % Bar 5 first theme.
 
@@ -182,110 +182,102 @@ subMp = \markup { sub \dynamic mp }
     c'4-> r8 c8~c8 r8 r4 |
     c'4-> r8 c8~c8 r8 r4 |
 
-    bf8 r bf8 f a8 r c, c \bar "||" |
+    bf8 r bf8 f a8 r8 r4  \bar "||" |
     r8 d f r c f r r      \bar "||" |
-    bf4-> r8 f8~f8 r8 r4  \bar "||" |
+    bf4-> r8 f8~f8 r8 c'' c  \bar "||" |
     bf4-> r8 f8~f8 r8 r4  \bar "||" |
 
 % Bar 31 back first theme.
 
-    \mark \default
-    c8( e) c-. c-. c( e) c-. c-. |
-    \mark \default
-    r4    g8 r8 r4    r8 g8 |
-    \mark \default
-    r4    c'8 r8 r4    r8 c8 |
-    \mark \default
-    c'8 c8 e8 r8 r8 c8 c8 e8 |
+    \mark \default r4    g,8 r8 r4    r8 g8 |
+    \mark \default r4    c8 r8 r4    r8 c8 |
+    \mark \default c8( e) c-. c-. c( e) c-. c-. |
+    \mark \default c'8 c8 e8 r8 r8 c8 c8 e8 |
 
-    d8( f) f-. f-. f-. r g,_\simile g |
     r4      f8  r8 r8 f8 r4 |
     r4      bf8 r8 r8 a8 r4 |
+    d8( f) f-. f-. f-. r g,_\simile g |
     bf8 bf8 d8  f,8 f8 c'8 r8 g8 |
 
-    g8( c) g g g( c) c c |
     r4    g8 r8 r4    r8 g8 |
     r4    c8 r8 r4    r8 c8 |
+    g8( c) g g g( c) c c |
     c8 c8 e8 r8 r8 c8 c8 e8 |
 
-    d8( f) f-. f-. f-. r g, g |
     r4      f8  r8 r8 c8 r4 |
     r4      bf8 r8 r8 g8 r4 |
+    d8( f) f-. f-. f-. r g, g |
     bf8 bf8 d8  f,8 f8 c'8 r8 g8 |
 
 % Repeat it.
 
-    g8( c) g-. g-. g( c) c-. c-. |
     r4    g'8 r8 r4    r8 g8 |
     r4    c8 r8 r4    r8 c8 |
+    g8( c) g-. g-. g( c) c-. c-. |
     c8 c8 e8 r8 r8 c8 c8 e8 |
 
-    d8( f) f-. f-. f-. r g, g |
     r4      f8  r8 r8 f8 r4 |
     r4      bf8 r8 r8 a8 r4 |
+    d8( f) f-. f-. f-. r g, g |
     bf8 bf8 d8  f,8 f8 c'8 r8 g8 |
 
-    g8( c) g g g( c) c c |
     r4    g8 r8 r4    r8 g8 |
     r4    c8 r8 r4    r8 c8 |
+    g8( c) g g g( c) c c |
     c8 c8 e8 r8 r8 c8 c8 e8 |
 
-    d8( f) f-. f-. f-. r r4       \bar "||" |
     r4      f8  r8 r8 c8 r4       \bar "||"|
     r4      bf8 r8 r8 g8 r4       \bar "||"|
+    d8( f) f-. f-. f-. r r4       \bar "||" |
     bf8 bf8 d8  f,8 f8 c'8 r8 g8  \bar "||"|
- 
+
 % Bar 39, second theme, in minor.
 
-    \mark \default 
-    c8 g8 g'4 c,8 g'8~g4 |
-    \mark \default 
-    r16 ef g c g' ef c g r8 c16 d c8-. g8-. |
-    \mark \default r
-    8 c8-. ef4-^  c8-. ef4-^ c8-.|
-    \mark \default 
-    c4      ef4    c8 ef8~ef4 |
+    \mark \default r8 c8-. ef4-^  c8-. ef4-^ c8-.|
+    \mark \default c'8 g8 g'4 c,8 g'8~g4 |
+    \mark \default r16 ef, g c g' ef c g r8 c16 d c8-. g8-. |
+    \mark \default c4      ef4    c8 ef8~ef4 |
 
+    r8  bf8-. d4-^  a8-. c4-^ a8-. |
     bf,8  f8 d'4 f8 a8~a4 |
     r16 f bf d f d bf f r8 c8-^ r8 f8 |
-    r8  bf8-. d4-^  a8-. c4-^ a8-. |
     bf4      d4    f,8 a8~a4 |
 
+    r8 c8-. ef4-^  c8-. ef4-^ c8-. |
     c,8 g8 g'4 c,8 g'8~g4 |
     r16 ef g c g' ef c g r8 c16 d c8-. g8-. |
-    r8 c8-. ef4-^  c8-. ef4-^ c8-. |
     c4      ef4    c8 ef8~ef4 |
 
+    r8  bf8-. d4-^  a8-. c4-^ a8-.|
     bf,8  f8 d'4 f,8 a8~a4 |
     r16 f bf d f d bf f r8 c8-^ r8 f8 |
-    r8  bf8-. d4-^  a8-. c4-^ a8-.|
     bf4      d4    f,8 a8~a4 |
 
 % Bar 43 second theme, second time
 
+    r8 c8-. ef4-^  c8-. ef4-^ c8-. |
     c8 g8 g'4 c,8 g'8~g4 |
     r16 ef g c g' ef c g r8 c16 d c8-. g8-. |
-    r8 c8-. ef4-^  c8-. ef4-^ c8-. |
     c4      ef4    c8 ef8~ef4 |
 
+    r8  bf8-. d4-^  a8-. c4-^ a8-. |
     bf,8  f8 d'4 f8 a8~a4 |
     r16 f bf d f d bf f r8 c8-^ r8 f8 |
-    r8  bf8-. d4-^  a8-. c4-^ a8-. |
     bf4      d4    f,8 a8~a4 |
 
+    r8 c8-. ef4-^  c8-. ef4-^ c8-. |
     c,8 g8 g'4 c,8 g'8~g4 |
     r16 ef g c g' ef c g r8 c16 d c8-. g8-. |
-    r8 c8-. ef4-^  c8-. ef4-^ c8-. |
     c4      ef4    c8 ef8~ef4 |
 
+    r8  bf8-. d4-^  a8-. c4-^ a8-. |
     bf,8  f8 d'4 f,8 a8~a4 |
     r16 f bf d f d bf f r8 c8-^ r8 f8 |
-    r8  bf8-. d4-^  a8-. c4-^ a8-. |
     bf4      d4    f,8 a8~a4 |
 
 % Bridge
 
-    g1~\p\< |
+    g'1~\p\< |
     r8 g8 b4-> g8 b4-> g8 |
     r8 d8 g4-> d8 g4-> d8 |
     g8 g8 b4-> g8 b4-> g8 |
