@@ -91,21 +91,21 @@ rall = \markup { \italic rall. }
     c4 c4 b8. c16 a8. b16 |
     d'4 r g, r |
 
-    % These little town
+    % These vagabond 
 
     R1       \bar "||" \mark \default |
     f4 c'4 b8 c8~c8 a8 \bar "||" \mark \default |
     c4 r4 r2 \bar "||" \mark \default |
     d'4 g,2.  \bar "||" \mark \default |
 
-    % blues.   B  bar 17
+    % shoes.   B  bar 17
 
     c,4 c4 b8. c16 a4 |
     g1 |
     r8. c16 e8. ds16 e8. g16 a8. g16 |
     c4 r g r |
 
-    % Are melting away
+    % Are longing to stray
 
     c4 c4 b8. c16 a4 |
     r4 c4 \times 2/3 { d4 c4 a4 } |
@@ -128,7 +128,7 @@ rall = \markup { \italic rall. }
     c4 c g' g, |
 
     c4 c4 b8. c16 a4 |
-    r4 g8 e4 g8 e4~ |
+    r4 g8 e8~e4 g4 |
     e,4 e4 e8. e16 e4 |
     c4 g' e d |
 
@@ -177,103 +177,363 @@ rall = \markup { \italic rall. }
 
     % iii king of the hill
 
-    b8. a16 g8. b16 r2 |
+    b8. a16 g8. b16~b4 r4 |
     g1 |
     e1 |
-    e4 g b e |
+    e4 g b e, |
 
     % IV top of the 
 
+    r2 a8. g16 f8. a16~ |
+    c,4 c4 r2 |
+    a,4 a4 r2 |
+    f4 a c f | 
+
     % ii heap
 
-    R1 |
-    R1 |
-    R1 |
-    R1 |
+    a4 r4 r2 |
+    r4 \times 2/3 { e,8( f g a b c d e f } |
+    f2 a4 f4 |
+    d4 a f a |
 
+    % My little town 
 
+    g4 r4 r2     \bar "||" \mark \default |
+    g8) r8 r4 r2  \bar "||" \mark \default |
+    f4 c'4 b8. c16 a4 \bar "||" \mark \default |
+    d4 g,2.     \bar "||" \mark \default |
 
+    % blues.   D  bar 33
 
-
-%{
-    \time 4/4 c4\f c b8. c16 a4 |
-    \time 4/4 a4\f a gs8. a16 g4 |
-    \time 4/4 g4\f g fs8. g16 e4 |
-    \time 4/4 e4\f e ds8. e16 c4 |
-
-    c4 c b8. c16 a4 |
-    a4 a gs8. a16 g4 |
-    g4 g fs8. g16 e4 |
-    e4 e ds8. e16 c4 |
-
-    c4 c b8. c16 a4 |
-    a4 a gs8. a16 f4 |
-    f4 f e 8. f16 d4 |
-    d4 d cs8. d16 c4 |
-
-    c4 c b8. c16 a4 |
-    a4 a gs8. a16 f4 |
-    f4 f e 8. f16 d4 |
-    d4 d cs8. d16 c4 |
-
-
-    R1 |
-    e4\mp e ds8. e16 c4 |
-    c4\mp c b8. c16 a4 |
-    g4\mp g fs8. g16 e4 |
-
-    R1 |
-    e4 e ds8. e16 c4 |
-    c4 c b8. c16 a4 |
-    g4 g fs8. g16 e4 |
-
-    R1 |
-    f4 f  e8. f16 d8. e16 |
-    c4 c b8. c16 a4 |
-    a4 a gs8. a16 f4 |
-
-    r4 c4 b8. c16~c8. a16 \bar "||"  \mark \default |
-    f4-. r4 r2 \bar "||" \mark \default |
-    c4-. r4 r2 \bar "||" \mark \default |
-    a4-. r4 r2 \bar "||" \mark \default |
-
-    % Bar 9 -- Start spreadin the news.
-
+    r8. c,,16 e8. ds16 e8. g16 a8. g16 |
+    c,4 c4 b8. c16 a4 |
     g1 |
-    e4\mp e ds8. e16 c4 |
-    c4\mp c b8. c16 a4 |
-    g4\mp g fs8. g16 e4 |
+    c4 r g r |
 
+    c8 r8 e,4 e8. e16 e4 |
+    c4 c4 b8. c16 a4 |
     r4 c4 \times 2/3 { d4 c4 a4 } |
-    e4 e ds8. e16 c4 |
-    c4 c b8. c16 a4 |
-    g4 g fs8. g16 e4 |
+    c4 r g r |
+
+    f8 r8 b8. a16 g8. fs16 g8. e16 |
+    c4 c4 b8. c16 a4 |
+    g1 |
+    d'4 r g, r |
+
+    d4 g a b |
+    c4 b c d |
+    r4 g' fs f |
+    d'4 g, a b |
+
+    c4 g8 c4 g8 c4 |
+    c4 c4 b8. c16 a4 |
+    e4 ds8 e4 ds8 e4 |
+    c4 c g' g, |
+
+    e,4 e4 e8. e16 e4 |
+    c4 c4 b8. c16 a4 |
+    r4 g8 e8~e4 g4 |
+    c4 g' e d |
+
+    % v9 York....
+
+    d1 |
+    bf1 |
+    a1 |
+    g,4 g a bf |
+
+    % I7 If I can
+
+    r4 e d c |
+    r4 bf bf bf |
+    r4 g4 f e |
+    c4 c d e |
+
+    % IV make it there 
+
+    c4. c4. af4~ |
+    a4. f4. c4~ |
+    c'4. a4. g4~ |
+    f4 f,2 f'4~ |
+
+    % iv I'll make it
+
+    af8 af'4. af4 af |
+    c8 c'4. c4 c |
+    g8 f4. e4 d |
+    f2 f,2 |
+
+    % I Anywhere
+
+    c4. c4. cs4~ |
+    e4. e4. g4~ |
+    c'4. g4. f4~ |
+    g'4 g,2 a4~ |
+
+    % VI7 It's up to 
+
+    cs8 r8 r4 r2 |
+    g8 r8 r4 r2 |
+    f8 r8 e4 f g |
+    a8 r8 a4 b cs |
+
+    % ii V you New
+
+    c2 b2 |
+    f2 d2 |
+    a2 g2 |
+    d4 d4 e4 e4 |
+
+    % vi7 v9 York New
+
+    c2 c2 |
+    a2 a2 |
+    e2 g2 |
+    f4 f4 g4 g4 |
+
+    % I York
+
+    e4 e r4 g,4 |
+    c4 c b8.( c16) a4 |
+    c,1 |
+    c,4 r g r |
+
+    e'4 e r4 g,4 |
+    c4 c b8.( c16) a4 |
+    g'4 g r4 e,4 |
+    c4 r g r |
+
+    g'4 g r4 f,4 |
+    f'4 f r4 d,4 |
+    c'4 c b8.( c16) a4 |
+    d'4 r g, r |
+
+    g4  \times 2/3 { d8  d d e e e f f f } \bar "||" \mark \default |
+    f'4 \times 2/3 { b,8 b b c c c d d d } \bar "||" \mark \default |
+    c4 g a b   \bar "||" \mark \default |
+    d'4 g, a b \bar "||" \mark \default |
+
+    % Bar 51 [E] 
+
+    g4 fs8 g-. r fs g-. r |
+    e4 ds8 e-. r ds e-. r |
+    r4 g4~g8. f16 d8. e16 |
+    c4 r g r |
+
+    % in old  New
+
+    r4 g'8. e16~e4 c'4 |
+    e8 r8 g,4 a b |
+    g8 r8 c4 b8.( c16) a4 |
+    c4 r g r |
+
+    % I7 york
 
     g1 |
-    f4 f  e8. f16 d8. e16 |
+    r4 \times 2/3 { e8 e c } \times 2/3 { e8 e c } \times 2/3 { e8 e c } |
+    r4 \times 2/3 { bf8 bf g } \times 2/3 { bf8 bf g } \times 2/3 { bf8 bf g } |
+    c4 c e g | 
+
+    % I7 to IV   I wanna
+
+    r4 e f g |
+    e8 r8 bf4 bf bf |
+    bf8 r8 g4 g g |
+    c4 c, d e |
+
+    % IV Wake up in a 
+
+    a4 f \times 2/3 { r4 e4 d4 } |
+    c4 r f r |
+    r4 c f g |
+    f4 r c r |
+
+    % city that doesn't 
+
+    \times 2/3 { af'4 g f } e4 d |
+    c4 r a r |
+    af4 c, g' f |
+    f4 r c r |
+
+    % sleep
+
+    g4 r4 r2 |
+    r4 c4 b8. c16 a4 |
+    r4 e4 e8. e16 e4 |
+    c4 r g r |
+
+    % to find I'm
+
+    r4 e4 f g |
+    c4 b c d |
+    e4 g, a b |
+    c4 r g r |
+
+    % iii king of the hill
+
+    \times 2/3 { b4 a g } b2 |
+    g1 |
+    e1 |
+    b1 |
+
+    % iii top of the heap
+
+    \times 2/3 { b4 a g } b2 |
+    g1 |
+    b1 |
+    e,1 |
+
+    % iv  A number one
+
+    \times 2/3 { c4 bf af } c2 |
+    af1 |
+    c1 |
+    f1 |
+
+    % V   cream of the crop
+
+    \times 2/3 { b4 a g } b2  \tempo "Much slower but getting faster" 4=90 |
+    d,2 \times 2/3 { d4 g b }  \tempo "Much slower but getting faster" 4=90 |
+    f1        \tempo "Much slower but getting faster" 4=90 |
+    g1        \tempo "Much slower but getting faster" 4=90 |
+
+    % ii7  HOLD  These little town
+
+    r4 c4 b8 c8 a4 \bar "||" \mark \default |
+    a1\trill\sfp\< \bar "||" \mark \default |
+    f1\trill\sfp\< \bar "||" \mark \default |
+    d'1\trill\sfp\< \bar "||" \mark \default |
+
+    % Bar 64 [F]   blues
+
+    g1 |
+    e4\!\f e e8. e16 e4 |
+    c4\!\f c b8. c16 a4 |
+    c4\!\f e g, e' |
+
+    % are melting away |
+
+    r4 c4 \times 2/3 { d4 c a } |
+    e4 e e8. e16 e4 |
     c4 c b8. c16 a4 |
-    a4 a gs8. a16 f4 |
+    c4 g' e c | 
 
-    r4 b4 c4 d4 |
-    f8 r g4 a4 b4 |
-    c8 r b4 c4 d4 |
-    g8 r g4 a4 b4 |
+    g1 |
+    f4 f f8. f16 f4 |
+    c4 c b8. c16 a8. b16 |
+    d4 f g, f' |
 
-    % Bar 13 -- Brand new start of it
+    % I'll make a 
 
-    e4 ds8 e8~e8 ds8 e4 |
-    c4 g8 c8~c8 g8 c4 |
-    e4 c8 e8~e8 c8 e4 |
-    c4 g8 c8~c8 g8 c4 |
+    r4 g fs f |
+    f4 b, b b |
+    c4 g a b |
+    d4 g, a b |
 
-    r4 g4 e4 ds4 |
-%}
+    % brand new start of it
 
+    e4 ds8 e4 ds8 e4 |
+    c4 b8 c4 b8 c4 |
+    g4 fs8 g4 fs8 g4 |
+    c4 r g r |
 
-    c1\fermata \bar "|." |
-    g1\fermata \bar "|." |
-    e1\fermata \bar "|." |
-    c1\fermata \bar "|." |
+    % in old New
+
+    r4 g8 e8~e4 g4 |
+    g8 r8 r4 c4 e4 |
+    e8 r8 r4 g4 c4 |
+    c4 r g r |
+
+    % York   (((( THIS IS THE WRONG CHORD )
+
+    a1 |
+    f4 \times 2/3 { f8 f d } \times 2/3 { f f d } \times 2/3 { f f d }  |
+    d4 \times 2/3 { d8 d a } \times 2/3 { d d a } \times 2/3 { d d a }  |
+    d'4 r g r |
+
+    % if I can
+
+    r4 g f \times 2/3 { e8 d c } \tempo "A tempo" 4=120 |
+    f8 r8 e4 d c  \tempo "A tempo" 4=120 |
+    d8 r8 g2.     \tempo "A tempo" 4=120 |
+    r4 c, d e     \tempo "A tempo" 4=120 |
+
+    % IV make it there  ((((( Beat 4 is wrong chord ))))
+
+    c'4. a4. g4~ |
+    f4. f4. af,4~ |
+    a4. a4. c,4~ |
+    f4 f,2 f'4~ |
+
+    % iv I'll make it
+
+    g8 f4. e4 d |
+    af8 af4. af4 af |
+    c8 c4. c4 c |
+    f2 f,2 |
+
+    % I Anywhere
+
+    c'4. g4. f4 |
+    c4. c4. d4 |
+    e4. e4. f4 |
+    g'4 g,2 a4 |
+
+    % (a tempo) it's up to 
+
+    r4 e f g \bar "||" |
+    r4 e f g \bar "||" |
+    r4 e f g \bar "||" |
+    r4 e f g \bar "||" |
+
+    % you New
+
+    a4 r g r | 
+    r4 f r e |
+    r4 c r b |
+    f4 r e r |
+
+    % York New
+
+    a4 r \times 2/3 { c( a g) } | 
+    r4 f r a |
+    r4 c r f |
+    f4 r g r |
+
+    % York
+
+    c1 |
+    e4 e r4 g4 |
+    c4 c b8.( c16) a4 |
+    c4 r g r |
+
+    % outro
+
+    g4 g r4 e,4 |
+    e4 e r4 g4 |
+    c4 c b8.( c16) a4 |
+    c4 r g r |
+
+    % outro
+
+    g'4 g r4 e,4 |
+    f'4 f r4 f,4 |
+    c4 c b8.( c16) a4 |
+    d'4 r g r |
+
+    % ii dim ? outro  
+    
+    c''1 |
+    af1 |
+    f1 |
+    d1 |
+    
+    % chunk
+
+    c4-^ r4 r2 \bar "|." |
+    c,4-^ r4 r2 \bar "|." |
+    c4-^ r4 r2 \bar "|." |
+    c4-^ r4 r2 \bar "|." |
 }
 
 
