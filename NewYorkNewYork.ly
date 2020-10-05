@@ -9,12 +9,37 @@ simile = \markup { \italic simile }
 subMp = \markup { sub \dynamic mp }
 rall = \markup { \italic rall. }
 
+
+prefix = {
+  \time 4/4
+  \tempo "Light swing" 4=120
+  \clef treble \key c \major
+  \override Score.BarNumber #'break-visibility = #all-visible
+  \override Score.BarNumber #'self-alignment-X = #0
+  \override Score.BarNumber #'self-alignment-Y = #1
+  \override MultiMeasureRest #'expand-limit = #1
+  \set Score.markFormatter = #format-mark-box-letters
+}
+
+skeleton = {
+    s1*8 \bar "||" \mark \default
+    s1*8 \bar "||" \mark \default
+    s1*8 \bar "||" \mark \default
+    s1*8 \bar "||" \mark \default
+    s1*18 \bar "||" \mark \default
+    s1*12 \tempo "Much slower but getting faster" 4=90 
+    s1   \bar "||" \mark \default
+    s1*8 \tempo "A tempo" 4=120 
+    s1*4 \bar "||"
+    s1*7 \bar "|."
+}
+
 \parallelMusic  #'(clarA clarB clarC clarBass) {
 
-    \time 4/4 g'4\f g r4 e,4 |
-    \time 4/4 e4\f e r4 g,4 |
-    \time 4/4 c4\f c b8.( c16) a4 |
-    \time 4/4 c4\f r g r |
+    g'4\f g r4 e,4 |
+    e4\f e r4 g,4 |
+    c4\f c b8.( c16) a4 |
+    c4\f r g r |
 
     g'4 g r4 e,4 |
     e'4 e r4 g,4 |
@@ -49,12 +74,12 @@ rall = \markup { \italic rall. }
 
     % Start spreading the
 
-    r4 c4 b8. c16~c8. a16 \bar "||"  \mark \default |
-    f4-. r4 r2 \bar "||" \mark \default |
-    c4-. r4 r2 \bar "||" \mark \default |
-    d'4-. r4 r2 \bar "||" \mark \default |
+    r4 c4 b8. c16~c8. a16 |
+    f4-. r4 r2 |
+    c4-. r4 r2 |
+    d'4-. r4 r2 |
    
-    % news.
+    % Bar 9 [A] news.
 
     g1 |
     e4 e4 e8. e16 e4 |
@@ -93,12 +118,12 @@ rall = \markup { \italic rall. }
 
     % These vagabond 
 
-    R1       \bar "||" \mark \default |
-    f4 c'4 b8 c8~c8 a8 \bar "||" \mark \default |
-    c4 r4 r2 \bar "||" \mark \default |
-    d'4 g,2.  \bar "||" \mark \default |
+    R1        |
+    f4 c'4 b8 c8~c8 a8 |
+    c4 r4 r2  |
+    d'4 g,2.  |
 
-    % shoes.   B  bar 17
+    % shoes.   [B]  bar 17
 
     c,4 c4 b8. c16 a4 |
     g1 |
@@ -141,10 +166,10 @@ rall = \markup { \italic rall. }
 
     % I want to 
 
-    c4 e' f g  \bar "||" \mark \default |
-    r4 c, d e  \bar "||" \mark \default |
-    r4 g a b   \bar "||" \mark \default |
-    e4 c d e   \bar "||" \mark \default |
+    c4 e' f g  |
+    r4 c, d e  |
+    r4 g a b   |
+    e4 c d e   |
 
 
     % Bar 25 [C] wake up in a 
@@ -198,10 +223,10 @@ rall = \markup { \italic rall. }
 
     % My little town 
 
-    g4 r4 r2     \bar "||" \mark \default |
-    g8) r8 r4 r2  \bar "||" \mark \default |
-    f4 c'4 b8. c16 a4 \bar "||" \mark \default |
-    d4 g,2.     \bar "||" \mark \default |
+    g4 r4 r2      |
+    g8) r8 r4 r2  |
+    f4 c'4 b8. c16 a4 |
+    d4 g,2.       |
 
     % blues.   D  bar 33
 
@@ -308,10 +333,10 @@ rall = \markup { \italic rall. }
     c'4 c b8.( c16) a4 |
     d'4 r g, r |
 
-    g4  \times 2/3 { d8  d d e e e f f f } \bar "||" \mark \default |
-    f'4 \times 2/3 { b,8 b b c c c d d d } \bar "||" \mark \default |
-    c4 g a b   \bar "||" \mark \default |
-    d'4 g, a b \bar "||" \mark \default |
+    g4  \times 2/3 { d8  d d e e e f f f } |
+    f'4 \times 2/3 { b,8 b b c c c d d d } |
+    c4 g a b   |
+    d'4 g, a b |
 
     % Bar 51 [E] 
 
@@ -392,17 +417,17 @@ rall = \markup { \italic rall. }
 
     % V   cream of the crop
 
-    \times 2/3 { b4 a g } b2  \tempo "Much slower but getting faster" 4=90 |
-    d,2 \times 2/3 { d4 g b }  \tempo "Much slower but getting faster" 4=90 |
-    f1        \tempo "Much slower but getting faster" 4=90 |
-    g1        \tempo "Much slower but getting faster" 4=90 |
+    \times 2/3 { b4 a g } b2  |
+    d,2 \times 2/3 { d4 g b } |
+    f1        |
+    g1        |
 
     % ii7  HOLD  These little town
 
-    r4 c4 b8 c8 a4 \bar "||" \mark \default |
-    a1\trill\sfp\< \bar "||" \mark \default |
-    f1\trill\sfp\< \bar "||" \mark \default |
-    d'1\trill\sfp\< \bar "||" \mark \default |
+    r4 c4 b8 c8 a4  |
+    a1\trill\sfp\<  |
+    f1\trill\sfp\<  |
+    d'1\trill\sfp\< |
 
     % Bar 64 [F]   blues
 
@@ -444,21 +469,21 @@ rall = \markup { \italic rall. }
     e8 r8 r4 g4 c4 |
     c4 r g r |
 
-    % York   (((( THIS IS THE WRONG CHORD )
+    % v7  York
 
     a1 |
-    f4 \times 2/3 { f8 f d } \times 2/3 { f f d } \times 2/3 { f f d }  |
-    d4 \times 2/3 { d8 d a } \times 2/3 { d d a } \times 2/3 { d d a }  |
-    d'4 r g r |
+    d4 \times 2/3 { d8 d c } \times 2/3 { d d c } \times 2/3 { d d c }  |
+    bf4 \times 2/3 { bf8 bf g } \times 2/3 { bf bf g } \times 2/3 { bf bf g }  |
+    g'4 r d r |
 
     % if I can
 
-    r4 g f \times 2/3 { e8 d c } \tempo "A tempo" 4=120 |
-    f8 r8 e4 d c  \tempo "A tempo" 4=120 |
-    d8 r8 g2.     \tempo "A tempo" 4=120 |
-    r4 c, d e     \tempo "A tempo" 4=120 |
+    r4 g f \times 2/3 { e8 d c } |
+    e8 r8 e4 d c  |
+    g8 r8 g2.     |
+    c4 c d e     |
 
-    % IV make it there  ((((( Beat 4 is wrong chord ))))
+    % IV to iv   make it there  ((((( Beat 4 is wrong chord ))))
 
     c'4. a4. g4~ |
     f4. f4. af,4~ |
@@ -472,32 +497,32 @@ rall = \markup { \italic rall. }
     c8 c4. c4 c |
     f2 f,2 |
 
-    % I Anywhere
+    % I to vi7  Anywhere
 
     c'4. g4. f4 |
-    c4. c4. d4 |
-    e4. e4. f4 |
+    c4. c4. cs4 |
+    e4. e4. e4 |
     g'4 g,2 a4 |
 
     % (a tempo) it's up to 
 
-    r4 e f g \bar "||" |
-    r4 e f g \bar "||" |
-    r4 e f g \bar "||" |
-    r4 e f g \bar "||" |
+    r4 e f g |
+    r4 e f g |
+    r4 e f g |
+    r4 e f g |
 
-    % you New
+    % 76 || you New
 
     a4 r g r | 
-    r4 f r e |
-    r4 c r b |
+    r4 \grace { c,16 d e } f4 r \grace { c16 d} e4 |
+    r4 \grace { g16 a b } c4 r \grace { g16 a } b4 |
     f4 r e r |
 
     % York New
 
     a4 r \times 2/3 { c( a g) } | 
-    r4 f r a |
-    r4 c r f |
+    r4 \grace { c16 d e } f4 r \grace { f16 g } a4 |
+    r4 \grace { g16 a b } c4 r \grace { c16 d e } f4 |
     f4 r g r |
 
     % York
@@ -517,7 +542,7 @@ rall = \markup { \italic rall. }
     % outro
 
     g'4 g r4 e,4 |
-    f'4 f r4 f,4 |
+    f4 f r4 f4 |
     c4 c b8.( c16) a4 |
     d'4 r g r |
 
@@ -525,15 +550,15 @@ rall = \markup { \italic rall. }
     
     c''1 |
     af1 |
-    f1 |
+    f'1 |
     d1 |
     
     % chunk
 
-    c4-^ r4 r2 \bar "|." |
-    c,4-^ r4 r2 \bar "|." |
-    c4-^ r4 r2 \bar "|." |
-    c4-^ r4 r2 \bar "|." |
+    c4-^ r4 r2 |
+    c,4-^ r4 r2 |
+    c4-^ r4 r2 |
+    c4-^ r4 r2 |
 }
 
 
@@ -548,18 +573,6 @@ rall = \markup { \italic rall. }
 
 
 
-prefix = {
-  \time 4/4
-  \tempo "Light swing" 4=120
-  \clef treble \key c \major
-  \override Score.BarNumber #'break-visibility = #all-visible
-  \override Score.BarNumber #'self-alignment-X = #0
-  \override Score.BarNumber #'self-alignment-Y = #1
-  \override MultiMeasureRest #'expand-limit = #1
-  \set Score.markFormatter = #format-mark-box-letters
-}
-
-
 %
 % Define the parts.
 %
@@ -571,7 +584,7 @@ clarI = {
   \set Staff.midiInstrument = #"clarinet"
 
   \prefix
-  \relative c'' \clarA
+  << \skeleton \relative c'' \clarA >>
 }
 
 % Clarinet II
@@ -581,7 +594,7 @@ clarII = {
   \set Staff.midiInstrument = #"clarinet"
 
   \prefix
-  \relative c'' \clarB
+  << \skeleton  \relative c'' \clarB >>
 }
 
 % Clarinet III
@@ -591,7 +604,7 @@ clarIII = {
   \set Staff.midiInstrument = #"clarinet"
 
   \prefix
-  \relative c'' \clarC
+  << \skeleton  \relative c'' \clarC >>
 }
 
 % Bass Clarinet
@@ -601,7 +614,7 @@ bassClar = {
   \set Staff.midiInstrument = #"clarinet"
 
   \prefix
-  \relative c' \clarBass
+  << \skeleton  \relative c' \clarBass >>
 }
 
 
