@@ -28,7 +28,7 @@ skeleton = {
     s1*8 \bar "||" \mark \default
     s1*18 \bar "||" \mark \default
     s1*12 \tempo "Much slower but getting faster" 4=90 
-    s1   \bar "||" \mark \default
+    s1*1 \bar "||" \mark \default 
     s1*8 \tempo "A tempo" 4=120 
     s1*4 \bar "||"
     s1*7 \bar "|."
@@ -74,7 +74,7 @@ skeleton = {
 
     % Start spreading the
 
-    r4 c4 b8. c16~c8. a16 |
+    r4 c4\mf b8. c16~c8. a16 |
     f4-. r4 r2 |
     c4-. r4 r2 |
     d'4-. r4 r2 |
@@ -83,17 +83,17 @@ skeleton = {
 
     g1 |
     e4 e4 e8. e16 e4 |
-    c,4 c4 b8. c16 a4 |
+    c,4 c4 b8.( c16) a4 |
     c4 r g r |
    
     r4 c4 d8 c8~ c8 a8 |
     e4 e4 e8. e16 e4 |
-    c4 c4 b8. c16 a4 |
+    c4 c4 b8.( c16) a4 |
     c4 r g r |
 
     g1 |
     f4 f4 f8. f16 f4 |
-    c4 c4 b8. c16 a8. b16 |
+    c4 c4 b8.( c16) a8. b16 |
     d'4 r g, r |
 
     r4 b c d |
@@ -103,17 +103,17 @@ skeleton = {
    
     e4 ds8 e8~e8 ds8 e4 |
     e,4 e4 e8. e16 e4 |
-    c4 c4 b8. c16 a4 |
+    c4 c4 b8.( c16) a4 |
     c4 r g r |
    
     r4 g4 e ds |
     e4 e4 e8. e16 e4 |
-    c4 c4 b8. c16 a4 |
+    c4 c4 b8.( c16) a4 |
     c4 r g r |
 
     d1 |
     f4 f4 f8. f16 f4 |
-    c4 c4 b8. c16 a8. b16 |
+    c4 c4 b8.( c16) a8. b16 |
     d'4 r g, r |
 
     % These vagabond 
@@ -125,19 +125,19 @@ skeleton = {
 
     % shoes.   [B]  bar 17
 
-    c,4 c4 b8. c16 a4 |
+    c,4 c4 b8.( c16) a4 |
     g1 |
     r8. c16 e8. ds16 e8. g16 a8. g16 |
     c4 r g r |
 
     % Are longing to stray
 
-    c4 c4 b8. c16 a4 |
+    c4 c4 b8.( c16) a4 |
     r4 c4 \times 2/3 { d4 c4 a4 } |
     c8 r8 e,4 e8. e16 e4 |
     c4 r g r |
 
-    c4 c4 b8. c16 a4 |
+    c4 c4 b8.( c16) a4 |
     g1 |
     f8 r8 b8. a16 g8. fs16 g8. e16 |
     d'4 r g, r |
@@ -147,12 +147,12 @@ skeleton = {
     d4 g a b |
     d'4 g, a b |
 
-    c4 c4 b8. c16 a4 |
+    c4 c4 b8.( c16) a4 |
     e4 ds8 e4 ds8 e4 |
     c4 g8 c4 g8 c4 |
     c4 c g' g, |
 
-    c4 c4 b8. c16 a4 |
+    c4 c4 b8.( c16) a4 |
     r4 g8 e8~e4 g4 |
     e,4 e4 e8. e16 e4 |
     c4 g' e d |
@@ -166,10 +166,10 @@ skeleton = {
 
     % I want to 
 
-    c4 e' f g  |
-    r4 c, d e  |
-    r4 g a b   |
-    e4 c d e   |
+    c4 e'\mf f g  |
+    r4 c,\mf d e  |
+    r4 g\mf a b   |
+    e4 c\mf d e   |
 
 
     % Bar 25 [C] wake up in a 
@@ -189,7 +189,7 @@ skeleton = {
     % sleep
 
     g4 r4 r2 |
-    r4 c4 b8. c16 a4 |
+    r4 c4 b8.( c16) a4 |
     r4 e4 e8. e16 e4 |
     c4 r g r |
 
@@ -225,23 +225,23 @@ skeleton = {
 
     g4 r4 r2      |
     g8) r8 r4 r2  |
-    f4 c'4 b8. c16 a4 |
+    f4 c'4 b8.( c16) a4 |
     d4 g,2.       |
 
     % blues.   D  bar 33
 
     r8. c,,16 e8. ds16 e8. g16 a8. g16 |
-    c,4 c4 b8. c16 a4 |
+    c,4 c4 b8.( c16) a4 |
     g1 |
     c4 r g r |
 
     c8 r8 e,4 e8. e16 e4 |
-    c4 c4 b8. c16 a4 |
+    c4 c4 b8.( c16) a4 |
     r4 c4 \times 2/3 { d4 c4 a4 } |
     c4 r g r |
 
     f8 r8 b8. a16 g8. fs16 g8. e16 |
-    c4 c4 b8. c16 a4 |
+    c4 c4 b8.( c16) a4 |
     g1 |
     d'4 r g, r |
 
@@ -251,12 +251,12 @@ skeleton = {
     d'4 g, a b |
 
     c4 g8 c4 g8 c4 |
-    c4 c4 b8. c16 a4 |
+    c4 c4 b8.( c16) a4 |
     e4 ds8 e4 ds8 e4 |
     c4 c g' g, |
 
     e,4 e4 e8. e16 e4 |
-    c4 c4 b8. c16 a4 |
+    c4 c4 b8.( c16) a4 |
     r4 g8 e8~e4 g4 |
     c4 g' e d |
 
@@ -333,17 +333,17 @@ skeleton = {
     c'4 c b8.( c16) a4 |
     d'4 r g, r |
 
-    g4  \times 2/3 { d8  d d e e e f f f } |
-    f'4 \times 2/3 { b,8 b b c c c d d d } |
-    c4 g a b   |
-    d'4 g, a b |
+    g4  \times 2/3 { d8\<  d d e e e f f f } |
+    f'4 \times 2/3 { b,8\< b b c c c d d d } |
+    c4 g\< a b   |
+    d'4 g,\< a b |
 
     % Bar 51 [E] 
 
-    g4 fs8 g-. r fs g-. r |
-    e4 ds8 e-. r ds e-. r |
-    r4 g4~g8. f16 d8. e16 |
-    c4 r g r |
+    g4\!\f fs8 g-. r fs g-. r |
+    e4\!\f ds8 e-. r ds e-. r |
+    r4\!\f g4~g8. f16 d8. e16 |
+    c4\!\f r g r |
 
     % in old  New
 
@@ -371,21 +371,21 @@ skeleton = {
     a4 f \times 2/3 { r4 e4 d4 } |
     c4 r f r |
     r4 c f g |
-    f4 r c r |
+    f4 a c, a' |
 
     % city that doesn't 
 
     \times 2/3 { af'4 g f } e4 d |
     c4 r a r |
     af4 c, g' f |
-    f4 r c r |
+    f4 af c, af' |
 
     % sleep
 
     g4 r4 r2 |
-    r4 c4 b8. c16 a4 |
+    r4 c4 b8.( c16) a4 |
     r4 e4 e8. e16 e4 |
-    c4 r g r |
+    c,4 r g r |
 
     % to find I'm
 
@@ -424,29 +424,29 @@ skeleton = {
 
     % ii7  HOLD  These little town
 
-    r4 c4 b8 c8 a4  |
-    a1\trill\sfp\<  |
-    f1\trill\sfp\<  |
-    d'1\trill\sfp\< |
+    r4 c4\f b8 c8 a4  |
+    << { a1\trill\sfp\fermata\< } \new CueVoice { s4 c4^"Cl1" b8 c8 a4 } >> |
+    << { f1\trill\sfp\fermata\< } \new CueVoice { s4 c'4^"Cl1" b8 c8 a4 } >> |
+    << { d'1\trill\sfp\fermata\<} \new CueVoice { s4 c''4^"Cl1" b8 c8 a4 } >> |
 
     % Bar 64 [F]   blues
 
     g1 |
-    e4\!\f e e8. e16 e4 |
-    c4\!\f c b8. c16 a4 |
-    c4\!\f e g, e' |
+    e4\!\f e-^ e8. e16 e4 |
+    c,4\!\f c-^ b8.( c16) a4 |
+    c,,4\!\f e-^ g, e' |
 
     % are melting away |
 
     r4 c4 \times 2/3 { d4 c a } |
-    e4 e e8. e16 e4 |
-    c4 c b8. c16 a4 |
-    c4 g' e c | 
+    e4 e-^ e8. e16 e4 |
+    c4 c-^ b8.( c16) a4 |
+    c4 g'-^ e c | 
 
     g1 |
-    f4 f f8. f16 f4 |
-    c4 c b8. c16 a8. b16 |
-    d4 f g, f' |
+    f4 f-^ f8. f16 f4 |
+    c4 c-^ b8.( c16) a8. b16 |
+    d4 f-^ g, f' |
 
     % I'll make a 
 
@@ -483,7 +483,7 @@ skeleton = {
     g8 r8 g2.     |
     c4 c d e     |
 
-    % IV to iv   make it there  ((((( Beat 4 is wrong chord ))))
+    % IV to iv   make it there
 
     c'4. a4. g4~ |
     f4. f4. af,4~ |
@@ -513,17 +513,17 @@ skeleton = {
 
     % 76 || you New
 
-    a4 r g r | 
+    a2 g2 |
     r4 \grace { c,16 d e } f4 r \grace { c16 d} e4 |
     r4 \grace { g16 a b } c4 r \grace { g16 a } b4 |
-    f4 r e r |
+    f2 e2 |
 
     % York New
 
-    a4 r \times 2/3 { c( a g) } | 
+    a2 \times 2/3 { c4( a g) } | 
     r4 \grace { c16 d e } f4 r \grace { f16 g } a4 |
     r4 \grace { g16 a b } c4 r \grace { c16 d e } f4 |
-    f4 r g r |
+    f2 g2 | 
 
     % York
 
@@ -557,7 +557,7 @@ skeleton = {
 
     c4-^ r4 r2 |
     c,4-^ r4 r2 |
-    c4-^ r4 r2 |
+    c,4-^ r4 r2 |
     c4-^ r4 r2 |
 }
 
