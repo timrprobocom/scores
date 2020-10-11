@@ -18,15 +18,16 @@ prefix = {
   \override Score.BarNumber #'self-alignment-X = #0
   \override Score.BarNumber #'self-alignment-Y = #1
   \override MultiMeasureRest #'expand-limit = #1
+  \compressFullBarRests
   \set Score.markFormatter = #format-mark-box-letters
 }
 
 skeleton = {
     s1*4 \bar "||" \mark \default
-    s1*8 \mark \default
+    s1*8 \bar "||" \mark \default
+    s1*8 \bar "||" \mark \default
+    s1*4 \mark \default
     \repeat volta 2 {
-        s1*8 \bar "||" 
-        s1*4 \bar "||" \mark \default
         s1*9 \bar "||" \mark \default
         s1*8 \bar "||" \mark \default
     } \alternative {{
@@ -40,9 +41,7 @@ skeleton = {
 % Don't think parallel works here.
 
 clarA = {
-    R1 |
-    R1 |
-    R1 |
+    R1*3 |
     r2 r8 e-.\mf f-. fs-. |
 
     % Bar 5 [A] first theme.
@@ -71,8 +70,7 @@ clarA = {
         % Bar 21 bridge.
         
         c8 r8 r4 r2 |
-        R1 |
-        R1 |
+        R1*2 |
         r4 c4->\mf d e |
 
         % Bar 25 [C] second theme.
@@ -99,22 +97,16 @@ clarA = {
         g8\! r8 g-. g-. a-. g-. ds-- e-. |
     } \alternative {{
         c8 r8 r4 r2 |
-        R1 |
-        R1 |
+        R1*2 |
         r4 c-> d-> e-> |
     }{
-        R1 |
-        R1 |
-        R1 |
+        R1*3 |
         c,4-. r4 r2 |
     }}
 }
 
 clarB = {
-    R1 |
-    R1 |
-    R1 |
-    R1 |
+    R1*4 |
 
     % Bar 5 [A] first theme.
 
@@ -139,8 +131,7 @@ clarB = {
         % Bar 21 bridge.
         
         c8 r8 r4 r2 |
-        R1 |
-        R1 |
+        R1*2 |
         r4 c'4->\mf b bf |
 
         % Bar 25 [C] second theme.
@@ -167,13 +158,10 @@ clarB = {
         r4\! g8-.\mf g-. a-. g-. ds-- e-. |
     } \alternative {{
         c8 r8 r4 r2 |
-        R1 |
-        R1 |
+        R1*2 |
         r4 c'-> b-> bf-> |
     }{
-        R1 |
-        R1 |
-        R1 |
+        R1*3 |
         c,4-. r4 r2 |
     }}
 }
