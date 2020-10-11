@@ -25,7 +25,7 @@ prefix = {
 skeleton = {
     s1*4 \bar "||" \mark \default
     s1*8 \bar "||" \mark \default
-    s1*8 \bar "||" \mark \default
+    s1*8 \bar "||" 
     s1*4 \mark \default
     \repeat volta 2 {
         s1*9 \bar "||" \mark \default
@@ -37,8 +37,6 @@ skeleton = {
     }}
     \bar "|."
 }
-
-% Don't think parallel works here.
 
 clarA = {
     R1*3 |
@@ -57,33 +55,32 @@ clarA = {
 
     % Bar 13 [B] repeat theme.
 
+    c4 g8 e gs8 gs r a8~ |
+    a2 r8 a,8 b cs |
+    d4 fs8 d fs e r d8~ |
+    d2 r8 e ef d |
+    c8\p\< e? g f~f a bf4 |
+    ef,8 g bf af~af c df4 |
+    b1\!\fp\< | 
+    r4\! g8-.\mf g-. a-. g-. ds-- e-. |
+
+    % Bar 21 bridge.
+    
+    c8 r8 r4 r2 |
+    R1*3 |
+
+    % Bar 25 [C] second theme.
+
     \repeat volta 2 {
-        c4 e8 g, e' d r cs~ |
-        cs2 r8 a af g |
-        fs4 d'8 fs,8 d' c? r b~ |
-        b2 r8 g fs f 
-        e8\< g c a r c d4 |
-        g,8 bf ef c r ef f4 |
-        g1~\!\fp\< |
-        g8\! r8 g-. g-. a-. g-. ds-- e-. |
-
-        % Bar 21 bridge.
-        
-        c8 r8 r4 r2 |
-        R1*2 |
-        r4 c4->\mf d e |
-
-        % Bar 25 [C] second theme.
-
-        f2 r8 f g f |
-        a8 g4 f8 r ef d c |
-        bf4 bf4 c8 cs4 d8~ |
-        d2 r8 bf a af |
-        g4 ef'8 ef r ef f ef |
-        g8\< f4 ef8 r df c bf |
-        af4\!\f af bf8 c4. |
-        b8-. c4 d8~->\fp\! d2~ |
-        d2 r8\! e,8\f f fs |
+        r4 c8\mf c8 r4 c4-. |
+        r4 c8 c8 r4 c4-. |
+        R1 |
+        r8 bf8( c)-. d-. c-. bf-. a-. af-. |
+        g4 bf8 bf r4 bf-. |
+        r4 bf8\< bf r4 bf-. |
+        c4-.\!\f r c-. r |
+        d8-. e4 f!8->\fp\< f2~ |
+        f2 r8\! e8\f f fs |
 
         % Bar 34 [D] back to first theme.
 
@@ -118,24 +115,25 @@ clarB = {
 
     % Bar 13 [A] repeat theme.
 
+    g4 e'8 g, e' d r cs~ |
+    cs2 r8 a af g |
+    fs4 d'8 fs,8 d' c? r b~ |
+    b2 r8 g fs f 
+    e8\< g c a r c d4 |
+    g,8 bf ef c r ef f4 |
+    g1~\!\fp\< |
+    g8\! r8 g-. g-. a-. g-. ds-- e-. |
+
+    % Bar 21 bridge.
+    
+    c8 r8 r4 r2 |
+
+    R1*2 |
+    r4 c4->\mf b bf |
+
+    % Bar 25 [C] second theme.
+
     \repeat volta 2 {
-        g4 g8 e gs8 gs r a8~ |
-        a2 r8 a,8 b cs |
-        d4 fs8 d fs e r d8~ |
-        d2 r8 e ef d |
-        c8\p\< e? g f~f a bf4 |
-        ef,8 g bf af~af c df4 |
-        b1\!\fp\< | 
-        r4\! g8-.\mf g-. a-. g-. ds-- e-. |
-
-        % Bar 21 bridge.
-        
-        c8 r8 r4 r2 |
-        R1*2 |
-        r4 c'4->\mf b bf |
-
-        % Bar 25 [C] second theme.
-
         a2 r8 a b? a |
         c8 bf4 a8 r g f e |
         d4 d4 e8 e4 f8~ |
@@ -185,38 +183,38 @@ clarC = {
 
     % Bar 13 [B] repeat theme.
 
+    e2\mf d8 d r cs~ |
+    cs4 e8 e8 r a,8 b cs |
+    d4 c? b8 a r g~ |
+    g4 d'8 d r2 |
+    c4.\p\< c8~c8 c f4 |
+    ef4. ef8~ef ef af4 |
+    g4\!\f g8 g8 g4 g8 g8 |
+    g8 r8 r4 r2 |
+
+    % Bar 21 bridge.
+
+    c,4\mf g'8 g g,4 g'8 g |
+    c,4 g'8 g,8~g g g'4 |
+    c,4 g'8 g g,4 g'8 g |
+    c,4-. c'4->\mf d e |
+
+    % Bar 25 [C] second theme.
+
     \repeat volta 2 {
-        e2\mf d8 d r cs~ |
-        cs4 e8 e8 r a,8 b cs |
-        d4 c? b8 a r g~ |
-        g4 d'8 d r2 |
-        c4.\p\< c8~c8 c f4 |
-        ef4. ef8~ef ef af4 |
-        g4\!\f g8 g8 g4 g8 g8 |
-        g8 r8 r4 r2 |
-
-        % Bar 21 bridge.
-
-        c,4\mf g'8 g g,4 g'8 g |
-        c,4 g'8 g,8~g g g'4 |
-        c,4 g'8 g g,4 g'8 g |
-        c,4-. r4 r2 |
-
-        % Bar 25 [C] second theme.
-
-        r4 c8\mf c8 r4 c4-. |
-        r4 c8 c8 r4 c4-. |
-        R1 |
-        r8 bf8( c)-. d-. c-. bf-. a-. af-. |
-        g4 bf8 bf r4 bf-. |
-        r4 bf8\< bf r4 bf-. |
-        c4-.\!\f r c-. r |
-        d8-. e4 f!8->\fp\< f2~ |
-        f2\! r2 |
+        f2 r8 f g f |
+        a8 g4 f8 r ef d c |
+        bf4 bf4 c8 cs4 d8~ |
+        d2 r8 bf a af |
+        g4 ef'8 ef r ef f ef |
+        g8\< f4 ef8 r df c bf |
+        af4\!\f af bf8 c4. |
+        b8-. c4 d8~->\fp\< d2~ |
+        d2\! r2 |
 
         % Bar 34 [D] third theme.
 
-        r4 c4\f d4. e8~ |
+        r4 c,4\f d4. e8~ |
         e8 e d cs8~cs2 |
         r4 d4 c?4. b8~ |
         b8 d c b~b2 |
@@ -228,9 +226,9 @@ clarC = {
         c,4 g'8 g g,4 g'8 g |
         c,4 g'8 g,8~g g g'4 |
         c,4 g'8 g g,4 g'8 g |
-        c,4-. c4-> d-> e-> |
+        c,4-. c'4-> d-> e-> |
     }{
-        c4 g'8 g g,4 g'8 g |
+        c,4 g'8 g g,4 g'8 g |
         c,4 g'8 g,8~g g g'4 |
         c,4 g'8 g g,4 g'8 g |
         c,4-. r4 r2 |
@@ -256,25 +254,25 @@ clarBass = {
 
     % Bar 13 [B] repeat theme.
 
+    c4.\mf c8 e2 |
+    a4. a8 e2 |
+    d4. d8 d2 |
+    g8 g f4 e d |
+    c4\p\< r8 f8~f4 bf,4 |
+    ef4 r8 af,8~af4 cs4 |
+    g4.\!\f g8 d'4. d8 |
+    g8 g f4 e4 d4 |
+
+    % Bar 21 bridge
+    
+    c4. r8 g4. r8 |
+    c4. r8 g4. r8 |
+    c4. r8 g4 b4 |
+    c4-. r4 r2 |
+
+    % Bar 25 [C] second theme.
+        
     \repeat volta 2 {
-        c4.\mf c8 e2 |
-        a4. a8 e2 |
-        d4. d8 d2 |
-        g8 g f4 e d |
-        c4\p\< r8 f8~f4 bf,4 |
-        ef4 r8 af,8~af4 cs4 |
-        g4.\!\f g8 d'4. d8 |
-        g8 g f4 e4 d4 |
-
-        % Bar 21 bridge
-        
-        c4. r8 g4. r8 |
-        c4. r8 g4. r8 |
-        c4. r8 g4 b4 |
-        c4-. r4 r2 |
-
-        % Bar 25 [C] second theme.
-        
         f4. f8 c4. c8 |
         f4. f8 g4 a4 |
         bf4. bf8 f4. f8 |
