@@ -12,12 +12,12 @@ rall = \markup { \italic rall. }
 
 prefix = {
   \time 4/4
-  \tempo "A la Fred Astaire" 4=180
+  \tempo "Easy swing, a la Fred Astaire" 4=180
   \clef treble \key d \minor
   \override Score.BarNumber #'break-visibility = #all-visible
   \override Score.BarNumber #'self-alignment-X = #0
   \override Score.BarNumber #'self-alignment-Y = #1
-  \override MultiMeasureRest #'expand-limit = #1
+  %% \override MultiMeasureRest #'expand-limit = #1
   \set Score.markFormatter = #format-mark-box-letters
 }
 
@@ -31,7 +31,7 @@ skeleton = {
     s1*8 \bar "||" \mark \default
     s1*8 \bar "||" \mark \default
     s1*8 \bar "||" \mark \default
-    s1*10 \bar "|."
+    s1*9 \bar "|."
 }
 
 \parallelMusic  #'(clarA clarB clarC clarBass) {
@@ -68,13 +68,13 @@ skeleton = {
     d4 d a c |
 
     a8( d) r a( c) r bf a~ | 
-    a8( d) r a( c) r bf a~ | 
-    d8( f) r d( e) r f4    |
+    a8( d) r a( c) r f, e~ | 
+    d8( f) r d( e) r8 r4 |
     d4 r f f |
 
     a2 r |
-    a2 r |
     e2 r |
+    cs2 r |
     a4 g f e |
 
     % [A] Bar 9 - first theme, held harmony
@@ -110,14 +110,14 @@ skeleton = {
     r2 a8( g f e) |
     R1 |
 
+    R1 |
+    R1 |
     d4 r4 r2 |
-    R1 |
-    R1 |
     r4 d f a |
 
-    R1 |
+    d4  d8  d8  r8 cs8~cs4 |
     bf4 bf8 bf8 r8 a8~a4 |
-    R1 |
+    f4  f8  f8  r8 e8~e4 |
     bf4 bf8 bf8 r8 a8~a4 |
 
 
@@ -125,45 +125,45 @@ skeleton = {
     % Dm  2 3 4 DmM7 2 3 4 Dm7 2 3 4 Dm6 A7 3 4 | Am7
 
 
-    d4 f a a,8( d) |
-    d1 |
-    f'1 |
-    d4 r a r |
+    f1 |
+    d,4 f a a,8( d) |
+    d'1 |
+    d,4 r a r |
 
+    f1 |
     r8 f( a) r8 a,4 d |
     cs1 |
-    f1 |
     cs4 r a r |
 
+    f1 |
     f4 a a,8( d8) r f |
     c1 |
-    f1 |
     c4 r a r |
 
+    f4 r4 r2 |
     a4 a, cs e |
     b4 a, cs e |
-    f4 r4 r2 |
     b4 r g r  |
 
-    g4 r4 r2 |
-    g4 r4 r2 |
     r2 r4 ds8( e) |
+    g4 r4 r2 |
+    g4 r4 r2 |
     a4 r r r |
 
+    a,4 r4 r2 |
     r2 a8( g f e) |
     R1 |
-    a,4 r4 r2 |
     R1 |
 
-    R1 |
     R1 |
     d4 r4 r2 |
     R1 |
+    R1 |
 
     R1 |
     R1 |
     R1 |
-    d,4 d e fs |
+    r4 d e fs |
 
 
 
@@ -171,55 +171,47 @@ skeleton = {
     % Chorus 1 normal
     % Gm  C  F  F Dm A |
 
-    g4 a bf c |
+    g'4 a bf c |
     g2  d2 |
     R1 |
     g4 r bf d, |
-
 
     d c bf a4 |
     g2  bf2 |
     R1 |
     g4 r d r |
 
-
     g4 c,8( g'8)~ g4 r4 |
     g4  r4 r2 |
     R1 |
     c4 r e g, |
-
 
     R1 |
     g4 c,8( g'8)~ g4 r4 |
     R1 |
     c4 c d e |
 
-
     f4 g a bf |
     R1 |
     R1 |
     f4 r a c, |
-
 
     c4 bf a g |
     R1 |
     R1 |
     f4 r f e |
 
-
     f4 c8( f8)~f4 r4 |
     R1 |
     R1 |
-    d2 f2 | 
-
+    f2 a2 | 
 
     % Super duper
 
-
-    R1 |
-    R1 |
-    R1 |
-    bf4 bf8 bf8 r8 a4. |
+    d4  d8  d8  r8 cs8~cs4 |
+    bf4 bf8 bf8 r8 a8~a4 |
+    f4  f8  f8  r8 e8~e4 |
+    bf4 bf8 bf8 r8 a8~a4 |
 
 
     % [D] Bar 33
@@ -245,47 +237,50 @@ skeleton = {
     f4 f e e  |
     a4 a, cs e |
  
-    a4 r r8 ds8( e) r8 |
+    a4 r r e'16 d cs b |
     e4 r r2 |
     cs4 r r2 |
     g4 r r2 |
 
-    a,4 r4 r2 |
+    a4 r4 r2 |
     r2 a8 g f e |
     R1 |
     r2 a8 g f e |
 
+% I don't know how to do this transition.  Dm to Db
+
     R1 |
-    R1 |
-    R1 |
+    d4 r4 r2 |
+    r4 a'8 bf a g f e |
     d4 r4 r2 |
 
     R1 |
-    R1 |
-    R1 |
+    d8 r8 r8 d8 r2 |
+    d8 r8 r8 d8 r2 |
     d4 r4 r2 |
 
     % [E] Bar 41, Interlude/intro.
+    % D  A  D  A  F  C  F   C  / A  E  A  E 
 
-    af'4 bf df df |
+    a'4 b d d |
     R1 |
     R1 |
-    df4 r af r |
+    d4 r a r |
 
-    df4 c8 ef8~ef4 r4 |
+    d4 cs8 e8~e4 r4 |
     R1 |
     R1 |
-    ef'4 r af, r |
+    e'4 r a, r |
 
-    af,4 bf df df |
+    a,4 b d d |
     R1 |
     R1 |
-    df4 r af r |
+    d4 r a r |
 
-    df4 c8 ef8~ef4 r4 |
+    d4 cs8 e8~e4 r4 |
     R1 |
     R1 |
-    ef'4 r af, r |
+    e'4 r a, r |
 
     c4 d f f |
     R1 |
@@ -370,7 +365,7 @@ skeleton = {
     a4 a, cs e |
  
     a4 r r8 ds8( e) r8 |
-    e4 r r2 |
+    e'4 r r2 |
     cs4 r r2 |
     g4 r r2 |
 
@@ -389,7 +384,7 @@ skeleton = {
     d4 d8 d8 r8 cs8~cs4 |
     R1 |
 
-    % Rpt
+    % [G] Rpt
 
      d4 d d d8 cs |
      a4 a a a8 a  |
@@ -476,12 +471,12 @@ skeleton = {
     R1 |
     
 
-    % [I] Bar 81 - final verse
+    % [J] Bar 81 - final verse
 
 
-    d4 f a a,8( d) |
+    d'4 f a a,8( d) |
     d'1 |
-    f'1 |
+    f1 |
     d4 r a r |
 
     r8 f( a) r8 a,4 d |
@@ -500,24 +495,29 @@ skeleton = {
     b4 r g r  |
 
     g4 r4 r2 |
+    R1 |
+    R1 |
+    a4 a cs e |
+
+    R1 |
+    R1 |
+    r4 a,, cs e |
     g4 r4 r2 |
-    r2 r4 ds8( e) |
-    a4 r r r |
 
-    r2 a8( g f e) |
-    R1 |
-    a,4 r4 r2 |
-    R1 |
+    r4 a, cs e |
+    r4 a, cs e |
+    a4 a, cs e |
+    r4 a, cs e |
 
-    d4 r4 r2 |
-    R1 |
-    R1 |
-    r4 d f a |
+    g4 r a2 |
+    g4 r e2 |
+    g4 r cs2 |
+    g4 r a2 |
 
-%% 2 bars puttin on the ritz
-
-%% 2 bars puttin on the ritz
-
+    b1\fermata |
+    fs1\fermata |
+    a1\fermata |
+    d1\fermata |
 }
 
 
