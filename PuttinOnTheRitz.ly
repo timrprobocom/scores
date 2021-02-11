@@ -8,20 +8,23 @@
 simile = \markup { \italic simile }
 subMp = \markup { sub \dynamic mp }
 rall = \markup { \italic rall. }
+solo = \markup \italic { solo ad lib }
 
 
-prefix = {
+common = {
   \time 4/4
-  \tempo "Easy swing, a la Fred Astaire" 4=180
+  \tempo "Easy swing, a la Fred Astaire" 4=200
   \clef treble \key d \minor
-  \override Score.BarNumber #'break-visibility = #all-visible
-  \override Score.BarNumber #'self-alignment-X = #0
-  \override Score.BarNumber #'self-alignment-Y = #1
-  %% \override MultiMeasureRest #'expand-limit = #1
+  % \override Score.BarNumber #'break-visibility = #all-visible
+  % \override Score.BarNumber #'self-alignment-X = #0
+  % \override Score.BarNumber #'self-alignment-Y = #1
+  \set Score.skipBars = ##t
+  \compressFullBarRests
+  \override MultiMeasureRest #'expand-limit = #1
   \set Score.markFormatter = #format-mark-box-letters
 }
 
-skeleton = {
+notation = {
     s1*8 \bar "||" \mark \default
     s1*8 \bar "||" \mark \default
     s1*8 \bar "||" \mark \default
@@ -34,7 +37,7 @@ skeleton = {
     s1*9 \bar "|."
 }
 
-\parallelMusic  #'(clarA clarB clarC clarBass) {
+\parallelMusic #'(clarA clarB clarC clarBass) {
 
     R1 |
     R1 |
@@ -68,7 +71,7 @@ skeleton = {
     d4 d a c |
 
     a8( d) r a( c) r bf a~ | 
-    a8( d) r a( c) r f, e~ | 
+    a8( d) r a( g) r f e~ | 
     d8( f) r d( e) r8 r4 |
     d4 r f f |
 
@@ -161,8 +164,8 @@ skeleton = {
     R1 |
 
     R1 |
-    R1 |
-    R1 |
+    f2 fs2 |
+    d2 c2 |
     r4 d e fs |
 
 
@@ -173,17 +176,17 @@ skeleton = {
 
     g'4 a bf c |
     g2  d2 |
-    R1 |
+    d2  bf2 |
     g4 r bf d, |
 
     d c bf a4 |
     g2  bf2 |
-    R1 |
+    bf2 d2 |
     g4 r d r |
 
     g4 c,8( g'8)~ g4 r4 |
-    g4  r4 r2 |
-    R1 |
+    g4 r4 r2 |
+    e4 r4 r2 |
     c4 r e g, |
 
     R1 |
@@ -192,18 +195,18 @@ skeleton = {
     c4 c d e |
 
     f4 g a bf |
-    R1 |
-    R1 |
+    r4 a2 c,4 |
+    r4 c a c  |
     f4 r a c, |
 
     c4 bf a g |
-    R1 |
-    R1 |
+    c4 r c e |
+    f2 a4 r |
     f4 r f e |
 
     f4 c8( f8)~f4 r4 |
-    R1 |
-    R1 |
+    f4 r4 r2 |
+    f4 r4 r2 |
     f2 a2 | 
 
     % Super duper
@@ -247,7 +250,7 @@ skeleton = {
     R1 |
     r2 a8 g f e |
 
-% I don't know how to do this transition.  Dm to Db
+% I don't know how to do this transition.  Dm to D.
 
     R1 |
     d4 r4 r2 |
@@ -262,222 +265,221 @@ skeleton = {
     % [E] Bar 41, Interlude/intro.
     % D  A  D  A  F  C  F   C  / A  E  A  E 
 
+    fs'1 |
     a'4 b d d |
-    R1 |
-    R1 |
+    d1 |
     d4 r a r |
 
+    e1 |
     d4 cs8 e8~e4 r4 |
-    R1 |
-    R1 |
+    cs1 |
     e'4 r a, r |
 
+    fs1 |
     a,4 b d d |
-    R1 |
-    R1 |
+    d1 |
     d4 r a r |
 
+    e1 |
     d4 cs8 e8~e4 r4 |
-    R1 |
-    R1 |
+    cs1 |
     e'4 r a, r |
 
-    c4 d f f |
-    R1 |
-    R1 |
+    c1 |
+    a,1 |
+    c'4 d f f |
     f'4 r c r |
 
+    bf1 |
+    e1 |
     f4 e8 g8~g4 r |
-    R1 |
-    R1 |
     g'4 r c, r |
 
+    c1 |
+    a1 |
     c,4 d f f |
-    R1 |
-    R1 |
     f4 r c r |
 
+    bf1 |
+    e1 |
     f4 e8 g8~g4 r |
-    R1 |
-    R1 |
     g'4 r c, r |
 
-    a2  e4 r8 cs8 |
-    R1 |
-    R1 |
-    R1 |
+    a''4. e8~e4 r8 cs8 |
+    e4. e8~e4 r4 |
+    cs,4. cs8~cs4 r4 |
+    a4 r cs r |
 
     e4 d4 cs8 b8~b4 |
-    R1 |
-    R1 |
-    R1 |
+    e4. e8~e4 r4 |
+    d4. d8~d4 r4 |
+    e4 d cs b |
 
-    a'2  e4 r8 cs8 |
-    R1 |
-    R1 |
-    R1 |
+    a'4. e8~e4 r8 cs8 |
+    e4. e8~e4 r4 |
+    cs4. cs8~cs4 r4 |
+    a4 r cs r |
 
     e4 d4 cs8 b8~b4 |
-    R1 |
-    R1 |
-    R1 |
+    e4. e8~e4 r4 |
+    d4. d8~d4 r4 |
+    e4 d cs b |
 
     fs'4 fs cs cs |
-    R1 |
-    R1 |
-    R1 |
+    fs4 fs cs cs |
+    fs,4 fs cs cs |
+    fs'4 r fs cs |
 
     fs2 r2 |
-    R1 |
-    R1 |
-    R1 |
+    fs2 r2 |
+    fs2 r2 |
+    fs4 cs fs g |
 
     gs4 gs8 gs8~gs8 fs8 e4 |
-    R1 |
-    R1 |
-    R1 |
+    d'4 d8 d8~d8 r8 d4 |
+    b,4 b8 b8~b8 r8 b4 |
+    e1 |
 
     a1 |
-    R1 |
-    R1 |
-    R1 |
+    a4 g f e |
+    a4 r r2 |
+    a4 g f e |
 
     % [F] 57 Block chord verse.
 
-    d,4 d d d8 cs |
-    a4 a a a8 a  |
-    f4 f f f8 f  |
+    a,4 a a a8 a  |
     d4 f a a,8( d) |
+    d4 d d d8 cs |
+    f4 f f f8 f  |
 
-    r8 cs8 cs4 cs cs |
     r8 a8  a4  a  a |
-    r8 f8  f4  f  f |
     r8 f( a) r8 a,4 d |
+    r8 cs8 cs4 cs cs |
+    r8 f8  f4  f  f |
 
-    c4 c c8 c r c |
     a4 a a8 a r a |
-    f4 f f8 f r f |
     f4 a a,8( d) r f |
+    c4 c c8 c r c |
+    f4 f f8 f r f |
 
-    b4 b a a |
     a4 a g g |
-    f4 f e e  |
     a4 a, cs e |
- 
-    a4 r r8 ds8( e) r8 |
-    e'4 r r2 |
-    cs4 r r2 |
+    b4 b a a |
+    f4 f e e  |
+
+    e4 r r2 |
     g4 r r2 |
+    a4 r r8 ds8( e) r8 |
+    cs4 r r2 |
 
+    r2 a8 g f e |
+    r2 a8 g f e |
     a,4 r4 r2 |
-    r2 a8 g f e |
-    R1 |
-    r2 a8 g f e |
+    r2 a2 |
 
-    R1 |
-    R1 |
+    d4 r4 r2 |
+    d4 r4 r2 |
     R1 |
     d4 r4 r2 |
 
-    bf4 bf8 bf8 r8 a8~a4 |
+    bf'4 bf8 bf8 r8 a8~a4 |
     f4 f8 f8 r8 e8~e4 |
     d4 d8 d8 r8 cs8~cs4 |
-    R1 |
+    bf4 bf8 bf8 r8 a8~a4 |
 
     % [G] Rpt
 
-     d4 d d d8 cs |
-     a4 a a a8 a  |
      f4 f f f8 f  |
      d4 f a a,8( d) |
+     a'4 a a a8 a  |
+     d'4 d d d8 cs |
 
-     r8 cs8 cs4 cs cs |
-     r8 a8  a4  a  a |
      r8 f8  f4  f  f |
      r8 f( a) r8 a,4 d |
+     r8 a8  a4  a  a |
+     r8 cs8 cs4 cs cs |
 
-     c4 c c8 c r c |
-     a4 a a8 a r a |
      f4 f f8 f r f |
      f4 a a,8( d) r f |
+     a4 a a8 a r a |
+     c4 c c8 c r c |
 
-     b4 b a a |
-     a4 a g g |
      f4 f e e  |
      a4 a, cs e |
- 
-     a4 r r8 ds,8( e) r8 |
-     e4 r r2 |
+     a4 a g g |
+     b4 b a a |
+
      cs4 r r2 |
      g4 r r2 |
+     e4 r r2 |
+     a4 r r8 ds,8( e) r8 |
 
-     a,4 r4 r2 |
-     r2 a8 g f e |
      R1 |
      r2 a8 g f e |
+     r2 a8 g f e |
+     a,4 r4 r2 |
 
-    R1 |
-    R1 |
     R1 |
     d4 r4 r2 |
+    d4 r4 r2 |
+    d4 r a r |
 
-    R1 |
-    R1 |
-    R1 |
-    R1 |
+    r4 d2. |
+    r4 d' e fs |
+    r4 d2. |
+    d4 d e fs |
     
     % [H] bar 73 Scat bridge.
 
-    R1 |
-    g8^solo^Gm d a' bf r bf c r |
-    R1 |
-    R1 |
+    r4 \acciaccatura { cs'16 } d2. |
+    g8^\solo^Gm d a' bf r bf c r |
+    r4 g2 d4 |
+    g4 r d r |
 
-    R1 |
+    d d, bf'8 a~a4 |
     cs8 d cs c r bf a g |
-    R1 |
-    R1 |
+    f4 r d f |
+    g4 r d f |
 
-    R1 |
+    bf4 r8 g r r bf4 |
     bf8 c bf g r4 bf8 c |
-    R1 |
-    R1 |
+    g4 r8 g,8~g8 r8 g'4 |
+    g4 r8 g8~g4 r4 |
 
-    R1 |
+    r8 g r4 r2 |
     bf8 g r4 bf8 a af g |
-    R1 |
-    R1 |
+    r8 g8 r4 g8 f e c | 
+    r2 g4 d4 |
 
-    R1 |
+    r4 \acciaccatura { b16 } c2. |
     f8^F r c' gs a c gs a |
-    R1 |
-    R1 |
+    r4 f4 r a |
+    f4 r c r |
 
-    R1 |
+    c8 r8 r4 c,4 e4 |
     c8 c bf a r a g e |
-    R1 |
-    R1 |
+    c8 c8 bf4 a g |
+    f4 r c e |
 
-    R1 |
+    f4 r4 r2 |
     f8 c d f r4 r4 |
-    R1 |
-    R1 |
+    f4 r8 f8~f8 r8 r4 |
+    f4 r8 f8~f4 r4 |
     
     % Super duper ...
 
-    R1 |
-    R1 |
-    R1 |
-    R1 |
+    d2 cs2 |
+    bf,8 d f bf r a8~a4 |
+    f2 e2 |
+    bf2 a2 |
     
 
     % [J] Bar 81 - final verse
 
-
     d'4 f a a,8( d) |
-    d'1 |
+    d,1 |
     f1 |
-    d4 r a r |
+    d,4 r a r |
 
     r8 f( a) r8 a,4 d |
     cs1 |
@@ -485,7 +487,7 @@ skeleton = {
     cs4 r a r |
 
     f4 a a,8( d8) r f |
-    c1 |
+    c?1 |
     f1 |
     c4 r a r |
 
@@ -495,18 +497,18 @@ skeleton = {
     b4 r g r  |
 
     g4 r4 r2 |
-    R1 |
+    g4 r4 r2 |
     R1 |
     a4 a cs e |
 
     R1 |
     R1 |
-    r4 a,, cs e |
+    r4 a, cs e |
     g4 r4 r2 |
 
     r4 a, cs e |
     r4 a, cs e |
-    a4 a, cs e |
+    g4 a, cs e |
     r4 a, cs e |
 
     g4 r a2 |
@@ -515,99 +517,20 @@ skeleton = {
     g4 r a2 |
 
     b1\fermata |
-    fs1\fermata |
+    f1\fermata |
     a1\fermata |
-    d1\fermata |
+    d,1\fermata |
 }
 
 
-
-\header {
-  title = "Puttin On The Ritz"
-  subtitle = "for Clarinet Quartet"
-  composer = "Irving Berlin"
-  arranger = "Arr Roberts"
-  tagline = ##f
-}
+clari   = \relative c' \clarA
+clarii  = \relative c' \clarB
+clariii = \relative c' \clarC 
+clarb   = \relative c' \clarBass 
 
 
+xtitle = "Puttin On The Ritz"
+xcomposer = "Irving Berlin"
+xarranger = "Arr Roberts"
 
-%
-% Define the parts.
-%
-
-% Clarinet I
-
-clarI = {
-  \set Staff.instrumentName = #"Bb Clar I "
-  \set Staff.midiInstrument = #"clarinet"
-
-  \prefix
-  << \skeleton \relative c' \clarA >>
-}
-
-% Clarinet II
-
-clarII = {
-  \set Staff.instrumentName = #"Bb Clar II "
-  \set Staff.midiInstrument = #"clarinet"
-
-  \prefix
-  << \skeleton  \relative c' \clarB >>
-}
-
-% Clarinet III
-
-clarIII = {
-  \set Staff.instrumentName = #"Bb Clar III "
-  \set Staff.midiInstrument = #"clarinet"
-
-  \prefix
-  << \skeleton  \relative c' \clarC >>
-}
-
-% Bass Clarinet
-
-bassClar = {
-  \set Staff.instrumentName = #"Bass Clar "
-  \set Staff.midiInstrument = #"clarinet"
-
-  \prefix
-  << \skeleton  \relative c' \clarBass >>
-}
-
-
-%
-% Put them all together.
-%
-
-parts = {
-  <<
-     \tag #'clr1  \new Staff  \transpose c  c  \clarI
-     \tag #'clr2  \new Staff  \transpose c  c  \clarII
-     \tag #'clr3  \new Staff  \transpose c  c  \clarIII
-     \tag #'bass  \new Staff  \transpose c  c  \bassClar
-  >>
-}
-
-
-%
-% Define the things that print.
-%
-
-\score {
-  % Do I need << >> around this line?
-  \context StaffGroup = "quartet" \parts 
-  \midi { 
-    \context { 
-      \Score tempoWholesPerMinute = #(ly:make-moment 160 8) 
-    }
-  }
-  \layout { }
-}
-
-\bookpart { \score { \keepWithTag #'clr1 \parts } }
-\bookpart { \score { \keepWithTag #'clr2 \parts } }
-\bookpart { \score { \keepWithTag #'clr3 \parts } }
-\bookpart { \score { \keepWithTag #'bass \parts } }
-
+\include "renderQuartet.ly"
