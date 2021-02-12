@@ -60,9 +60,9 @@ notation = {
     R1 |
     d4 r r r |
 
-    d8( a') r d,( g) r d( f) |
-    d8( a') r d,( g) r d( f) |
-    d8( f) r d( e) r d( f) |
+    d8\mf( a') r d,( g) r d( f) |
+    d8\mf( a') r d,( g) r d( f) |
+    d8\mf( f) r d( e) r d( f) |
     d4 d d d |
 
     r8 d( e) r d( e f g) |
@@ -75,18 +75,18 @@ notation = {
     d8( f) r d( e) r8 r4 |
     d4 r f f |
 
-    a2 r |
-    e2 r |
-    cs2 r |
+    a2\> r |
+    e2\> r |
+    cs2\> r |
     a4 g f e |
 
     % [A] Bar 9 - first theme, held harmony
     % Dm  2 3 4 DmM7 2 3 4 Dm7 2 3 4 Dm6 A7 3 4 | Am7
 
-    r4 f r f |
-    r4 a r a |
-    d4 f a a,8( d) |
-    d4 r a r |
+    r4\! f\mp r f |
+    r4\! a\mp r a |
+    d4\!\mf f a a,8( d) |
+    d4\!\mp r a r |
 
     r4 f r f |
     r4 a r a |
@@ -118,20 +118,20 @@ notation = {
     d4 r4 r2 |
     r4 d f a |
 
-    d4  d8  d8  r8 cs8~cs4 |
-    bf4 bf8 bf8 r8 a8~a4 |
-    f4  f8  f8  r8 e8~e4 |
-    bf4 bf8 bf8 r8 a8~a4 |
+    d4\f  d8  d8  r8 cs8~cs4 |
+    bf4\f bf8 bf8 r8 a8~a4 |
+    f4\f  f8  f8  r8 e8~e4 |
+    bf4\f bf8 bf8 r8 a8~a4 |
 
 
     % [B] Bar 17 - first theme, articulated harmony
     % Dm  2 3 4 DmM7 2 3 4 Dm7 2 3 4 Dm6 A7 3 4 | Am7
 
 
-    f1 |
-    d,4 f a a,8( d) |
-    d'1 |
-    d,4 r a r |
+    f1\mp |
+    d,4\mf f a a,8( d) |
+    d'1\mp |
+    d,4\mp r a r |
 
     f1 |
     r8 f( a) r8 a,4 d |
@@ -164,8 +164,8 @@ notation = {
     R1 |
 
     R1 |
-    f2 fs2 |
-    d2 c2 |
+    f2\< fs2 |
+    d2\< c2 |
     r4 d e fs |
 
 
@@ -174,10 +174,10 @@ notation = {
     % Chorus 1 normal
     % Gm  C  F  F Dm A |
 
-    g'4 a bf c |
-    g2  d2 |
-    d2  bf2 |
-    g4 r bf d, |
+    g'4\f a bf c |
+    g2\!\f  d2 |
+    d2\!\f  bf2 |
+    g4\f r bf d, |
 
     d c bf a4 |
     g2  bf2 |
@@ -220,10 +220,10 @@ notation = {
     % [D] Bar 33
     % block chord verse
 
-    d4 d d d8 cs |
-    a4 a a a8 a  |
-    f4 f f f8 f  |
-    d,4 f a a,8( d) |
+    d4\mf d d d8 cs |
+    a4\mf a a a8 a  |
+    f4\mf f f f8 f  |
+    d,4\mf f a a,8( d) |
 
     r8 cs8 cs4 cs cs |
     r8 a8  a4  a  a |
@@ -240,12 +240,12 @@ notation = {
     f4 f e e  |
     a4 a, cs e |
  
-    a4 r r e'16 d cs b |
+    a4 r r e'16( d cs b |
     e4 r r2 |
     cs4 r r2 |
     g4 r r2 |
 
-    a4 r4 r2 |
+    a4) r4 r2 |
     r2 a8 g f e |
     R1 |
     r2 a8 g f e |
@@ -254,21 +254,21 @@ notation = {
 
     R1 |
     d4 r4 r2 |
-    r4 a'8 bf a g f e |
+    r4 a'8( bf a g f e |
     d4 r4 r2 |
 
     R1 |
-    d8 r8 r8 d8 r2 |
-    d8 r8 r8 d8 r2 |
+    d8 r8 r8 d8-> r2 |
+    d8) r8 r8 d8-> r2 |
     d4 r4 r2 |
 
     % [E] Bar 41, Interlude/intro.
     % D  A  D  A  F  C  F   C  / A  E  A  E 
 
-    fs'1 |
-    a'4 b d d |
-    d1 |
-    d4 r a r |
+    fs'1\mp |
+    a'4\mf b d d |
+    d1\mp |
+    d4\mp r a r |
 
     e1 |
     d4 cs8 e8~e4 r4 |
@@ -286,8 +286,8 @@ notation = {
     e'4 r a, r |
 
     c1 |
-    a,1 |
-    c'4 d f f |
+    a,1\mp |
+    c'4\mf d f f |
     f'4 r c r |
 
     bf1 |
@@ -305,10 +305,10 @@ notation = {
     f4 e8 g8~g4 r |
     g'4 r c, r |
 
-    a''4. e8~e4 r8 cs8 |
-    e4. e8~e4 r4 |
-    cs,4. cs8~cs4 r4 |
-    a4 r cs r |
+    a''4.\f e8~e4 r8 cs8 |
+    e4.\mf e8~e4 r4 |
+    cs,4.\mf cs8~cs4 r4 |
+    a4\mf r cs r |
 
     e4 d4 cs8 b8~b4 |
     e4. e8~e4 r4 |
@@ -340,17 +340,17 @@ notation = {
     b,4 b8 b8~b8 r8 b4 |
     e1 |
 
-    a1 |
-    a4 g f e |
-    a4 r r2 |
-    a4 g f e |
+    a1\> |
+    a4\> g f e |
+    a4\> r r2 |
+    a4\> g f e |
 
     % [F] 57 Block chord verse.
 
-    a,4 a a a8 a  |
-    d4 f a a,8( d) |
-    d4 d d d8 cs |
-    f4 f f f8 f  |
+    a,4\mp a a a8 a  |
+    d4\mf f a a,8( d) |
+    d4\mp d d d8 cs |
+    f4\mp f f f8 f  |
 
     r8 a8  a4  a  a |
     r8 f( a) r8 a,4 d |
@@ -390,7 +390,7 @@ notation = {
     % [G] Rpt
 
      f4 f f f8 f  |
-     d4 f a a,8( d) |
+     d4\mf f a a,8( d) |
      a'4 a a a8 a  |
      d'4 d d d8 cs |
 
@@ -424,17 +424,17 @@ notation = {
     d4 r4 r2 |
     d4 r a r |
 
-    r4 d2. |
-    r4 d' e fs |
-    r4 d2. |
-    d4 d e fs |
+    r4 d2.\< |
+    r4 d'\< e fs |
+    r4 d2.\< |
+    d4\< d e fs |
     
     % [H] bar 73 Scat bridge.
 
-    r4 \acciaccatura { cs'16 } d2. |
-    g8^\solo^Gm d a' bf r bf c r |
-    r4 g2 d4 |
-    g4 r d r |
+    r4 \acciaccatura { cs'16 } d2.\mf |
+    g8\f^\solo^Gm d a' bf r bf c r |
+    r4 g2\mf d4 |
+    g4\mf r d r |
 
     d d, bf'8 a~a4 |
     cs8 d cs c r bf a g |
@@ -452,34 +452,34 @@ notation = {
     r2 g4 d4 |
 
     r4 \acciaccatura { b16 } c2. |
-    f8^F r c' gs a c gs a |
+    f8^F r c'-. gs( a c-.) gs( a |
     r4 f4 r a |
     f4 r c r |
 
     c8 r8 r4 c,4 e4 |
-    c8 c bf a r a g e |
+    c8-.) c bf a r a g e |
     c8 c8 bf4 a g |
     f4 r c e |
 
     f4 r4 r2 |
-    f8 c d f r4 r4 |
+    f8( c d f) r4 r4 |
     f4 r8 f8~f8 r8 r4 |
     f4 r8 f8~f4 r4 |
     
     % Super duper ...
 
     d2 cs2 |
-    bf,8 d f bf r a8~a4 |
+    bf,8( d f bf-.) r a8~a4 |
     f2 e2 |
     bf2 a2 |
     
 
     % [J] Bar 81 - final verse
 
-    d'4 f a a,8( d) |
-    d,1 |
-    f1 |
-    d,4 r a r |
+    d'4\f f a a,8( d) |
+    d,1\f |
+    f1\f |
+    d,4\f r a r |
 
     r8 f( a) r8 a,4 d |
     cs1 |
