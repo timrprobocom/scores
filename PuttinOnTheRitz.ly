@@ -67,12 +67,12 @@ notation = {
 
     r8 d( e) r d( e f g) |
     r8 d( e) r d( e f g) |
-    r8 d8( e) r d4 a4 |
+    r8 d( e) r d4 a4 |
     d4 d a c |
 
     a8( d) r a( c) r bf a~ | 
     a8( d) r a( g) r f e~ | 
-    d8( f) r d( e) r8 r4 |
+    d8( f) r d( e) f d cs~ |
     d4 r f f |
 
     a2\> r |
@@ -167,7 +167,6 @@ notation = {
     f2\< fs2 |
     d2\< c2 |
     r4 d e fs |
-
 
 
     % [C] Bar 25
@@ -271,7 +270,7 @@ notation = {
     d4\mp r a r |
 
     e1 |
-    d4 cs8 e8~e4 r4 |
+    d4 cs8( e8~e4) r4 |
     cs1 |
     e'4 r a, r |
 
@@ -281,7 +280,7 @@ notation = {
     d4 r a r |
 
     e1 |
-    d4 cs8 e8~e4 r4 |
+    d4 cs8( e8~e4) r4 |
     cs1 |
     e'4 r a, r |
 
@@ -292,7 +291,7 @@ notation = {
 
     bf1 |
     e1 |
-    f4 e8 g8~g4 r |
+    f4 e8( g8~g4) r |
     g'4 r c, r |
 
     c1 |
@@ -302,13 +301,13 @@ notation = {
 
     bf1 |
     e1 |
-    f4 e8 g8~g4 r |
+    f4 e8( g8~g4) r |
     g'4 r c, r |
 
     a''4.\f e8~e4 r8 cs8 |
     e4.\mf e8~e4 r4 |
     cs,4.\mf cs8~cs4 r4 |
-    a4\mf r cs r |
+    a4\mf r8 cs8~ cs4 r |
 
     e4 d4 cs8 b8~b4 |
     e4. e8~e4 r4 |
@@ -318,7 +317,7 @@ notation = {
     a'4. e8~e4 r8 cs8 |
     e4. e8~e4 r4 |
     cs4. cs8~cs4 r4 |
-    a4 r cs r |
+    a4 r8 cs8~ cs4 r |
 
     e4 d4 cs8 b8~b4 |
     e4. e8~e4 r4 |
@@ -333,7 +332,7 @@ notation = {
     fs2 r2 |
     fs2 r2 |
     fs2 r2 |
-    fs4 cs fs g |
+    fs4 cs fs gs |
 
     gs4 gs8 gs8~gs8 fs8 e4 |
     d'4 d8 d8~d8 r8 d4 |
@@ -341,9 +340,9 @@ notation = {
     e1 |
 
     a1\> |
-    a4\> g f e |
+    a4\> g f! e |
     a4\> r r2 |
-    a4\> g f e |
+    a4\> g! f! e |
 
     % [F] 57 Block chord verse.
 
@@ -448,7 +447,7 @@ notation = {
 
     r8 g r4 r2 |
     bf8 g r4 bf8 a af g |
-    r8 g8 r4 g8 f e c | 
+    r8 g8 r4 g8( f e c) | 
     r2 g4 d4 |
 
     r4 \acciaccatura { b16 } c2. |
@@ -468,10 +467,10 @@ notation = {
     
     % Super duper ...
 
-    d2 cs2 |
+    d2 r8 cs8~cs4 |
     bf,8( d f bf-.) r a8~a4 |
-    f2 e2 |
-    bf2 a2 |
+    f2 r8 e8~e4 |
+    bf2 r8 a8~a4 |
     
 
     % [J] Bar 81 - final verse
