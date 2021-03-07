@@ -227,7 +227,7 @@ notation = {
     g,4 a bf c d |
     g2. r8 bf,8 d8 g8 |
     g'2. r8 bf,8 d8 g8 |
-    g4 a bf c d |
+    g,4 a bf c d |
 
     g,4 a bf c d |
     fs2. r8 bf,8 d8 f8 |
@@ -255,7 +255,7 @@ notation = {
     ef?8 d8 r1 |
     a'4 r8 a4 r8 bf4 c4 |
     g,4 r8 g4 r8 a4 bf4 |
-    d,4 r8 d4 r8 ef4 f4 |
+    d4 r8 d4 r8 ef4 f4 |
 
     d4 r8 d4 r8 ef4 f4 |
     a4 r8 a4 r8 bf4 c4 |
