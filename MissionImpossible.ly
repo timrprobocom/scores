@@ -120,48 +120,48 @@ notation = {
 
     % [C] bar 15 main theme modulated
 
-    R4*5 |
+    ef8 c g1 |
     ef8 c g1 |
     c4. g4. fs'4 g,4 |
-    c4 r8 c4 r8 r4 c4 |
+    c4 r8 c4 r8 fs4 c4 |
 
-    R4*5 |
+    ef'8 c fs,1 |
     ef'8 c fs,1 |
     c4. g4. f'4 g,4 |
-    c4 r8 c4 r8 r4 c4 |
+    c4 r8 c4 r8 f?4 c4 |
 
-    R4*5 |
+    ef'8 c f,1 |
     ef'8 c f,1 |
     c4. g4. ef'?4 g,4 |
-    c4 r8 c4 r8 r4 c4 |
+    c4 r8 c4 r8 ef4 c4 |
 
-    R4*5 |
     ef8 f r1 |
-    c4 r8 c4 r8 bf4 a4 |
-    c4 r8 c4 r8 bf4 a4 |
+    ef8 f r1 |
+    c4 r8 c4 r8 ef4 f4 |
+    c4 r8 c4 r8 ef4 f4 |
 
     % bar 19 back down
 
     bf8 g8 fs'1 |
     d'4. cs4. g4 d'4 |
-    R4*5 |
-    g4 r8 g4 r8 bf4 c4 |
+    bf8 g8 fs'1 |
+    g,4 r8 g4 r8 bf4 c4 |
 
     bf,8 g8 f'1  |
     cs4. g4. d'4 cs4 |
-    R4*5 |
+    bf,8 g8 f'1  |
     g4 r8 g4 r8 f4 fs4 |
 
     bf,8 g8 e'1 |
     g4. d'4. cs4 g4 |
-    R4*5 |
+    bf,8 g8 e'1 |
     g4 r8 g4 r8 bf4 c4 |
 
     % TO CODA
 
     ef?8 d8 r1 |
     a4 r8 a4 r8 bf4 c4 |
-    g4 r8 g4 r8 a4 bf4 |
+    g,4 r8 g4 r8 a4 bf4 |
     d4 r8 d4 r8 ef4 f4 |
 
     R4*5 |
@@ -169,81 +169,81 @@ notation = {
     g4 r1 |
     d4 r8 c4 r8 bf4 a4 |
 
+    R4*5 |
+    R4*5 |
+    g4 r8 g4 r8 bf4-> c4-> |
+    g4 r8 g4 r8 bf4-> c4-> |
+
+    R4*5 |
+    R4*5 |
+    g4 r8 g4 r8 f4-> fs->  |
+    g4 r8 g4 r8 f4-> fs->  |
+
     % [D] bar 25 
 
-    R4*5 |
-    R4*5 |
-    g4 r8 g4 r8 bf4-> c4-> |
-    g4 r8 g4 r8 bf4-> c4-> |
-
-    R4*5 |
-    R4*5 |
-    g4 r8 g4 r8 f4-> fs->  |
-    g4 r8 g4 r8 f4-> fs->  |
-
     % 1
-    R4*5 |
+    g,2. r8 bf,8 d8 g8 |
     g'2. r8 bf,8 d8 g8 |
-    R4*5 |
+    g,4 a bf c d |
     g4 a bf c d |
 
-    R4*5 |
     fs2. r8 bf,8 d8 f8 |
-    R4*5 |
+    fs2. r8 bf,8 d8 f8 |
+    g,4 a bf c d |
     g,4 a bf c d |
 
-    R4*5 |
     e2. r8 e f e | 
-    R4*5 |
+    e2. r8 e f e | 
+    g,4 a bf c d |
     g,4 a bf c d |
 
-    R4*5 |
-    ef8 d8 r1 |
+    ef?8 d8 r1 |
+    ef?8 d8 r1 |
     g4 r8 g4 r8 bf4-> b4-> |
     g,4 r8 g4 r8 bf4-> b4-> |
 
     % 2
-    c'2. r8 d8 c g |
-    R4*5 |
-    R4*5 |
+    c''2. r8 d8 c g |
+    c,4 d ef f g |
+    c2. r8 d8 c g |
     c4 d ef f g |
 
     b2. r8 b bf c |
-    R4*5 |
-    R4*5 |
+    c,4 d ef f g |
+    b2. r8 b bf c |
     c,4 d ef f g |
 
     a2. r8 a bf a |
-    R4*5 |
-    R4*5 |
+    c,4 d ef f g |
+    a2. r8 a bf a |
     c,4 d ef f g |
 
-    gs8 g8 r1 |
-    R4*5 |
-    c4 r8 c4 r8 bf4 a4 |
-    c,4 r8 c4 r8 bf4 a4 |
+    af8 g8 r1 |
+    c,4 r8 c4 r8 ef4 f4 |
+    af8 g8 r1 |
+    c,4 r8 c4 r8 ef4 f4 |
 
     % 3
-    R4*5 |
+    g,4 a bf c d |
     g2. r8 bf,8 d8 g8 |
-    R4*5 |
+    g'2. r8 bf,8 d8 g8 |
     g4 a bf c d |
 
-    R4*5 |
+    g,4 a bf c d |
     fs2. r8 bf,8 d8 f8 |
-    R4*5 |
+    fs2. r8 bf,8 d8 f8 |
     g,4 a bf c d |
 
-    R4*5 |
+    g,4 a bf c d |
     e2. r8 e f e | 
-    R4*5 |
+    e2. r8 e f e | 
     g,4 a bf c d |
 
 
-    d'4 r8 d4 r8 ef4-> f-> |
+    d4 r8 d4 r8 ef4-> f-> |
     e8 d8 r1 |
-    d'4 r8 d4 r8 ef4-> f-> |
-    d'4 r8 d4 r8 ef4-> f-> |
+    d4 r8 d4 r8 ef4-> f-> |
+    d4 r8 d4 r8 ef4-> f-> |
 
     d4 r1 ^ \markup { \right-align D.S. Al Coda } \break |
     d4 r1 ^ \markup { \right-align D.S. Al Coda } \break |
@@ -253,24 +253,24 @@ notation = {
     % CODA
 
     ef?8 d8 r1 |
-    a4 r8 a4 r8 bf4 c4 |
-    g4 r8 g4 r8 a4 bf4 |
-    d4 r8 d4 r8 ef4 f4 |
+    a'4 r8 a4 r8 bf4 c4 |
+    g,4 r8 g4 r8 a4 bf4 |
+    d,4 r8 d4 r8 ef4 f4 |
 
     d4 r8 d4 r8 ef4 f4 |
     a4 r8 a4 r8 bf4 c4 |
     g4 r8 g4 r8 a4 bf4 |
     d4 r8 d4 r8 ef4 f4 |
     
-    a4 r1 |
+    d4 r1 |
     a4 r1 |
     g4 r1 |
     d4 r1 |
 
-    g8 a8~a1\fermata |
-    g8 a8~a1\fermata |
-    g8 a8~a1\fermata |
-    g8 a8~a1\fermata |
+    f8 g8~g1\fermata |
+    d8 ef8~ef1\fermata |
+    a8 bf8~bf1\fermata |
+    d8 cs8~cs1\fermata |
 }
 
 
