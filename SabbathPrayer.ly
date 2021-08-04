@@ -102,56 +102,56 @@ skeleton = {
     R1 |
     r4. d8 c d c b |
     r4. d8 c d c b |
-    e1 |
+    e2 r8 e8 fs8 gs8 |
 
     % Second verse
 
     c,4 e c fs |
     e8 a8 a8 a8 a4 a8 a8 |
     e8 a8 a8 a8 a4 a8 a8 |
-    a2 a2 |
+    a4 c4 a4 d4 |
 
     c4 g' c, fs |
     a4 a2 r4 |
     a4 a2 r4 |
-    a2 a2 |
+    a4 e'4 a,4 d4 |
 
     c4 e c fs |
     a8 c8 c8 c8 c4 c8 c8 |
     e8 a8 a8 a8 a4 a8 a8 |
-    a2 a2 |
+    a4 c4 a4 d4 |
 
     c4 g' c, fs |
     c1 |
     a1 |
-    a2 a2 |
+    a4 e'4 a,4 d4 |
 
     c4 e c fs |
     d8 c b a c4. a8 |
     d8 c b a c4. a8 |
-    a2 a2 |
+    a4 c4 a4 d4 |
 
     c4 g' c, fs |
     d8 c b a c4 a4 |
     d8 c b a c4 a4 |
-    a2 a2 |
+    a4 e'4 a,4 d4 |
 
     r4 d4 ef4 d4 |
     r4 g4 af4 g4 |
     b1 |
-    g1 |
+    g,2. r8 d'8 |
 
     r4 d4 ef4 d4 |
     r4 b8 d8 c4 b4 |
     R1 |
-    g1 |
+    g2. r8 d8 |
 
     % C Chorus bar 17
 
     b'4\mf d, ef d |
     d,4\mf g af g |
     g4\mf b c b |
-    g'2.\mf r8 d8 |
+    g2.\mf r8 d8 |
 
     b4 d ef d |
     d4 g af g |
@@ -186,39 +186,39 @@ skeleton = {
     r4_\rall r8 d8 c d c b |
     e1_\rall |
     gs4_\rall e4 e2 |
-    e1_\rall |
+    e2_\rall r8 e8 fs8 gs8 |
 
     % Final verse D Bar 31
  
     e8(_\atempo a8) a8 a8 a4 a8 a8 |
     c4_\atempo e c fs |
     e8(_\atempo a8) a8 a8 a4 a8 a8 |
-    a2_\atempo a2 |
+    a4_\atempo c a d |
     
     a4 a2 r4 |
     e8 a8 a8 a8 a4 a8 a8 |
     a4 a2 r4 |
-    a2 a2 |
+    a4 e' a, d |
     
     e8 a8 a8 a8 a4 a8 a8 |
     a4 a2 r4 |
     a8 c8 c8 c8 c4 c8 c8 |
-    a2 a2 |
+    a4 c a d |
     
     a1 |
     e8 a8 a8 a8 a4 a8 a8 |
     c1 |
-    a2 a2 |
+    a4 e' a, d |
     
     d8( c b a c4.) a8 |
     a2       d8( c b a |
     d8( c b a c4.) a8 |
-    a2 a2 |
+    a4 c a d |
     
     d8( c b a c4.) a8 |
     c2)      d8( c b) a |
     d8 c b a c4. a8 |
-    a2 a2 |
+    a4 e' a, d |
 
     d8->\f c-> b-> a-> b4-.\breathe  r4 |
     a8->\f a-> a-> a-> gs4-.\breathe gs4~_\sfp |
