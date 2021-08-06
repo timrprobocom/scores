@@ -48,9 +48,9 @@ skeleton = {
     R1 |
 
     r2   e,8 f e d |
-    R1 |
-    R1 |
-    R1 |
+    << R1 \new CueVoice { s2 e8^"Cl1" f e d } >> |
+    << R1 \new CueVoice { s2 e8^"Cl1" f e d } >> |
+    << R1 \new CueVoice { s2 e8^"Cl1" f e d } >> |
 
     c4 r4 r2 |
     a4\mp e'4 a,4 fs'4 | 
@@ -64,7 +64,7 @@ skeleton = {
 
     % A Verse 1  Bar 7
     
-    e8 a8 a8 a8 a4 a8 a8 |
+    e8( a8) a8 a8 a4 a8 a8 |
     a,4 e'4 a,4 fs'4 | 
     a4 c4 a4 d4 |
     a2 a2 |
@@ -74,7 +74,7 @@ skeleton = {
     a4 e'4 a,4 d4 |
     a2 a2 |
     
-    e8 a8 a8 a8 a4 a8 a8 |
+    e8( a8) a8 a8 a4 a8 a8 |
     a,4 e'4 a,4 fs'4 | 
     a4 c4 a4 d4 |
     a2 a2 |
@@ -104,11 +104,11 @@ skeleton = {
     r4. d8 c d c b |
     e2 r8 e8 fs8 gs8 |
 
-    % Second verse
+    % B 15 Second verse
 
     c,4 e c fs |
-    e8 a8 a8 a8 a4 a8 a8 |
-    e8 a8 a8 a8 a4 a8 a8 |
+    e8( a8) a8 a8 a4 a8 a8 |
+    e8( a8) a8 a8 a4 a8 a8 |
     a4 c4 a4 d4 |
 
     c4 g' c, fs |
@@ -118,7 +118,7 @@ skeleton = {
 
     c4 e c fs |
     a8 c8 c8 c8 c4 c8 c8 |
-    e8 a8 a8 a8 a4 a8 a8 |
+    e8( a8) a8 a8 a4 a8 a8 |
     a4 c4 a4 d4 |
 
     c4 g' c, fs |
@@ -160,7 +160,7 @@ skeleton = {
 
     a1 |
     f1 |
-    f8 a b c d c b a |
+    f8( a b c d c b a) |
     f1 |
 
     b2._\rall r4 |
@@ -180,7 +180,7 @@ skeleton = {
 
     a1 |
     f1 |
-    f8 a b c d c b a |
+    f8( a b c d c b a) |
     f1 |
 
     r4_\rall r8 d8 c d c b |
@@ -196,17 +196,17 @@ skeleton = {
     a4_\atempo c a d |
     
     a4 a2 r4 |
-    e8 a8 a8 a8 a4 a8 a8 |
+    e8( a8) a8 a8 a4 a8 a8 |
     a4 a2 r4 |
     a4 e' a, d |
     
-    e8 a8 a8 a8 a4 a8 a8 |
+    e8( a8) a8 a8 a4 a8 a8 |
     a4 a2 r4 |
     a8 c8 c8 c8 c4 c8 c8 |
     a4 c a d |
     
     a1 |
-    e8 a8 a8 a8 a4 a8 a8 |
+    e8( a8) a8 a8 a4 a8 a8 |
     c1 |
     a4 e' a, d |
     
@@ -217,7 +217,7 @@ skeleton = {
     
     d8( c b a c4.) a8 |
     c2)      d8( c b) a |
-    d8 c b a c4. a8 |
+    d8( c b a c4.) a8 |
     a4 e' a, d |
 
     d8->\f c-> b-> a-> b4-.\breathe  r4 |
@@ -240,7 +240,7 @@ skeleton = {
     a1~ |
     a,4 e'4 a,4 fs'4 | 
     a4 c4 a4 d4 |
-    a2 a2 |
+    a,2 a2 |
 
     a1 |
     a,4 g'4 a,4 fs'4 |
@@ -265,7 +265,7 @@ skeleton = {
 \header {
   title = "Sabbath Prayer - Fiddler on the Roof\""
   instrument = "Clarinet quartet"
-  composer = "Kander & Ebb"
+  composer = "Bock & Harnick"
   arranger = "Arr Roberts"
   tagline = ##f
 }
