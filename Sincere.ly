@@ -13,7 +13,7 @@ atempo = \markup { \italic { a tempo } }
 
 prefix = {
   \time 3/4
-  \tempo "Reverently" 4=90
+  \tempo "Joyously" 4=90
   \clef treble \key a \major
   \override Score.BarNumber #'break-visibility = #all-visible
   \override Score.BarNumber #'self-alignment-X = #0
@@ -25,7 +25,8 @@ prefix = {
 skeleton = {
     \override BreathingSign.text = \markup { \musicglyph #"scripts.caesura.straight" } 
 %    s2.*34 \bar "||" \mark \default
-    s2.*35 
+    s2.*4 \tempo "Quicker" 4=150
+    s2.*32 
     \override BreathingSign.text = \markup { \musicglyph #"scripts.rcomma" } 
     s1*2 \bar "|."
 }
@@ -93,15 +94,15 @@ skeleton = {
     c b a |
     d d d |
 
-    e2 e4 |
-    cs2 cs4 | 
-    e2 a4 |
-    a2 a4 |
+    e2 e4~ |
+    cs2 cs4~ | 
+    e2 a4~ |
+    a2 a4~ |
 
-    e2. |
-    as2. |
-    cs2. |
-    fs2. |
+    e4 e2 |
+    cs4 as2 |
+    a4 cs2 |
+    a4 fs2 |
 
     % Puzzle and mystify tell me why tell me
 
@@ -156,6 +157,11 @@ skeleton = {
     cs4 b2) |
     gs2. |
     d2. |
+    
+    fs2.~ |
+    d2.~ |
+    a2.~ |
+    d2.~ |
     
     fs2 \breathe d4 |
     d2 \breathe a4 |
