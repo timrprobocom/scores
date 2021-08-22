@@ -12,104 +12,97 @@ atempo = \markup { \italic { a tempo } }
 
 
 prefix = {
-  \time 3/4
-  \tempo "Joyously" 4=90
+  \time 3/2
+  \tempo "Joyously" 2=90
   \clef treble \key a \major
   \override Score.BarNumber #'break-visibility = #all-visible
   \override Score.BarNumber #'self-alignment-X = #0
   \override Score.BarNumber #'self-alignment-Y = #1
   \override MultiMeasureRest #'expand-limit = #1
+  \override BreathingSign.text = \markup { \musicglyph #"scripts.caesura.straight" } 
   \set Score.markFormatter = #format-mark-box-letters
 }
 
 skeleton = {
-    \override BreathingSign.text = \markup { \musicglyph #"scripts.caesura.straight" } 
 %    s2.*34 \bar "||" \mark \default
-    s2.*4 \tempo "Quicker" 4=150
-    s2.*32 
-    \override BreathingSign.text = \markup { \musicglyph #"scripts.rcomma" } 
-    s1*2 \bar "|."
+%    \override BreathingSign.text = \markup { \musicglyph #"scripts.rcomma" } 
+%    s1*2 \bar "|."
 }
 
 \parallelMusic  #'(clarA clarB clarC clarBass) {
 
     % How can there be any sin in sincere
 
-    R2. |
-    R2. |
-    R2. |
-    cs4 d ds4 |
+    R1. |
+    R1. |
+    R1. |
+    cs2\mf d ds |
 
-    R2. |
-    R2. |
-    r4 fs gs |
-    e4 r2 |
+    r2 \breathe r1 |
+    r2 \breathe r1 |
+    r2 \breathe fs\mf gs |
+    e2 \breathe r1 |
 
-    fs4 gs4 a4 |
-    cs4 cs e |
-    a4 b cs |
-    fs4 f e |
+    fs2\mf gs a |
+    cs2\mf cs e |
+    a2 b cs |
+    fs2 f e |
 
-    fs2. \breathe |
-    as,2. \breathe |
-    d2. \breathe |
-    fs2. \breathe |
+    fs1. \breathe |
+    as,1. \breathe |
+    d1. \breathe |
+    fs1. \breathe |
 
     % Where is the good in good bye
 
-    fs4 fs fs |
-    ds4 ds ds |
-    cs4 b a |
-    b,4 b b |
+    \time 3/4 fs4 fs fs |
+    \time 3/4 ds4 ds ds |
+    \time 3/4 cs4 b a |
+    \time 3/4 b,4 b b |
 
     gs4 gs gs |
     d?4 d d |
     c?4 gs b |
     e4 e e |
 
-    a2.~ |
-    cs4 d ds |
-    a2 a4 |
-    a,4 b bs |
+    \time 3/2 a1.~ |
+    \time 3/2 cs2 d ds |
+    \time 3/2 a1 a2 |
+    \time 3/2 a,2 b bs |
 
-    a2.~ |
-    e4 fs g~ |
-    a4 c cs~ |
-    cs4 ds e~ |
+    a1.~ |
+    e2 fs g~ |
+    a2 c cs~ |
+    cs2 ds e~ |
 
-    \grace { a8[ as8] b4 a16[( b16] a4~ } a2.) \fermata \breathe |
-    g2.\fermata \breathe |
-    cs2.\fermata \breathe |
-    e2.\fermata \breathe |
+    \grace { a4 as4 b2 a16[( b16] a4~ } a1.) \fermata \breathe |
+    g1.\fermata \breathe |
+    cs1.\fermata \breathe |
+    e1.\fermata \breathe |
    
     % Your apprehensions confuse me dear
 
-    d,4 d d |
-    a,4 fs a |
-    fs4 a b |
-    d4 d d |
+    \time 3/4 d,4 d d |
+    \time 3/4 a,4 fs a |
+    \time 3/4 fs4 a b |
+    \time 3/4 d4 d d |
 
     f4 f f |
     d4 d d |
     c b a |
     d d d |
 
-    e2 e4~ |
-    cs2 cs4~ | 
-    e2 a4~ |
-    a2 a4~ |
-
-    e4 e2 |
-    cs4 as2 |
-    a4 cs2 |
-    a4 fs2 |
+    \time 3/2 e2 e2 e2 |
+    \time 3/2 cs2 cs2 as2 |
+    \time 3/2 e2 a2 cs2 |
+    \time 3/2 a2 a2 fs2 |
 
     % Puzzle and mystify tell me why tell me
 
-    fs4 ds f |
-    a4 a d |
-    ds,4 fs gs |
-    b4 b b |
+    \time 3/4 fs4 ds f |
+    \time 3/4 a4 a d |
+    \time 3/4 ds,4 fs gs |
+    \time 3/4 b4 b b |
 
     fs?2 ds4 |
     ds2 a4 |
@@ -148,96 +141,86 @@ skeleton = {
     g4 a b |
     a4 a a |
 
-    es2.~ |
-    b2( cs4~ |
-    gs2.~ |
-    d2.~ |
-
-    es2. |
-    cs4 b2) |
-    gs2. |
-    d2. |
+    \time 3/2 es1. |
+    \time 3/2 b2( cs2 b2) |
+    \time 3/2 gs1. |
+    \time 3/2 d1. |
     
-    fs2.~ |
-    d2.~ |
-    a2.~ |
-    d2.~ |
-    
-    fs2 \breathe d4 |
-    d2 \breathe a4 |
-    a2 \breathe d,4 |
-    d2 \breathe fs4 |
+    fs1 \breathe r4 d4 |
+    d1 \breathe r4 a4 |
+    a1 \breathe r4 d,4 |
+    d1 \breathe r4 fs4 |
 
     % While one single star shines above?
 
-    fs4\mf fs fs |
-    b4\mf cs ds |
-    ds4\mf e fs |
-    b,4\mf b b |
+    \time 3/4 fs4\mf fs fs |
+    \time 3/4 b4\mf cs ds |
+    \time 3/4 ds4\mf e fs |
+    \time 3/4 b,4\mf b b |
 
     ds4 e fs |
     b4 b ds |
     fs4 gs a |
     b4 b b |
 
-    gs2( a4~ |
-    d!2( ds4~ |
-    b2.~ |
-    e2( fs4~ |
+    \time 3/2 gs2( a2 fs2)\glissando |
+    \time 3/2 d!2( ds2 ds2) |
+    \time 3/2 b1.~ |
+    \time 3/2 e2( fs2 b,2) |
 
-    a4 fs2)\glissando |
-    ds4 ds2) |
-    b2.~ |
-    fs4 b,2) |
-
-    gs2. \fermata \breathe |
-    d?2. \fermata \breathe |
-    b2. \fermata \breathe |
-    e2. \fermata \breathe |
+    gs1. \fermata \breathe |
+    d?1. \fermata \breathe |
+    b1. \fermata \breathe |
+    e1. \fermata \breathe |
 
     % How can there be any sin in sincere?
 
-    e4 d fs |
-    cs b a |
-    cs, d ds |
-    a, b bs |
+    \time 3/4 e4 d fs |
+    \time 3/4 cs4 b a |
+    \time 3/4 cs,4 d ds |
+    \time 3/4 a,4 b bs |
 
     e4 gs es |
     a4 bs b |
     e4 fs gs |
     cs4 ds cs |
 
-    fs4\< gs a |
-    cs4\< cs e |
-    a4\< b cs |
-    fs4\< f e |
+    \time 3/2 fs2\< gs a |
+    \time 3/2 cs2\< cs e |
+    \time 3/2 a2\< b cs |
+    \time 3/2 fs2\< f e |
 
-    as2.\!\fermata \breathe |
-    e2.\!\fermata \breathe |
-    fs2.\!\fermata \breathe |
-    fs2.\!\fermata \breathe |
+    as1.\!\fermata \breathe |
+    e1.\!\fermata \breathe |
+    fs1.\!\fermata \breathe |
+    fs1.\!\fermata \breathe |
 
     % Aren't we sincerely in love?
 
-    fs4\mp fs fs |
-    fs,4\mp a fs |
-    d4\mp cs a |
-    b,4 cs d |
+    fs2\mp fs fs |
+    fs,2\mp a fs |
+    d2\mp cs a |
+    b,2 cs d |
 
-    ds4 d \breathe fs\f |
-    a4 b \breathe d\f |
-    fs4 gs \breathe e\f |
-    b4 e \breathe b8 bf\f |
+    ds2 d \breathe fs\f  |
+    a2 b \breathe d\f    |
+    fs2 gs \breathe e\f  |
+    b2 e \breathe b4(\f bf |
 
-    \time 4/4 a1~ |
-    \time 4/4 cs4 \breathe e ds d |
-    \time 4/4 a4 \breathe cs c b |
-    \time 4/4 a4 \breathe a' fs f |
+    \time 4/4 a1~ | 
+    \time 4/4 cs2 \breathe e | 
+    \time 4/4 a2 \breathe cs | 
+    \time 4/4 a2) \breathe a' | 
 
-    a1\fermata |
-    e1\fermata |
-    cs1\fermata |
-    a,1\fermata |
+    a1~ |
+    ds2 d |
+    c2 b |
+    fs2 f |
+
+    a1\fermata \bar "|." |
+    e1\fermata \bar "|." |
+    cs1\fermata \bar "|." |
+    a,1\fermata \bar "|." |
 
 }
 
