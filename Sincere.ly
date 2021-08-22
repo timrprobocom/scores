@@ -11,7 +11,7 @@ rall = \markup { \italic rall... }
 atempo = \markup { \italic { a tempo } }
 
 
-prefix = {
+common = {
   \time 3/2
   \tempo "Joyously" 2=90
   \clef treble \key a \major
@@ -23,13 +23,10 @@ prefix = {
   \set Score.markFormatter = #format-mark-box-letters
 }
 
-skeleton = {
-%    s2.*34 \bar "||" \mark \default
-%    \override BreathingSign.text = \markup { \musicglyph #"scripts.rcomma" } 
-%    s1*2 \bar "|."
+notation = {
 }
 
-\parallelMusic  #'(clarA clarB clarC clarBass) {
+\parallelMusic  #'(clari clarii clariii clarb) {
 
     % How can there be any sin in sincere
 
@@ -40,10 +37,10 @@ skeleton = {
 
     r2 \breathe r1 |
     r2 \breathe r1 |
-    r2 \breathe fs\mf gs |
+    r2 \breathe fs,,\mf gs |
     e2 \breathe r1 |
 
-    fs2\mf gs a |
+    fs,2\mf gs a |
     cs2\mf cs e |
     a2 b cs |
     fs2 f e |
@@ -225,93 +222,10 @@ skeleton = {
 }
 
 
-
-\header {
-  title = "Sincere (Music Man)"
-  instrument = "Clarinet quartet"
-  composer = "Meredith Willson"
-  arranger = "Arr Roberts"
-  tagline = ##f
-}
+xtitle = "Sincere (Music Man)"
+xinstrument = "Clarinet quartet"
+xcomposer = "Meredith Willson"
+xarranger = "Arr Roberts"
 
 
-
-%
-% Define the parts.
-%
-
-% Clarinet I
-
-clarI = {
-  \set Staff.instrumentName = #"Bb Clar I "
-  \set Staff.midiInstrument = #"clarinet"
-
-  \prefix
-  << \skeleton \relative c'' \clarA >>
-}
-
-% Clarinet II
-
-clarII = {
-  \set Staff.instrumentName = #"Bb Clar II "
-  \set Staff.midiInstrument = #"clarinet"
-
-  \prefix
-  << \skeleton  \relative c'' \clarB >>
-}
-
-% Clarinet III
-
-clarIII = {
-  \set Staff.instrumentName = #"Bb Clar III "
-  \set Staff.midiInstrument = #"clarinet"
-
-  \prefix
-  << \skeleton  \relative c \clarC >>
-}
-
-% Bass Clarinet
-
-bassClar = {
-  \set Staff.instrumentName = #"Bass Clar "
-  \set Staff.midiInstrument = #"clarinet"
-
-  \prefix
-  << \skeleton  \relative c' \clarBass >>
-}
-
-
-%
-% Put them all together.
-%
-
-parts = {
-  <<
-     \tag #'clr1  \new Staff  \transpose c  c  \clarI
-     \tag #'clr2  \new Staff  \transpose c  c  \clarII
-     \tag #'clr3  \new Staff  \transpose c  c  \clarIII
-     \tag #'bass  \new Staff  \transpose c  c  \bassClar
-  >>
-}
-
-
-%
-% Define the things that print.
-%
-
-\score {
-  % Do I need << >> around this line?
-  \context StaffGroup = "quartet" \parts 
-  \midi { 
-    \context { 
-      \Score tempoWholesPerMinute = #(ly:make-moment 160 8) 
-    }
-  }
-  \layout { }
-}
-
-\bookpart { \score { \keepWithTag #'clr1 \parts } }
-\bookpart { \score { \keepWithTag #'clr2 \parts } }
-\bookpart { \score { \keepWithTag #'clr3 \parts } }
-\bookpart { \score { \keepWithTag #'bass \parts } }
-
+\include "renderQuartet.ly"
