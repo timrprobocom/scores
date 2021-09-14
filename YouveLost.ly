@@ -418,10 +418,10 @@ notation = {
     c4 r8 c8 f4 r8 f8 |
     c4 r8 c8 f4 r8 f8 |
 
-    r8 g'\!\f g g f f g g |
-    r8 b\!\f b b a a b b |
-    r8 d\!\f d d c c d d |
-    r8 g\!\f g g f f g g |
+    r8 g'-.\!\f g-. g-. f-. f-. g-. g-. |
+    r8 b-.\!\f b-. b-. a-. a-. b-. b-. |
+    r8 d-.\!\f d-. d-. c-. c-. d-. d-. |
+    r8 g-.\!\f g-. g-. f-. f-. g-. g-. |
 
     %% F final verse -- Bring back that 
 
