@@ -1,4 +1,4 @@
-#! /usr/local/bin/python3
+#! /usr/bin/python3
 #
 #  Given   rotate.py 1 3 2 4
 #  swaps the middle two of every group of four blank-delimited lines
@@ -9,14 +9,14 @@ import sys
 
 # Read the arguments.
 
-if len(sys.argv) != 5:
+if len(sys.argv) < 4:
     print( "usage:  rotate.py 1 2 3 4 < input" )
     sys.exit(-1)
 
 rotation = [int(i)-1 for i in sys.argv[1:]]
 
 def rotate( gather ):
-    if len(gather) == 4:
+    if len(gather) == len(rotation):
         for i in rotation:
             print( gather[i] )
     elif gather:

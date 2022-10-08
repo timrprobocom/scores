@@ -29,7 +29,6 @@ scoreAClarinetIIIPart = \new Staff \with {
         \scoreAClarinetIPart
         \scoreAClarinetIIPart
         \scoreAClarinetIIIPart
-        \scoreABassClarinetPart
       >>
       \layout { ragged-last = ##t }
       \midi { }

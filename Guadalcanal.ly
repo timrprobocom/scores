@@ -15,7 +15,7 @@ atempo = \markup { \italic { a tempo } }
 common = {
   \time 6/8
   \tempo "March" 4.=120
-  \clef treble \key c \major
+  \clef treble \key d \major
   \override Score.BarNumber #'break-visibility = #all-visible
   \override Score.BarNumber #'self-alignment-X = #0
   \override Score.BarNumber #'self-alignment-Y = #1
@@ -26,287 +26,470 @@ common = {
 
 notation = {
     s2.*4 \bar "||" \mark \default
-    s2.*8 \bar "||" \mark \default
-    s2.*8 \bar "||" \mark \default
-    s2.*8 \bar "||" \mark \default
-    s2.*8 \bar "||" \mark \default
-    s2.*12 \bar "|."
+    s2.*16 \bar "||" \mark \default
+    s2.*16 \bar "||" \mark \default
+    \key g \major
+    s2.*16 \bar "||" \mark \default
+    s2.*16 \bar "||" \mark \default
+    \key c \major
+    s2.*16 \bar "|."
 }
 
 \parallelMusic  #'(clari clarii clariii clarb) {
     
-    g8\f fs a g r r |
-    g'8\f fs a g r r |
-    g8\f fs a g r r |
-    g'8\f fs a g r r |
+    a8\f gs b a r r |
+    a'8\f gs b a r r |
+    a8\f gs b a r r |
+    a'8\f gs b a r r |
 
-    g,8 fs a g r r |
-    g,8 fs a g r r |
-    g,8 fs a g r r |
-    g,8 fs a g r r |
+    a,8 gs b a r r |
+    a,8 gs b a r r |
+    a,8 gs b a r r |
+    a,8 gs b a r r |
 
-    g'8 r f d r b |
-    b8 r bf b r bf |
-    b8 r c d r e    |
-    g8 r gs8 a r as |
+    a'8 r g e r cs |
+    cs8 r c cs r c |
+    cs8 r d e r fs    |
+    a8 r bf8 b r bf |
 
-    g8 r r r r g,\mp |
-    b8 r r r4. |
-    f8 r r f4.-> |
+    a8 r r r r a,\mp |
+    cs8 r r r4. |
     g8 r r g4.-> |
+    a8 r r a4.-> |
 
     % First verse.  Bar 5, I
     
-    c8 r d e f g |
+    d8 r e fs g a |
     R2. |
-    c8\mp r8 r8 r4. |
-    c8\mp r8 r8 r4. |
+    d8\mp r8 r8 r4. |
+    d8\mp r8 r8 r4. |
 
-    a8 r g e r c |
+    b8 r a fs r d |
     R2. |
-    c8 r8 r8 r4. |
-    c8 r8 r8 r4. |
+    d8 r8 r8 r4. |
+    d8 r8 r8 r4. |
 
-    e8 r ds e r r |
-    r8 r8 r8 b4.( |
-    r8 r8 r8 b4.( |
-    c8 r8 r8 b4.( |
+    fs8 r e fs r r |
+    r8 r8 r8 cs4.( |
+    r8 r8 r8 cs4.( |
+    d8 r8 r8 cs4.( |
 
-    e4. r8 r8 g,8 |
-    a4. g4.) |
-    a4. g4.) |
-    a4. g4.) |
+    fs4. r8 r8 a,8 |
+    b4. a4.) |
+    b4. a4.) |
+    b4. a4.) |
 
-    % B bar 13
+    % Bar 9
     
-    c8 r d e f g |
-    c,8 r8 r8 r4. |
-    c8 r8 r8 r4. |
-    c8 r8 r8 r4. |
+    d8 r e fs g a |
+    d,8 r8 r8 r4. |
+    d8 r8 r8 r4. |
+    d8 r8 r8 r4. |
 
-    a8 r g e r c |
-    c8 r8 r8 r4. |
-    c8 r8 r8 r4. |
-    c8 r8 r8 r4. |
+    b8 r a fs r d |
+    d8 r8 r8 r4. |
+    d8 r8 r8 r4. |
+    d8 r8 r8 r4. |
 
     % III
 
-    b8 r as b r r |
-    gs'8 r r gs r r |
-    b8 r r b r r |
-    e8 r r e r r |
+    cs8 r c cs r r |
+    as'8 r r as r r |
+    cs8 r r cs r r |
+    fs8 r r fs r r |
 
     % Vm7
 
-    b4. r8 r8 g8 |
-    f4 r8 g, r r |
-    d4 r8 d  r r |
-    g4 r8 g, r r |
+    cs4. r8 r8 a8 |
+    g4 r8 a, r r |
+    e4 r8 e  r r |
+    a4 r8 a, r r |
 
+    % Bar 13
 
-    c8 r d e f g |
-    c8 r8 r8 r4. |
-    c8 r8 r8 r4. |
-    c8 r8 r8 r4. |
+    d8 r e fs g a |
+    d8 r8 r8 r4. |
+    d8 r8 r8 r4. |
+    d8 r8 r8 r4. |
 
-    a8 r g e r c |
-    c8 r8 r8 r4. |
-    c8 r8 r8 r4. |
-    c8 r8 r8 r4. |
+    b8 r a fs r d |
+    d8 r8 r8 r4. |
+    d8 r8 r8 r4. |
+    d8 r8 r8 r4. |
 
     % III
 
-    e8 r ds e r r |
-    e8 r r b r r |
-    e8 r r gs r r |
-    e8 r r e r r |
+    fs8 r es fs r r |
+    fs8 r r cs r r |
+    fs8 r r as r r |
+    fs8 r r fs r r |
 
-    % III6 ?  VI?
+    % VI?
 
-    e4. r8 r8 e8 |
-    a4. r8 r8 r8 |
-    cs4.  r8 r8 r8 |
-    e4.  r8 r8 r8 |
+    fs4. r8 r8 fs8 |
+    b4.  r8 r8 r8 |
+    ds4. r8 r8 r8 |
+    fs4. r8 r8 r8 |
 
     % V
 
-    d8 r b d g a |
-    d8 r r d8 r r |
-    b8 r r b8 r r |
-    g8 r r g8 r r |
+    e8 r cs e a b |
+    e8 r r e8 r r |
+    cs8 r r cs8 r r |
+    a8 r r a8 r r |
 
     % II
 
-    b4. a4. |
-    fs8 r r fs r r |
-    a8 r r a r r |
-    d8 r r d r r |
+    cs4. b4. |
+    gs8 r r gs r r |
+    b8 r r b r r |
+    e8 r r e r r |
 
     % V7
 
-    g4 r8 r4. |
-    g8 r g16 g b8 c cs |
-    g8 r g16 g b8 c cs |
-    g8 r g,16 g b8 c cs |
+    a4 r8 r4. |
+    a8 r a16 a cs8 d ds |
+    a8 r a16 a cs8 d ds |
+    a,8 r a16 a cs8 d ds |
 
-    r4. r4  g8 |
-    d8 e f g r r |
-    d8 e f g r r |
-    d8 e f g r r |
+    r4. r4  a8 |
+    e8 fs g a r r |
+    e8 fs g a r r |
+    e8 fs g a r r |
     
 
-    % Second verse, C, bar 21
+    % Second verse, B, bar 21
 
-    c8\mf r d e f g |
-    g,4. c4.~ |
-    g,4. c4.~ |
-    c,8\mf r r g r r |
+    d8\mf r e fs g a |
+    a,4. d4.~ |
+    a,4. d4.~ |
+    d,8\mf r r a r r |
 
-    a8 r g e r c |
-    c4. g4. | 
-    c4. g4. | 
-    c8 r r g r r |
+    b8 r a fs r d |
+    d4. a4. | 
+    d4. a4. | 
+    d8 r r a r r |
 
-    e8 r ds e r r |
+    fs8 r es fs r r |
+    cs2. |
+    cs2. |
+    d8 r r a r r |
+
+    fs4. r8 r8 a,8 |
     b2. |
     b2. |
-    c8 r r g r r |
-
-    e4. r8 r8 g,8 |
-    a2. |
-    a2. |
-    c8 r r g r r |
-
-    % B bar 13
+    d8 r r a r r |
     
-    c8 r d e f g |
-    g4. c4.~ |
-    g4. c4.~ |
-    c8 r r g r r |
+    d8 r e fs g a |
+    a4. d4.~ |
+    a4. d4.~ |
+    d8 r r a r r |
 
-    a8 r g e r c |
-    c4. d4. | 
-    c4. d4. | 
-    c8 r r d r r |
+    b8 r a fs r d |
+    d4. e4. | 
+    d4. e4. | 
+    d8 r r e r r |
 
     % III
 
-    b8 r as b r r |
-    e2. |
-    e2. |
-    e8 r r b r r |
+    cs8 r bs cs r r |
+    fs2. |
+    fs2. |
+    fs8 r r cs r r |
 
     % Vm7
 
-    b4. r8 r8 g8 |
-    f2. |
-    f2. |
-    g'8 r r g, r r |
+    cs4. r8 r8 a8 |
+    g2. |
+    g2. |
+    a'8 r r a, r r |
 
+    d8 r e fs g a |
+    a,4. d4.~ |
+    a,4. d4.~ |
+    d8 r r a r r |
 
-    c8 r d e f g |
-    g,4. c4.~ |
-    g,4. c4.~ |
-    c8 r r g r r |
-
-    a8 r g e r c |
-    c4. d4. |
-    c4. d4. |
-    c8 r r g r r |
+    b8 r a fs r d |
+    d4. e4. |
+    d4. e4. |
+    d8 r r a r r |
 
     % III
 
-    e8 r ds e r r |
-    e8 r r b r r |
-    e8 r r gs r r |
-    e'8 r r e r r |
+    fs8 r es fs r r |
+    fs8 r r cs r r |
+    fs8 r r as r r |
+    fs'8 r r fs r r |
 
     % VI
 
-    e4. e8 f g |
-    a4. r8 r8 r8 |
-    cs,4.r8 r8 r8 |
-    e4.  r8 r8 r8 |
+    fs4. fs8 g a |
+    b4. r8 r8 r8 |
+    ds,4.r8 r8 r8 |
+    fs4. r8 r8 r8 |
 
     % IV
 
-    a8 r r d, e f |
-    f8 r r f8 r r |
-    c8 r r c8 r r |
-    f,8 r r f,8 r r |
+    b8 r r e, fs g |
+    g8 r r g8 r r |
+    d8 r r d8 r r |
+    g8 r r g,8 r r |
 
     % V7
 
-    g8 r r g, a b |
-    f8 r r g, a b |
-    b8 r r g a b |
-    g'8 r r g, a b |
+    a8 r r a, b cs |
+    g8 r r a, b cs |
+    cs8 r r a b cs |
+    a'8 r r a, b cs |
 
     % I
 
-    c8 r r r r r |
-    c8 r \times 2/3 { g16( a g } fs4) g8 |
-    c8 r \times 2/3 { g16( a g } fs4) g8 |
-    c8 r \times 2/3 { g16( a g } fs4) g8 |
+    d8 r r r r r |
+    d8 r \times 2/3 { a16( b a } gs4) a8 |
+    d8 r \times 2/3 { a16( b a } gs4) a8 |
+    d8 r \times 2/3 { a16( b a } gs4) a8 |
 
     r4. r4. |
-    c4 r8 c4. |
-    c4 r8 r r r |
-    c4 r8 r r r |
+    d4 r8 d4. |
+    d4 r8 r r r |
+    d4 r8 r r r |
 
-    % Bridge, now in F?, [E] bar 37.
+    % Bridge, now in G, [C] bar 37.
 
-    R2. |
-    a'4. r8 gs a |
-    R2. |
-    R2. |
-
-    R2. |
-    c4. e,4. |
+    g8 g g g r r  |
+    b'4. r8 as b |
     R2. |
     R2. |
 
+    r8 fs e d c b |
+    d4. fs,4. |
     R2. |
+    R2. |
+
+    r8 e d c b a |
+    a4. e4. |
+    R2. |
+    R2. |
+
+    r8 d c b a g | 
+    g4. d4. |
+    R2. |
+    R2. |
+
+    fs8 r d d'4. |
+    fs8 r d d'4. |
+    fs,8 r r r r r |
+    fs,8 r r r r r |
+
+    g,8 r d d'4. |
+    g,8 r d d'4. |
+    g8 r r r r r |
+    g8 r r r r r |
+
+    a8 r r r r d,( |
+    a8 r r r r d,( |
+    a8 r r r r d,( |
+    a8 r r r r d ( |
+
+    ef4. d4) r8 |
+    ef4. d4) r8 |
+    ef4. d4) r8 |
+    ef4. d4) r8 |
+
+    % Bar 45.
+
+    g'8 g g g r r  |
+    b'4. r8 as b |
+    R2. |
+    R2. |
+
+    r8 fs e d c b |
+    d4. fs,4. |
+    R2. |
+    R2. |
+
+    r8 e d c b a |
+    a4. e4. |
+    R2. |
+    R2. |
+
+    r8 d c b a g | 
     g4. d4. |
     R2. |
     R2. |
 
     R2. |
-    f4. c4. |
+    fs8 r ess fs4. |
     R2. |
     R2. |
 
-    e8 r r r r r |
-    e8 r c c'4. |
-    e8 r r r r r |
-    e8 r r r r r |
+    R2. |
+    ds'8 r css ds4. |
+    R2. |
+    R2. |
 
-    f8 r r r r r |
-    f,8 r c c'4. |
-    f8 r r r r r |
-    f8 r r r r r |
+    R2. |
+    b8 r r b b b |
+    R2. |
+    R2. |
 
-    g8 r r r r c,( |
-    g8 r r r r c,( |
-    g8 r r r r c,( |
-    g8 r r r r c,( |
+    R2. |
+    c8 r r d,4. |
+    R2. |
+    R2. |
 
-    cs4. c4) r8 |
-    cs4. c4) r8 |
-    cs4. c4) r8 |
-    cs4. c4) r8 |
+    % [D] Bar 53
 
+    g'8 g g g r r  |
+    b'4. r8 as b |
+    R2. |
+    R2. |
+
+    r8 fs e d c b |
+    d4. fs,4. |
+    R2. |
+    R2. |
+
+    r8 e d c b a |
+    a4. e4. |
+    R2. |
+    R2. |
+
+    r8 d c b a g | 
+    g4. d4. |
+    R2. |
+    R2. |
+
+    fs8 r d d'4. |
+    fs8 r d d'4. |
+    fs,8 r r r r r |
+    fs,8 r r r r r |
+
+    g,8 r d d'4. |
+    g,8 r d d'4. |
+    g8 r r r r r |
+    g8 r r r r r |
+
+    a8 r r r r d,( |
+    a8 r r r r d,( |
+    a8 r r r r d ( |
+    a8 r r r r d ( |
+
+    ef4. d4) r8 |
+    ef4. d4) r8 |
+    ef4. d4) r8 |
+    ef4. d4) r8 |
+
+    % Bar 61
+
+    R2. |
+    d'4. r8 cs d |
+    R2. |
+    R2. |
+
+    R2. |
+    e4. b4. |
+    R2. |
+    R2. |
+
+    R2. |
+    d4. a4. |
+    R2. |
+    R2. |
+
+    R2. |
+    c4. g4. |
+    R2. |
+    R2. |
+
+    R2. |
+    b8 c cs d r ds |
+    R2. |
+    R2. |
+
+    R2. |
+    e8 r r fs4. |
+    R2. |
+    R2. |
+
+    r8 r g g r g, | 
+    g8 r g g r g, | 
+    R2. |
+    R2. |
+
+    g8 r g' g r r |
+    g8 r g' g r g, |
+    R2. |
+    R2. |
+
+
+    % [E] Bar 69 final verse
+
+    e8  r e g g c |
+    c8 r d e f g |
+    g4.   c4.~ |
+    R2. |
+
+    c8 r g g r e |
+    a8 r g e r c |
+    c4. g4. |
+    R2. |
+
+    g8 r fs g r r |
+    e8 r ds e r r |
+    b2. |
+    R2. |
+
+    g4. r8 r g  |
+    e4. r8 r g, |
+    a2. |
+    R2. |
+
+    e8 r e g g c |
+    c8 r d e f g |
+    g4.  c4.~ |
+    R2. |
+
+    c8 r g g r e |
+    a8 r g e r c |
+    c4. d4. |
+    R2. |
+
+    e8 r ds e r r |
+    b8 r as b r r |
+    e2. |
+    R2. |
+
+    f4. r8 r f |
+    b4. r8 r g |
+    f2. |
+    R2. |
+
+    e8 r e g g c |
+    c8 r d e f g |
+    a4.  g4.~ |
+    R2. |
+
+    c8 r g g r e |
+    a8 r g e r c |
+    g4. c,4. |
+    R2. |
+
+    R2. |
+    e8 r ds e r r |
+    e4. e4. |
+    R2. |
 
     % Closing
 
     r4. e8 f g |
-    r4. e8 d c |
+    e4. e8 d c |
     r4. e8 f g |
     f4. c8 c c |
 
-    a8 r r d e f |
+    a,8 r r d e f |
     f8 r r f g a |
-    a8 r r d e f |
+    a8 r r d, e f |
     f8 r r f g a |
 
     g8 r r g, a b |
@@ -319,11 +502,10 @@ notation = {
     c8 r r c c c |
     c8 r r c c c |
 
-    c r4 r4. \bar "|. |
-    c r4 r4. \bar "|. |
-    c r4 r4. \bar "|. |
-    c r4 r4. \bar "|. |
-
+    c8 r4 r4. \bar "|." |
+    c8 r4 r4. \bar "|." |
+    c8 r4 r4. \bar "|." |
+    c8 r4 r4. \bar "|." |
 }
 
 
