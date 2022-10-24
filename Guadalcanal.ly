@@ -32,7 +32,7 @@ notation = {
     s2.*16 \bar "||" \mark \default
     s2.*16 \bar "||" \mark \default
     \key c \major
-    s2.*16 \bar "|."
+    s2.*20 \bar "|."
 }
 
 \parallelMusic  #'(clari clarii clariii clarb) {
@@ -48,7 +48,7 @@ notation = {
     a,8 gs b a r r |
 
     a'8 r g e r cs |
-    cs8 r c cs r c |
+    cs8 r a cs r a |
     cs8 r d e r fs    |
     a8 r bf8 b r bf |
 
@@ -57,19 +57,19 @@ notation = {
     g8 r r g4.-> |
     a8 r r a4.-> |
 
-    % First verse.  Bar 5, I
+    % First verse.  Bar 5.  I chord
     
     d8 r e fs g a |
-    R2. |
+    d,8\mp r8 r8 r4. |
     d8\mp r8 r8 r4. |
     d8\mp r8 r8 r4. |
 
     b8 r a fs r d |
-    R2. |
+    d8 r8 r8 r4. |
     d8 r8 r8 r4. |
     d8 r8 r8 r4. |
 
-    fs8 r e fs r r |
+    fs8 r es fs r r |
     r8 r8 r8 cs4.( |
     r8 r8 r8 cs4.( |
     d8 r8 r8 cs4.( |
@@ -82,7 +82,7 @@ notation = {
     % Bar 9
     
     d8 r e fs g a |
-    d,8 r8 r8 r4. |
+    d8 r8 r8 r4. |
     d8 r8 r8 r4. |
     d8 r8 r8 r4. |
 
@@ -161,8 +161,8 @@ notation = {
     % Second verse, B, bar 21
 
     d8\mf r e fs g a |
-    a,4. d4.~ |
-    a,4. d4.~ |
+    a,4.\mf d4.~ |
+    a,4.\mf d4.~ |
     d,8\mf r r a r r |
 
     b8 r a fs r d |
@@ -205,13 +205,13 @@ notation = {
     a'8 r r a, r r |
 
     d8 r e fs g a |
-    a,4. d4.~ |
-    a,4. d4.~ |
+    b4. a4.~ |
+    b4. a4.~ |
     d8 r r a r r |
 
     b8 r a fs r d |
-    d4. e4. |
-    d4. e4. |
+    a4. d,4. |
+    a4. d,4. |
     d8 r r a r r |
 
     % III
@@ -244,183 +244,183 @@ notation = {
 
     % I
 
-    d8 r r r r r |
+    d8 r r r4. |
     d8 r \times 2/3 { a16( b a } gs4) a8 |
     d8 r \times 2/3 { a16( b a } gs4) a8 |
     d8 r \times 2/3 { a16( b a } gs4) a8 |
 
     r4. r4. |
     d4 r8 d4. |
-    d4 r8 r r r |
-    d4 r8 r r r |
+    d4 r8 d,4. |
+    d4 r8 r4. |
 
     % Bridge, now in G, [C] bar 37.
 
     g8 g g g r r  |
     b'4. r8 as b |
-    R2. |
-    R2. |
+    b'4. r8 as b |
+    g,8 r r g r r |
 
-    r8 fs e d c b |
+    r8 fs e d c a |
     d4. fs,4. |
-    R2. |
-    R2. |
+    d4. fs,4. |
+    a8 r r d r r |
 
-    r8 e d c b a |
+    r8 e' d c b a |
     a4. e4. |
-    R2. |
-    R2. |
+    a4. e4. |
+    c8 r r e r r |
 
     r8 d c b a g | 
     g4. d4. |
-    R2. |
-    R2. |
+    g4. d4. |
+    g8 r r g, r r|
 
     fs8 r d d'4. |
     fs8 r d d'4. |
-    fs,8 r r r r r |
-    fs,8 r r r r r |
+    fs8 r r r4. |
+    fs8 r r r4. |
 
     g,8 r d d'4. |
     g,8 r d d'4. |
-    g8 r r r r r |
-    g8 r r r r r |
+    g8 r r r4. |
+    g8 r r r4. |
 
     a8 r r r r d,( |
     a8 r r r r d,( |
     a8 r r r r d,( |
     a8 r r r r d ( |
 
-    ef4. d4) r8 |
-    ef4. d4) r8 |
-    ef4. d4) r8 |
-    ef4. d4) r8 |
+    ef4.-> d4) r8 |
+    ef4.-> d4) r8 |
+    ef4.-> d4) r8 |
+    ef4.-> d4) r8 |
 
     % Bar 45.
 
     g'8 g g g r r  |
     b'4. r8 as b |
-    R2. |
-    R2. |
+    b'4. r8 as b |
+    g,8 r r g r r |
 
-    r8 fs e d c b |
+    r8 fs e d c a |
     d4. fs,4. |
-    R2. |
-    R2. |
+    d4. fs,4. |
+    a8 r r d r r |
 
-    r8 e d c b a |
+    r8 e' d c b a |
     a4. e4. |
-    R2. |
-    R2. |
+    a4. e4. |
+    c8 r r e r r |
 
     r8 d c b a g | 
     g4. d4. |
-    R2. |
-    R2. |
+    g4. d4. |
+    g8 r r g, r r|
 
-    R2. |
     fs8 r ess fs4. |
-    R2. |
-    R2. |
+    fs8 r ess fs4. |
+    ds8 r r ds4. |
+    b8 r r b r r |
 
-    R2. |
     ds'8 r css ds4. |
-    R2. |
-    R2. |
+    ds'8 r css ds4. |
+    a'8 r r a4. |
+    fs8 r f fs r r |
 
-    R2. |
     b8 r r b b b |
-    R2. |
-    R2. |
+    b8 r r b b b |
+    fs8 r r r r r |
+    b8 r r r r r |
 
-    R2. |
+    c8 r r r4. |
     c8 r r d,4. |
-    R2. |
-    R2. |
+    fs8 r r r r r |
+    d8 r r d4. |
 
     % [D] Bar 53
 
     g'8 g g g r r  |
     b'4. r8 as b |
-    R2. |
-    R2. |
+    b4. r8 as b |
+    g,8 r r g r r |
 
-    r8 fs e d c b |
+    r8 fs e d c a |
     d4. fs,4. |
-    R2. |
-    R2. |
+    d4. fs,4. |
+    a8 r r d r r |
 
-    r8 e d c b a |
+    r8 e' d c b a |
     a4. e4. |
-    R2. |
-    R2. |
+    a4. e4. |
+    c8 r r e r r |
 
     r8 d c b a g | 
     g4. d4. |
-    R2. |
-    R2. |
+    g4. d4. |
+    g8 r r g, r r|
 
     fs8 r d d'4. |
     fs8 r d d'4. |
-    fs,8 r r r r r |
-    fs,8 r r r r r |
+    fs,8 r r r4. |
+    fs8 r r r4. |
 
     g,8 r d d'4. |
     g,8 r d d'4. |
-    g8 r r r r r |
-    g8 r r r r r |
+    g8 r r r4. |
+    g8 r r r4. |
 
     a8 r r r r d,( |
     a8 r r r r d,( |
     a8 r r r r d ( |
     a8 r r r r d ( |
 
-    ef4. d4) r8 |
-    ef4. d4) r8 |
-    ef4. d4) r8 |
-    ef4. d4) r8 |
+    ef4.-> d4) r8 |
+    ef4.-> d4) r8 |
+    ef4.-> d4) r8 |
+    ef4.-> d4) r8 |
 
     % Bar 61
 
-    R2. |
+    g'8 g g g a g |
     d'4. r8 cs d |
-    R2. |
-    R2. |
+    b'4. d4. |
+    g4. g4. |
 
-    R2. |
+    g,8 g g g a g |
     e4. b4. |
-    R2. |
-    R2. |
+    e4. b4. |
+    g,4. g4. |
 
-    R2. |
+    g'8 g g g a g |
     d4. a4. |
-    R2. |
-    R2. |
+    d4. a4. |
+    g'4. g4. |
 
-    R2. |
+    g,8 g g g a bf |
     c4. g4. |
-    R2. |
-    R2. |
+    e8 r r g a bf |
+    g,4. g8 a bf |
 
-    R2. |
+    g'8 a bf b r ds, |
     b8 c cs d r ds |
-    R2. |
-    R2. |
+    b8 r r b r r |
+    b4. g4. |
 
-    R2. |
+    e8 r r d4. |
     e8 r r fs4. |
-    R2. |
-    R2. |
+    c8 r r d4. |
+    e4. fs4. |
 
-    r8 r g g r g, | 
+    d8 r g g r g, | 
     g8 r g g r g, | 
     R2. |
-    R2. |
+    g8 r r r4. |
 
     g8 r g' g r r |
     g8 r g' g r g, |
-    R2. |
-    R2. |
+    r8 g, g g g g |
+    r4. g4. |
 
 
     % [E] Bar 69 final verse
@@ -428,57 +428,57 @@ notation = {
     e8  r e g g c |
     c8 r d e f g |
     g4.   c4.~ |
-    R2. |
+    c8 r r g r r |
 
     c8 r g g r e |
     a8 r g e r c |
     c4. g4. |
-    R2. |
+    c8 r r g r r |
 
     g8 r fs g r r |
     e8 r ds e r r |
     b2. |
-    R2. |
+    b8 r r g r r |
 
     g4. r8 r g  |
     e4. r8 r g, |
     a2. |
-    R2. |
+    a8 r r e' r r |
 
     e8 r e g g c |
     c8 r d e f g |
     g4.  c4.~ |
-    R2. |
+    c8 r r g r r |
 
     c8 r g g r e |
     a8 r g e r c |
     c4. d4. |
-    R2. |
+    b8 r r g r r |
 
     e8 r ds e r r |
     b8 r as b r r |
     e2. |
-    R2. |
+    gs8 r r gs r r |
 
     f4. r8 r f |
     b4. r8 r g |
     f2. |
-    R2. |
+    d'4. d4. |
 
     e8 r e g g c |
     c8 r d e f g |
     a4.  g4.~ |
-    R2. |
+    c8 r r g r r |
 
     c8 r g g r e |
     a8 r g e r c |
     g4. c,4. |
-    R2. |
+    b8 r r b r r |
 
     R2. |
     e8 r ds e r r |
     e4. e4. |
-    R2. |
+    a8 r r e' r r |
 
     % Closing
 
@@ -487,7 +487,27 @@ notation = {
     r4. e8 f g |
     f4. c8 c c |
 
-    a,8 r r d e f |
+    a8 r r d, e f |
+    f8 r r f g a |
+    a8 r r d, e f |
+    f8 r r f g a |
+
+    g8 r r g a bf |
+    g8 r r g, a bf |
+    g8 r r g fs f |
+    g8 r r g g g |
+
+    b8 r r b c b | 
+    b8 r r b c b | 
+    e8 r r b c b |
+    e8 r r e e e |
+
+    a8 r r e f g  |
+    a8 r r e d c |
+    cs8 r r e f g |
+    a8 r r c c c |
+
+    a8 r r d, e f |
     f8 r r f g a |
     a8 r r d, e f |
     f8 r r f g a |
