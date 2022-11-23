@@ -293,14 +293,14 @@ notation = {
     g4 r8 g8 f4 d4 |
     g4 r8 g8 f4 d4 |
 
-    % Baby baby I get down on my knees for you
+    % [E] 47 Baby baby I get down on my knees for you
 
     r4 c'8\mp c8 b8 b8 r4 |
     R1 |
     c4 r8 c8 f4 r8 f8 |
     c4 r8 c8 f4 r8 f8 |
 
-    r8 a8 a8 b8 a8 g8 f8 g8~ |
+    r8 a8 a8 a8 b8 a8 g8 f8 |
     R1 |
     g4 r8 g8 f4 d4 |
     g4 r8 g8 f4 d4 |
