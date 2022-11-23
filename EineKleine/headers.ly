@@ -1,0 +1,7 @@
+\version "2.14.2"
+title = "Eine kleine Nachtmusik"
+subtitle = "Movement 1"
+composer = "Wolfgang Amadeus Mozart"
+opus = "K. 525"
+piece = "Allegro"
+tagline = ""
