@@ -293,8 +293,8 @@ lefthand = \relative c {
 
 \score {
   \new PianoStaff <<
-    \new Staff = "upper" \transpose c c  << \notation \righthand >>
-    \new Staff = "lower" \transpose c c  << \notation \lefthand >>
+    \new Staff = "upper" \transpose c d  << \notation \righthand >>
+    \new Staff = "lower" \transpose c d  << \notation \lefthand >>
   >>
   \layout { 
     \context {
