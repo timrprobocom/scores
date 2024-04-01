@@ -185,6 +185,9 @@ notation = {
 
 }
 
+clari =   { \common  \relative c''' \clari }
+clarii =  { \common  \relative c''  \clarii }
+clariii = { \common  \relative c''  \clariii }
 
 xtitle = "Unchained Melody"
 xinstrument = "Clarinet trio"

@@ -528,6 +528,10 @@ notation = {
     c8 r4 r4. \bar "|." |
 }
 
+clari =   { \common  \relative c''' \clari }
+clarii =  { \common  \relative c''  \clarii }
+clariii = { \common  \relative c''  \clariii }
+clarb =   { \common  \relative c'   \clarb }
 
 xtitle = "Guadalcanal March"
 xinstrument = "Victory at Sea"

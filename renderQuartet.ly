@@ -2,22 +2,23 @@
 scoreAClarinetIPart = \new Staff \with {
   instrumentName = "Clarinet I"
   midiInstrument = "clarinet"
-} << \notation { \common  \relative c''' \clari } >>
+% } << \notation { \common  \relative c''' \clari } >>
+} << \notation \clari >>
 
 scoreAClarinetIIPart = \new Staff \with {
   instrumentName = "Clarinet II"
   midiInstrument = "clarinet"
-} << \notation { \common  \relative c'' \clarii } >>
+} << \notation \clarii >>
 
 scoreAClarinetIIIPart = \new Staff \with {
   instrumentName = "Clarinet III"
   midiInstrument = "clarinet"
-} << \notation { \common  \relative c'' \clariii } >>
+} << \notation \clariii >>
 
 scoreABassClarinetPart = \new Staff \with {
   instrumentName = "Bass clarinet"
   midiInstrument = "clarinet"
-} << \notation { \common  \relative c' \clarb } >>
+} << \notation \clarb >>
 
 
 \bookpart { 

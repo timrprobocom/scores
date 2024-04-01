@@ -21,7 +21,8 @@ common = {
   \override BreathingSign.text = \markup { \musicglyph #"scripts.caesura.straight" } 
   \time 4/4
   \tempo "Moderately" 4=120
-  \clef treble \key af \major
+  \clef treble 
+  \key af \major
   \set Score.markFormatter = #format-mark-box-letters
 }
 
@@ -112,24 +113,24 @@ notation = {
     % Fm
 
     c2 r2 |
-    f,8 f8 c'8 d8  r2 |
+    f,8 f8 c'8 df8  r2 |
     c8 c8 af8 af8 r2 |
     f8 f8 r8 ef'8~ ef4 df4 |
 
     r8 af8 bf c ef f af bf~ | 
-    f,8 f8 c'8 d8  r2 |
+    f,8 f8 c'8 df8  r2 |
     c8 c8 af8 af8 r2 |
     f,8 f8 r4 r2 |
 
     bf8 c4. r2 |
-    f,8 f8 c'8 d8  r2 |
+    f,8 f8 c'8 df8  r2 |
     c8 c8 af8 af8 r2 |
     f8 f8 r4 r2 |
    
     % page 3 "With a stranger who might"
 
     r4 r8 df16 c df8 c c bf |
-    f,8 f8 c'8 d8  r2 |
+    f,8 f8 c'8 df8  r2 |
     c8 c8 af8 af8 r2 |
     f8 f8 r4 r2 |
 
@@ -245,7 +246,7 @@ notation = {
 
     r8 bf' bf a a g a bf |
     d'4 f,8 f~f f f4 |
-    bf'4 d,8 d~d d d4 |
+    bf4 d8 d~d d d4 |
     bf,4. a'4. g4 |
 
     r8 bf bf a a g a bf |
@@ -311,15 +312,14 @@ notation = {
     ef1 |
 
 
-
     % Is this an exact repeat?
     % [D]
 
 
-    \key df \major af1 |
-    \key df \major R1 |
-    \key df \major af,8\mf af8 r4 r2 |
-    \key df \major af,8\mf af8 r4 r2 |
+    \key af \major af1 |
+    \key af \major R1 |
+    \key af \major af,8\mf af8 r4 r2 |
+    \key af \major af,8\mf af8 r4 r2 |
 
     R1 |
     R1 |
@@ -547,7 +547,7 @@ notation = {
     % page 12 "my heart is set in motion"
 
     r8 bf' bf a a g a g |
-    d'4 f,8 f~f f f4 |
+    d4 f8 f~f f f4 |
     bf4 d8 d~d d d4 |
     bf4. a4. g4 |
 
@@ -590,7 +590,7 @@ notation = {
     a4. c4. f,4 |
 
 
-    % "Slower more freely"   Gm
+    % "Slower more freely"   Gm  bar 97
 
     a2\mp r4 bf,4 |
     bf,1~\mp |
@@ -665,12 +665,15 @@ notation = {
 
     bf4-> r4 r2 |
     d4-> r4 r2 |
-    cf4-> r4 r2 |
+    f4-> r4 r2 |
     bf4-> r4 r2 |
 
 }
 
-
+clari =   \transpose af bf { \common  \relative c''' \clari }
+clarii =  \transpose af bf { \common  \relative c''  \clarii }
+clariii = \transpose af bf { \common  \relative c''  \clariii }
+clarb =   \transpose af bf { \common  \relative c'   \clarb }
 
 xtitle = "When He Sees Me (from \"Waitress\")"
 xcomposer = "Sara Bareilles"
