@@ -522,10 +522,10 @@ notation = {
 }
 
 
-clari   = \relative c' \clarA
-clarii  = \relative c' \clarB
-clariii = \relative c' \clarC 
-clarb   = \relative c' \clarBass 
+clari   = { \common \relative c' \clarA   }
+clarii  = { \common \relative c' \clarB   }
+clariii = { \common \relative c' \clarC    }
+clarb   = { \common \relative c' \clarBass } 
 
 
 xtitle = "Puttin On The Ritz"

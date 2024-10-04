@@ -221,6 +221,10 @@ notation = {
 
 }
 
+clari =   { \common  \relative c''' \clari }
+clarii =  { \common  \relative c''  \clarii }
+clariii = { \common  \relative c''  \clariii }
+clarb =   { \common  \relative c'   \clarb }
 
 xtitle = "Sincere (Music Man)"
 xinstrument = "Clarinet quartet"
