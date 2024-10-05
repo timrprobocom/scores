@@ -13,14 +13,16 @@ atempo = \markup { \italic { a tempo } }
 
 
 common = {
-  \time 4/4
-  \tempo "Allegretto" 4=160
-  \clef treble \key c \major
+  \numericTimeSignature 
   \override Score.BarNumber #'break-visibility = #all-visible
   \override Score.BarNumber #'self-alignment-X = #0
   \override Score.BarNumber #'self-alignment-Y = #1
   \override MultiMeasureRest #'expand-limit = #1
   \override BreathingSign.text = \markup { \musicglyph #"scripts.caesura.straight" } 
+  \time 4/4
+  \tempo "Allegretto" 4=160
+  \clef treble 
+  \key c \major
   \set Score.markFormatter = #format-mark-box-letters
 }
 
@@ -42,17 +44,17 @@ notation = {
     R1 |
 
     g'4 g8( a) g4 e4 | 
-    R1 |
+    c,4 g'8( a) g4 r4 |
     R1 |
     c2 g'2 | 
 
     g4 g8( a) g4 e4 |
-    R1 |
+    b,4 g'8( a) g4 r4 |
     R1 |
     b,2 g'2 |
 
     g4 g8( a) g4 e4  |
-    R1 |
+    bf,4 g'8( a) g4 r4 |
     R1 |
     bf,2 g'2 |
 
@@ -84,17 +86,17 @@ notation = {
     % Repeat that.
 
     g'4 g8( a) g4 e4 | 
-    R1 |
+    c,4 g'8( a) g4 r4 |
     R1 |
     c2 g'2 | 
 
     g4 g8( a) g4 e4 |
-    R1 |
+    b,4 g'8( a) g4 r4 |
     R1 |
     b,2 g'2 |
 
     g4 g8( a) g4 e4  |
-    R1 |
+    bf,4 g'8( a) g4 r4 |
     R1 |
     bf,2 g'2 |
 
@@ -122,8 +124,6 @@ notation = {
     R1 |
     R1 |
     c1 |
-
-
   
     % Double bar.
 
@@ -303,6 +303,11 @@ notation = {
 
 }
 
+
+clari =   \transpose bf bf { \common  \relative c''' \clari }
+clarii =  \transpose bf bf { \common  \relative c''  \clarii }
+clariii = \transpose bf bf { \common  \relative c''  \clariii }
+clarb =   \transpose bf bf { \common  \relative c'   \clarb }
 
 xtitle = "Only Make Believe"
 xinstrument = "from Showboat"

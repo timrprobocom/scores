@@ -1,3 +1,7 @@
+import os
+import glob
+import subprocess
+
 parts = (
     ( "'flt1",  5, "fluteone" ),
     ( "'flt2",  5, "flutetwo" ),
@@ -17,15 +21,21 @@ parts = (
 #    ( "'hrn2", 2, "horntwo" ),
     ( "'tbn1", 4, "tromboneone" ),
     ( "'tbn2", 4, "trombonetwo" ),
-    ( "'tbnb", 1, "basstrombone" ),
+    ( "'tbn3", 4, "trombonethree" ),
+#    ( "'tbnb", 1, "basstrombone" ),
     ( "'eutc", 2, "euphoniumtc" ),
     ( "'eubc", 4, "euphoniumbc" ),
     ( "'tuba", 3, "tuba" )
 )
 
-lp=r'lilypond'
+lp='lilypond'
 
-lily = """
+lily = r"""
+\version "2.16.1"
+\paper {
+    system-system-spacing
+    .padding = #13
+}
 \include "DisneyOscars.ly"
 \score {
   \keepWithTag #%s \parts
@@ -33,19 +43,23 @@ lily = """
 }
 """
 
-print lp,"DisneyOscarsScore.ly"
+def execute( *cmds ):
+    print(' '.join(cmds))
+    subprocess.call( cmds )
 
-pdfs = []
+execute( lp,"DisneyOscarsScore.ly" )
+
+pdfs = ["cpdf"]
 
 for a,b,c in parts:
     fn = "Disney-%s.ly" % c
     open(fn,'w').write(lily % a)
-    print lp,fn
+    execute( lp,fn )
     pdfs.extend( [fn.replace('ly','pdf')]*b )
 
-print "rm /q ave.pdf"
-print "pdftk",' '.join(pdfs),"output ave.pdf"
-print "rm Disney-*.ly"
-print "rm Disney-*.log"
-print "rm Disney-*.ps"
-print "rm Disney-*.pdf"
+pdfs.extend( ["-o", "out.pdf"] )
+
+execute( *pdfs )
+for name in glob.glob('Disney-*'):
+    print( "rm", name )
+    os.remove( name )

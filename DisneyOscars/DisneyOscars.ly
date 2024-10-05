@@ -15,6 +15,7 @@
     title = "Disney at the Oscars - New Ending"
     subtitle = "(Rev 1.2)"
     arranger = "Arr Tim Roberts"
+    copyright = ""
 }
 
 
@@ -32,6 +33,7 @@ prefix = {
 structure = {
   \time 4/4
   \tempo "Smoothly" 4 = 110
+  \mark \markup \box 218 \no
   s1*12  \mark \markup \box 230 \no
   s1*8 \tempo "Marcato - separated"
   s1 
@@ -41,6 +43,10 @@ structure = {
   s1*4 \bar "|."
 }
 
+tenorIIa = { s1 }
+tenorIIb = { s1 }
+bassIa = { s1 }
+bassIb = { s1 }
 
 \include "flute1.ly"
 \include "flute2.ly"
@@ -138,18 +144,18 @@ clarinetthree = \relative c' {
 %   \tenorIa
 %   \tenorIb
 % }
-% 
-% bassclarinet = \relative c'' {
-%   \set Staff.instrumentName = #"Bass Clarinet "
-%   \set Staff.shortInstrumentName = #"BCl "
-%   \set Staff.midiInstrument = #"clarinet"
-% 
-%   \clef treble 
-%   \prefix
-% 
-%   \tenorIIa
-%   \tenorIIb
-% }
+ 
+bassclarinet = \relative c'' {
+  \set Staff.instrumentName = #"Bass Clarinet "
+  \set Staff.shortInstrumentName = #"BCl "
+  \set Staff.midiInstrument = #"clarinet"
+
+  \clef treble 
+  \prefix
+
+  \tenorIIa
+  \tenorIIb
+}
 
 altosax = \relative c'' {
   \set Staff.instrumentName = #"Alto Sax "
@@ -171,17 +177,17 @@ tenorsax = \relative c'' {
   << \structure \tenorsax >>
 }
 
-% barisax = \relative c'' {
-%   \set Staff.instrumentName = #"Bari Sax "
-%   \set Staff.shortInstrumentName = #"BSx "
-%   \set Staff.midiInstrument = #"saxophone"
-% 
-%   \clef treble 
-%   \prefix
-% 
-%   \bassIa
-%   \bassIb
-% }
+barisax = \relative c'' {
+  \set Staff.instrumentName = #"Bari Sax "
+  \set Staff.shortInstrumentName = #"BSx "
+  \set Staff.midiInstrument = #"saxophone"
+
+  \clef treble 
+  \prefix
+
+  \bassIa
+  \bassIb
+}
 
 trumpetone = \relative c' {
   \set Staff.instrumentName = #"Trumpet 1 "
@@ -314,12 +320,12 @@ music = {
      \new Staff     \clarinettwo
      \new Staff     \clarinetthree
 %     \new Staff     \altoclarinet
-%     \new Staff     \bassclarinet
+     \new Staff     \bassclarinet
     >>
     \new StaffGroup <<
      \new Staff     \altosax
      \new Staff     \tenorsax
-%     \new Staff     \barisax
+     \new Staff     \barisax
     >>
     \new Staff     \hornone
     \new StaffGroup <<
@@ -358,8 +364,9 @@ parts = {
      \tag #'tpt1  \new Staff     \trumpetone
      \tag #'tpt2  \new Staff     \trumpettwo
      \tag #'tpt3  \new Staff     \trumpetthree
-%     \tag #'tbn1  \new Staff     \tromboneone
-%     \tag #'tbn2  \new Staff     \trombonetwo
+     \tag #'tbn1  \new Staff     \tromboneone
+     \tag #'tbn2  \new Staff     \trombonetwo
+     \tag #'tbn3  \new Staff     \trombonethree
 %     \tag #'tbnb  \new Staff     \basstrombone
      \tag #'hrn1  \new Staff     \hornone
 %     \tag #'hrn2  \new Staff     \horntwo

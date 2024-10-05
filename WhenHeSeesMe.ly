@@ -317,20 +317,20 @@ notation = {
 
 
     \key af \major af1 |
-    \key af \major R1 |
-    \key af \major af,8\mf af8 r4 r2 |
+    \key af \major af,8\mf af8 d ef r2 |
+    \key af \major af,8\mf af8 b c r2 |
     \key af \major af,8\mf af8 r4 r2 |
 
     R1 |
-    R1 |
-    af8 af8 r4 r2 |
-    af8 af8 r4 r2 |
+    af,8 af8 d ef r2 |
+    af8 af8 b c r2 |
+    af8\mf af8 r4 r2 |
 
 % page 7 - second verse - Ab - bar 52
 
     r8 g,8\mf g8 g8 g8 f8 r4 |
     af,8\mp af8 d ef r2 |
-    ef'8\mp ef8 b c r2 |
+    ef8\mp ef8 b c r2 |
     af8\mp af8 r4 r2 |
 
     r8 g4 g16 g16 g8 f8 ef8 c8 |
