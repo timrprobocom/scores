@@ -84,8 +84,13 @@ breakW = \lyricmode {
 
 
 
-
-
+%                                       
+%  ___  ___  _ __  _ __ __ _ _ __   ___  
+% / __|/ _ \| '_ \| '__/ _` | '_ \ / _ \ 
+% \__ \ (_) | |_) | | | (_| | | | | (_) |
+% |___/\___/| .__/|_|  \__,_|_| |_|\___/ 
+%          |_|                          
+%
 
 soprano = \relative c' {
     \clef treble 
@@ -106,14 +111,26 @@ soprano = \relative c' {
     r8 af16 r r af r r af2 |
     R1 |
 
-    R1 |
-    R1 |
-    R1 |
-    R1 |
+    % Just because 
+
+    a8 a af af g g gf gf |
+    g?8 g af af16 a16 r2 |
+    a8 a af af g g gf gf |
+    g?8 af a bf16 b16 r2 |
 
     \bar "||"
 
+    % You can feel it ...
+
+
+
+
     \breakN
+
+    R1 |
+    R1 |
+    R1 |
+    R1 |
 
     \bar "|."
 }
@@ -129,8 +146,22 @@ soplyrics = \lyricmode {
     Doot doot bah
     Doot doot bah
 
+    % Just because
+
+    Doo pah doo pah doo pah doo pah
+    doo pah doo ba doot
+    Doo pah doo pah doo pah doo pah
+    doo pah doo ba doot
+
     \breakW
 }
+
+%         _ _        
+%    __ _| | |_ ___  
+%   / _` | | __/ _ \ 
+%  | (_| | | || (_) |
+%   \__,_|_|\__\___/ 
+%                    
 
 alto = \relative c' {
     \clef treble 
@@ -151,10 +182,12 @@ alto = \relative c' {
     r8 f16 r r f r r f2 |
     R1 |
 
-    R1 |
-    R1 |
-    R1 |
-    R1 |
+    % Just because 
+
+    f8 f e e ef ef d d   |
+    ef8 ef e e16 f16 r2 |
+    f8 f e e ef ef d d   |
+    ef8 e f fs16 g16 r2 |
 
     \bar "||"
 
@@ -174,10 +207,24 @@ altolyrics = \lyricmode {
     Doot doot bah
     Doot doot bah
 
+    Doo pah doo pah doo pah doo pah
+    doo pah doo ba doot
+    Doo pah doo pah doo pah doo pah
+    doo pah doo ba doot
+
     \breakW
 }
 
-tenor = \relative c {
+% 
+%  _                        
+% | |_ ___ _ __   ___  _ __ 
+% | __/ _ \ '_ \ / _ \| '__|
+% | ||  __/ | | | (_) | |   
+%  \__\___|_| |_|\___/|_|   
+%                           
+% 
+
+tenor = { \relative c {
     \clef bass
     \common
     \set Staff.midiInstrument = #"trombone"
@@ -203,10 +250,26 @@ tenor = \relative c {
 
     \bar "||"
 
-    \breakN
+    } \relative c, { \breakN 
+
+    r4 a8 c d c a f |
+    f8 g4 f8 r c d f |
+    af8 g f df f af4 g8~ |
+    g2 r2 |
+
+    r4 a8 c d c a f |
+    f8 g4 f8 r c d f |
+    af8 g f df f af4 g8~ |
+    g2 r4 r8 f16 f |
+
+    f8 f e e ef ef16 d16~d8 d16 d16 |
+    ef8 ef e e16 f16 r4 r16 f f f | 
+    f8 f e e ef ef16 d16~d8 d16 d16 |
+    ef8  e f8 gf16 g16 r4 r4 |
+    
 
     \bar "|."
-}
+}}
 
 
 tenorlyrics = \lyricmode {
@@ -228,9 +291,44 @@ tenorlyrics = \lyricmode {
     Peo -- ple start to move
 
     \breakW
+
+    Mu -- sic knows it is and
+    al -- ways will be one of 
+    the things that life just won't 
+    quit
+    Here are some of mu  --  sic's 
+    pi  --  o  --  neers that time will
+    not al -- low us to for  --  getr.
+    Well there's Ba  --  sie, Mil -- ler, Satch  --  a  --  mo,
+    and the king of all Sir Duke.
+    And with a voice like El -- las ring -- ing out,
+    there's no way the band could lose
 }
 
-bass = \relative c,  {
+% Chorus 1
+% They can feel it all o--ver
+% They can feel it all o--ver people
+% They can feel it all o--ver
+% They can feel it all o--ver people GO!
+
+% Chorus 2-3-4
+% You can feel it all o--ver
+% You can feel it all o--ver people
+% You can feel it all o--ver
+% You can feel it all o--ver people GO!
+% Chorus 5
+% Everybody all o--ver people GO!
+
+%  
+%   _                   
+%  | |__   __ _ ___ ___ 
+%  | '_ \ / _` / __/ __|
+%  | |_) | (_| \__ \__ \
+%  |_.__/ \__,_|___/___/
+%                       
+%  
+
+bass = { \relative c,  {
     \clef bass
     \common
     \set Staff.midiInstrument = #"tuba"
@@ -259,17 +357,24 @@ bass = \relative c,  {
     df8 r af r df r af r |
     R1 |
 
-    R1 |
-    R1 |
-    R1 |
-    R1 |
+    % Just because 
+
+    c8 c b b bf bf a a |
+    bf8 bf b b16 c16 r2 |
+    c8 c b b bf bf a a |
+    bf8 b c cs16 d16 r2 |
 
     \bar "||"
 
-    \breakN
+    } \relative c, { \breakN
+
+    R1 |
+    R1 |
+    R1 |
+    R1 |
 
     \bar "|."
-}
+}}
 
 basslyrics = \lyricmode {
     \introW
@@ -285,6 +390,14 @@ basslyrics = \lyricmode {
     doot doot doot doot
     doot doot doot doot
     %% bop bop bop ba doo bop bop
+
+    % Just because...
+
+    Doo pah doo pah doo pah doo pah
+    doo pah doo ba doot
+    Doo pah doo pah doo pah doo pah
+    doo pah doo ba doot
+
 
     \breakW
 }
