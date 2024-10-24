@@ -62,11 +62,11 @@ introW = \lyricmode {
 
 breakN = {
     f8 r8   r16 f a g   r g d' c  r8 c,16 d |
-    f8 g16 af   a c d f  r g af a r4 |
+    f8 g16 af   a c d f  r g, af a r4 |
     d8. a16   r8 c8~c8 g8~g8 a8 |
     g16 f d c  g' f d f~f4 r4 |
 
-    a8 g16 f   g f d f  d c d8   r16 c a c |
+    a8 g16 f   g f d f  d c d8   r16 c' a c |
     a16 g a g   f g f d~d8 c8  r4 |
     c16 d f g  a c d f   r d f8 r16 d8 c16 |
     d8 r16 c8 a16 c8 r8 c16 c r4 |
@@ -250,7 +250,7 @@ tenor = { \relative c {
 
     \bar "||"
 
-    } \relative c, { \breakN 
+    } \relative c { \breakN 
 
     r4 a8 c d c a f |
     f8 g4 f8 r c d f |
@@ -366,7 +366,7 @@ bass = { \relative c,  {
 
     \bar "||"
 
-    } \relative c, { \breakN
+    } \relative c { \breakN
 
     R1 |
     R1 |
