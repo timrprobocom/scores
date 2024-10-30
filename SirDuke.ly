@@ -28,13 +28,31 @@ common = {
     \tempo 4 = 120
 }
 
+% intro 8 bars
+% verse 12 vars
+% chorus 8 bars
+% break 8 bars
 
 spacing = {
     s1*8 \bar "||" \mark \default
     s1*12 \bar "||" \mark \default
     s1*8 \bar "||" \mark \default
+    s1*8 \bar "||" \mark \default
+    s1*12 \mark \default
+    \repeat volta 2 {
+        s1*8 
+    } \mark \default
+    s1*8 \mark \default
+    \repeat volta 2 {
+        s1*8 
+    }
+    s1*8 \bar "||" \mark \default
+    s1*8 
     \bar "|."
 }
+
+
+%% The introduction.
 
 
 introN = {
@@ -60,13 +78,47 @@ introW = \lyricmode {
 }
 
 
+%% The verse
+
+
+verseN = {
+    r4 a8 c c a c( a) |
+    e'8( d e) d~d2 |
+    r4 d8 c c a d( c) |
+    a4 g16( f d8) f4 d8( c) |
+
+    r4 a'8 c c a c( a) |
+    e'8( d e) d~d2 |
+    r4 d8 c c a d( c) |
+    a4 g16( f d8) f4 d8( c) |
+}
+
+verseA = \lyricmode {
+    You can feel it all o -- ver 
+    You can feel it all o -- ver peo -- ple 
+}
+
+verseB = \lyricmode {
+    They can feel it all o -- ver 
+    They can feel it all o -- ver peo -- ple 
+}
+
+verseC = \lyricmode {
+    Ev -- ery -- bo -- dy all o -- ver 
+    Ev -- ery -- bo -- dy all o -- ver peo -- ple
+}
+
+
+%% The break.
+
+
 breakN = {
     f8 r8   r16 f a g   r g d' c  r8 c,16 d |
-    f8 g16 af   a c d f  r g, af a r4 |
+    f8 g16 af   a c d f  r g af a r4 |
     d8. a16   r8 c8~c8 g8~g8 a8 |
     g16 f d c  g' f d f~f4 r4 |
 
-    a8 g16 f   g f d f  d c d8   r16 c' a c |
+    a8 g16 f   g f d f  d c d8   r16 c a c |
     a16 g a g   f g f d~d8 c8  r4 |
     c16 d f g  a c d f   r d f8 r16 d8 c16 |
     d8 r16 c8 a16 c8 r8 c16 c r4 |
@@ -99,7 +151,7 @@ soprano = \relative c' {
 
     \introN
 
-    \bar "||"
+    % A 9 - Music is a world
 
     r8 a16 r r a r r a2 |
     r8 a16 r r a r r a2 |
@@ -118,25 +170,53 @@ soprano = \relative c' {
     a8 a af af g g gf gf |
     g?8 af a bf16 b16 r2 |
 
-    \bar "||"
+    % B 21 You can feel it ...
 
-    % You can feel it ...
+    \verseN
 
-
-
+    % C 29
 
     \breakN
 
-    R1 |
-    R1 |
-    R1 |
+    % D 37 Music knows it is
+
+    r8 a16 r r a r r a2 |
+    r8 a16 r r a r r a2 |
+    r8 af16 r r af r r af2 |
     R1 |
 
-    \bar "|."
+    r8 a16 r r a r r a2 |
+    r8 a16 r r a r r a2 |
+    r8 af16 r r af r r af2 |
+    R1 |
+
+    % Well there's Basie
+
+    a8 a af af g g gf gf |
+    g?8 g af af16 a16 r2 |
+    a8 a af af g g gf gf |
+    g?8 af a bf16 b16 r2 |
+
+    % E 49
+
+%    \repeat volta 2 {
+        \verseN
+%    }
+
+    \breakN
+
+%    \repeat volta 2 {
+        \verseN
+%    }
+    \verseN
+
+    \breakN
 }
 
 soplyrics = \lyricmode {
     \introW
+
+    % Music is a world
 
     Doot doot bah
     Doot doot bah
@@ -152,6 +232,43 @@ soplyrics = \lyricmode {
     doo pah doo ba doot
     Doo pah doo pah doo pah doo pah
     doo pah doo ba doot
+
+    \verseA
+    \verseA
+
+    \breakW
+
+    % Music knows it is
+
+    Doot doot bah
+    Doot doot bah
+    Doot doot bah
+
+    Doot doot bah
+    Doot doot bah
+    Doot doot bah
+
+    % Well there's Basie
+
+    Doo pah doo pah doo pah doo pah
+    doo pah doo ba doot
+    Doo pah doo pah doo pah doo pah
+    doo pah doo ba doot
+
+%    \repeat volta 2 {
+        \verseB
+        \verseB
+%    }
+
+    \breakW
+
+%    \repeat volta 2 {
+        \verseB
+        \verseB
+%    }
+
+    \verseC
+    \verseC
 
     \breakW
 }
@@ -170,8 +287,6 @@ alto = \relative c' {
 
     \introN
 
-    \bar "||"
-
     r8 f,16 r r f r r f2 |
     r8 f16 r r f r r f2 |
     r8 f16 r r f r r f2 |
@@ -189,11 +304,42 @@ alto = \relative c' {
     f8 f e e ef ef d d   |
     ef8 e f fs16 g16 r2 |
 
-    \bar "||"
+    R1*4
+    R1*4
 
     \breakN
 
-    \bar "|."
+    % Music knows it is and always will
+
+    r8 f,16 r r f r r f2 |
+    r8 f16 r r f r r f2 |
+    r8 f16 r r f r r f2 |
+    R1 |
+
+    r8 f16 r r f r r f2 |
+    r8 f16 r r f r r f2 |
+    r8 f16 r r f r r f2 |
+    R1 |
+
+    % Well there's Basic Miller Satchmo
+
+    f8 f e e ef ef d d   |
+    ef8 ef e e16 f16 r2 |
+    f8 f e e ef ef d d   |
+    ef8 e f fs16 g16 r2 |
+
+%    \repeat volta 2 {
+        R1 * 8
+%    }
+
+    \breakN
+
+%    \repeat volta 2 {
+        R1*8
+%    }
+    R1*8
+
+    \breakN
 }
 
 altolyrics = \lyricmode {
@@ -213,6 +359,23 @@ altolyrics = \lyricmode {
     doo pah doo ba doot
 
     \breakW
+
+    Doot doot bah
+    Doot doot bah
+    Doot doot bah
+
+    Doot doot bah
+    Doot doot bah
+    Doot doot bah
+
+    Doo pah doo pah doo pah doo pah
+    doo pah doo ba doot
+    Doo pah doo pah doo pah doo pah
+    doo pah doo ba doot
+
+    \breakW
+
+    \breakW
 }
 
 % 
@@ -224,14 +387,12 @@ altolyrics = \lyricmode {
 %                           
 % 
 
-tenor = { \relative c {
+tenor = \relative c {
     \clef bass
     \common
     \set Staff.midiInstrument = #"trombone"
 
     \introN
-
-    \bar "||"
 
     r4 a8 c d c a f |
     f8 g4 f8 r c d f |
@@ -246,13 +407,15 @@ tenor = { \relative c {
     f8 f e e ef ef16 d16~d8 d |
     ef ef e e16 f16 r4 r16 f f f | 
     f8 f16 f16 e8 e16 ef16 r ef d8 r8 d16 d |
-    ef8  e f8 gf16 g16 r4 r4 |
+    ef8  e f8 gf16 g16 r2 |
 
-    \bar "||"
+    \verseN
 
-    } \relative c { \breakN 
+    \relative c, \breakN 
 
-    r4 a8 c d c a f |
+    % D 37 Music knows it is
+
+    r4 a'8 c d c a f |
     f8 g4 f8 r c d f |
     af8 g f df f af4 g8~ |
     g2 r2 |
@@ -265,11 +428,21 @@ tenor = { \relative c {
     f8 f e e ef ef16 d16~d8 d16 d16 |
     ef8 ef e e16 f16 r4 r16 f f f | 
     f8 f e e ef ef16 d16~d8 d16 d16 |
-    ef8  e f8 gf16 g16 r4 r4 |
+    ef8  e f8 gf16 g16 r2 |
     
+%    \repeat volta 2 {
+        \verseN
+%    }
 
-    \bar "|."
-}}
+    \relative c, \breakN 
+    
+%    \repeat volta 2 {
+        \verseN
+%    }
+    \verseN
+
+    \relative c, \breakN 
+}
 
 
 tenorlyrics = \lyricmode {
@@ -290,6 +463,9 @@ tenorlyrics = \lyricmode {
     And you can tell right a -- way at let -- ter 'A' when the
     Peo -- ple start to move
 
+    \verseA
+    \verseA
+
     \breakW
 
     Mu -- sic knows it is and
@@ -298,11 +474,28 @@ tenorlyrics = \lyricmode {
     quit
     Here are some of mu  --  sic's 
     pi  --  o  --  neers that time will
-    not al -- low us to for  --  getr.
+    not al -- low us to for  --  get.
     Well there's Ba  --  sie, Mil -- ler, Satch  --  a  --  mo,
     and the king of all Sir Duke.
     And with a voice like El -- las ring -- ing out,
     there's no way the band could lose
+
+%    \repeat volta 2 {
+        \verseB
+        \verseB
+%    }
+
+    \breakW
+
+%    \repeat volta 2 {
+        \verseB
+        \verseB
+%    }
+    \verseC
+    \verseC
+
+    \breakW
+
 }
 
 % Chorus 1
@@ -328,7 +521,7 @@ tenorlyrics = \lyricmode {
 %                       
 %  
 
-bass = { \relative c,  {
+bass =  \relative c,  {
     \clef bass
     \common
     \set Staff.midiInstrument = #"tuba"
@@ -345,7 +538,7 @@ bass = { \relative c,  {
     df,8 df f f af16 g af8 df8. c16 |
     r8 c8 c8 r16 c16 r c bf8 a8 g8 |
 
-    \bar "||"
+    % Music is a world within itself
 
     f8 r c' r f r c cs |
     d8 r a r d r a r |
@@ -364,17 +557,42 @@ bass = { \relative c,  {
     c8 c b b bf bf a a |
     bf8 b c cs16 d16 r2 |
 
-    \bar "||"
+    \verseN
 
-    } \relative c { \breakN
+    \relative c, \breakN
 
-    R1 |
-    R1 |
-    R1 |
+    % Music knows it is and always will
+
+    f8 r c' r f r c cs |
+    d8 r a r d r a r |
+    df8 r af r df r af r |
+    r8 c8 c8 r16 c16 r c bf8 a8 g8 |
+
+    f8 r c' r f r c cs |
+    d8 r a r d r a r |
+    df8 r af r df r af r |
     R1 |
 
-    \bar "|."
-}}
+    % Well there's Basie Miller Satchmo
+
+    c,8 c b b bf bf a a |
+    bf8 bf b b16 c16 r2 |
+    c8 c b b bf bf a a |
+    bf8 b c cs16 d16 r2 |
+
+%    \repeat volta 2 {
+        R1*8
+%    }
+
+    \relative c, \breakN
+
+%    \repeat volta 2 {
+        R1*8
+%    }
+    R1*8
+
+    \relative c, \breakN
+}
 
 basslyrics = \lyricmode {
     \introW
@@ -398,6 +616,41 @@ basslyrics = \lyricmode {
     Doo pah doo pah doo pah doo pah
     doo pah doo ba doot
 
+    \verseA
+    \verseA
+
+    \breakW
+
+    doot doot doot doo bee
+    doot doot doot doot
+    doot doot doot doot
+    bop bop bop ba doo bop bop
+
+    doot doot doot doo bee
+    doot doot doot doot
+    doot doot doot doot
+    %% bop bop bop ba doo bop bop
+
+    % Just because...
+
+    Doo pah doo pah doo pah doo pah
+    doo pah doo ba doot
+    Doo pah doo pah doo pah doo pah
+    doo pah doo ba doot
+
+%    \repeat volta 2 {
+%%        \verseB
+%%        \verseB
+%    }
+
+    \breakW
+
+%    \repeat volta 2 {
+%%        \verseB
+%%        \verseB
+%    }
+    \verseC
+    \verseC
 
     \breakW
 }
