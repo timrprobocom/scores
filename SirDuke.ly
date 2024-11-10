@@ -78,10 +78,10 @@ introW = \lyricmode {
 }
 
 
-%% The verse
+%% The chorus
 
 
-verseN = {
+chorusN = {
     r4 a8 c c a c( a) |
     e'8( d e) d~d2 |
     r4 d8 c c a d( c) |
@@ -93,17 +93,19 @@ verseN = {
     a4 g16( f d8) f4 d8( c) |
 }
 
-verseA = \lyricmode {
+chorusA = \lyricmode {
     You can feel it all o -- ver 
     You can feel it all o -- ver peo -- ple 
 }
 
-verseB = \lyricmode {
+chorusB = \lyricmode {
     They can feel it all o -- ver 
     They can feel it all o -- ver peo -- ple 
 }
 
-verseC = \lyricmode {
+chorusC = \lyricmode {
+    Can't you feel it  all o -- ver 
+    Ev -- ery -- bo -- dy all o -- ver peo -- ple
     Ev -- ery -- bo -- dy all o -- ver 
     Ev -- ery -- bo -- dy all o -- ver peo -- ple
 }
@@ -161,7 +163,7 @@ soprano = \relative c' {
     r8 a16 r r a r r a2 |
     r8 a16 r r a r r a2 |
     r8 af16 r r af r r af2 |
-    R1 |
+    g4 g4 fs4 fs4 |
 
     % Just because 
 
@@ -172,7 +174,7 @@ soprano = \relative c' {
 
     % B 21 You can feel it ...
 
-    \verseN
+    \chorusN
 
     % C 29
 
@@ -188,7 +190,7 @@ soprano = \relative c' {
     r8 a16 r r a r r a2 |
     r8 a16 r r a r r a2 |
     r8 af16 r r af r r af2 |
-    R1 |
+    g4 g4 f4 f4 |
 
     % Well there's Basie
 
@@ -200,15 +202,15 @@ soprano = \relative c' {
     % E 49
 
 %    \repeat volta 2 {
-        \verseN
+        \chorusN
 %    }
 
     \breakN
 
 %    \repeat volta 2 {
-        \verseN
+        \chorusN
 %    }
-    \relative c'' \verseN
+    \relative c'' \chorusN
 
     \breakN
 }
@@ -225,6 +227,7 @@ soplyrics = \lyricmode {
     Doot doot bah
     Doot doot bah
     Doot doot bah
+    wah wah wah wah
 
     % Just because
 
@@ -233,8 +236,8 @@ soplyrics = \lyricmode {
     Doo pah doo pah doo pah doo pah
     doo pah doo ba doot
 
-    \verseA
-    \verseA
+    \chorusA
+    \chorusA
 
     \breakW
 
@@ -247,6 +250,7 @@ soplyrics = \lyricmode {
     Doot doot bah
     Doot doot bah
     Doot doot bah
+    wah wah wah wah
 
     % Well there's Basie
 
@@ -256,19 +260,18 @@ soplyrics = \lyricmode {
     doo pah doo ba doot
 
 %    \repeat volta 2 {
-        \verseB
-        \verseB
+        \chorusB
+        \chorusB
 %    }
 
     \breakW
 
 %    \repeat volta 2 {
-        \verseB
-        \verseB
+        \chorusB
+        \chorusB
 %    }
 
-    \verseC
-    \verseC
+    \chorusC
 
     \breakW
 }
@@ -279,6 +282,17 @@ soplyrics = \lyricmode {
 %  | (_| | | || (_) |
 %   \__,_|_|\__\___/ 
 %                    
+
+altoChorus = {
+    r8 a16 r r a r r a2 |
+    r8 a16 r r a r r a2 |
+    r8 bf16 r r bf r r bf2 |
+    bf4 bf g g |
+    r8 a16 r r a r r a2 |
+    r8 a16 r r a r r a2 |
+    r8 bf16 r r bf r r bf2 |
+    bf4 bf g g |
+}
 
 alto = \relative c' {
     \clef treble 
@@ -295,7 +309,7 @@ alto = \relative c' {
     r8 f16 r r f r r f2 |
     r8 f16 r r f r r f2 |
     r8 f16 r r f r r f2 |
-    R1 |
+    e4 e4 ds4 ds4 |
 
     % Just because 
 
@@ -306,20 +320,13 @@ alto = \relative c' {
 
     % Chorus 1
 
-    r8 f16 r r f r r f2 |
-    r8 e16 r r e r r e2 |
-    r8 d16 r r d r r d2 |
-    g4 a bf c |
-    r8 f,16 r r f r r f2 |
-    r8 e16 r r e r r e2 |
-    r8 d16 r r d r r d2 |
-    g4 a bf c |
+    \altoChorus
 
     \relative c' \breakN
 
     % Music knows it is and always will
 
-    r8 f,16 r r f r r f2 |
+    r8 f16 r r f r r f2 |
     r8 f16 r r f r r f2 |
     r8 f16 r r f r r f2 |
     R1 |
@@ -327,7 +334,7 @@ alto = \relative c' {
     r8 f16 r r f r r f2 |
     r8 f16 r r f r r f2 |
     r8 f16 r r f r r f2 |
-    R1 |
+    e4 e4 ds4 ds4 |
 
     % Well there's Basie Miller Satchmo
 
@@ -336,42 +343,21 @@ alto = \relative c' {
     f8 f e e ef ef d d   |
     ef8 e f fs16 g16 r2 |
 
-%    \repeat volta 2 {
     % Chorus 2
 
-    r8 f16 r r f r r f2 |
-    r8 e16 r r e r r e2 |
-    r8 d16 r r d r r d2 |
-    g4 a bf c |
-    r8 f,16 r r f r r f2 |
-    r8 e16 r r e r r e2 |
-    r8 d16 r r d r r d2 |
-    g4 a bf c |
-%    }
+%    \repeat volta 2 
+    \altoChorus
 
     \relative c' \breakN
 
-%    \repeat volta 2 {
     % Chorus 3
 
-    r8 f,16 r r f r r f2 |
-    r8 e16 r r e r r e2 |
-    r8 d16 r r d r r d2 |
-    g4 a bf c |
-    r8 f,16 r r f r r f2 |
-    r8 e16 r r e r r e2 |
-    r8 d16 r r d r r d2 |
-    g4 a bf c |
-%    }
-    % Chrous 3c
-    r8 f,16 r r f r r f2 |
-    r8 e16 r r e r r e2 |
-    r8 d16 r r d r r d2 |
-    g4 a bf c |
-    r8 f,16 r r f r r f2 |
-    r8 e16 r r e r r e2 |
-    r8 d16 r r d r r d2 |
-    g4 a bf c |
+%    \repeat volta 2 {
+    \altoChorus
+
+    % Chorus 3c
+
+    \altoChorus
 
     \relative c' \breakN
 }
@@ -386,6 +372,7 @@ altolyrics = \lyricmode {
     Doot doot bah
     Doot doot bah
     Doot doot bah
+    wah wah wah wah
 
     Doo pah doo pah doo pah doo pah
     doo pah doo ba doot
@@ -411,6 +398,7 @@ altolyrics = \lyricmode {
     Doot doot bah
     Doot doot bah
     Doot doot bah
+    wah wah wah wah
 
     Doo pah doo pah doo pah doo pah
     doo pah doo ba doot
@@ -482,7 +470,7 @@ tenor = \relative c {
     f8 f16 f16 e8 e16 ef16 r ef d8 r8 d16 d |
     ef8  e f8 gf16 g16 r2 |
 
-    \verseN
+    \chorusN
 
     \relative c, \breakN 
 
@@ -503,16 +491,15 @@ tenor = \relative c {
     f8 f e e ef ef16 d16~d8 d16 d16 |
     ef8  e f8 gf16 g16 r2 |
     
-%    \repeat volta 2 {
-        \verseN
-%    }
+%    \repeat volta 2 
+    \chorusN
 
     \relative c, \breakN 
     
-%    \repeat volta 2 {
-        \verseN
-%    }
-    \relative c, \verseN
+%    \repeat volta 2
+    \relative c' \chorusN
+
+    \chorusN
 
     \relative c, \breakN 
 }
@@ -536,8 +523,8 @@ tenorlyrics = \lyricmode {
     And you can tell right a -- way at let -- ter 'A' when the
     Peo -- ple start to move
 
-    \verseA
-    \verseA
+    \chorusA
+    \chorusA
 
     \breakW
 
@@ -554,36 +541,23 @@ tenorlyrics = \lyricmode {
     there's no way the band could lose
 
 %    \repeat volta 2 {
-        \verseB
-        \verseB
+        \chorusB
+        \chorusB
 %    }
 
     \breakW
 
 %    \repeat volta 2 {
-        \verseB
-        \verseB
+        \chorusB
+        \chorusB
 %    }
-    \verseC
-    \verseC
+
+    \chorusC
 
     \breakW
 
 }
 
-% Chorus 1
-% They can feel it all o--ver
-% They can feel it all o--ver people
-% They can feel it all o--ver
-% They can feel it all o--ver people GO!
-
-% Chorus 2-3-4
-% You can feel it all o--ver
-% You can feel it all o--ver people
-% You can feel it all o--ver
-% You can feel it all o--ver people GO!
-% Chorus 5
-% Everybody all o--ver people GO!
 
 %  
 %   _                   
@@ -593,6 +567,18 @@ tenorlyrics = \lyricmode {
 %  |_.__/ \__,_|___/___/
 %                       
 %  
+
+
+bassChorus = {
+    r8 f16 r r f r r f2 |
+    r8 d16 r r d r r d2 |
+    r8 bf16 r r bf r r bf2 |
+    g4 g c c |
+    r8 f16 r r f r r f2 |
+    r8 d16 r r d r r d2 |
+    r8 bf16 r r bf r r bf2 |
+    g4 g c c |
+}
 
 bass =  \relative c,  {
     \clef bass
@@ -621,7 +607,7 @@ bass =  \relative c,  {
     f8 r c' r f r c cs |
     d8 r a r d r a r |
     df8 r af r df r af r |
-    R1 |
+    c4 c4 b4 b4 |
 
     % Just because 
 
@@ -632,14 +618,7 @@ bass =  \relative c,  {
 
     % Chorus 1
 
-    r8 a16 r r a r r a2 |
-    r8 gs16 r r gs r r gs2 |
-    r8 bf16 r r bf r r bf2 |
-    g4 a bf c |
-    r8 a16 r r a r r a2 |
-    r8 gs16 r r gs r r gs2 |
-    r8 bf16 r r bf r r bf2 |
-    g4 a bf c |
+    \bassChorus
 
     \relative c, \breakN
 
@@ -653,7 +632,7 @@ bass =  \relative c,  {
     f8 r c' r f r c cs |
     d8 r a r d r a r |
     df8 r af r df r af r |
-    R1 |
+    c4 c4 b4 b4 |
 
     % Well there's Basie Miller Satchmo
 
@@ -662,43 +641,21 @@ bass =  \relative c,  {
     c8 c b b bf bf a a |
     bf8 b c cs16 d16 r2 |
 
-%    \repeat volta 2 {
     % Chorus 2
 
-    r8 a16 r r a r r a2 |
-    r8 gs16 r r gs r r gs2 |
-    r8 bf16 r r bf r r bf2 |
-    g4 a bf c |
-    r8 a16 r r a r r a2 |
-    r8 gs16 r r gs r r gs2 |
-    r8 bf16 r r bf r r bf2 |
-    g4 a bf c |
-%    }
+%    \repeat volta 2 
+    \bassChorus
 
     \relative c, \breakN
 
-%    \repeat volta 2 {
     % Chorus 3
 
-    r8 a16 r r a r r a2 |
-    r8 gs16 r r gs r r gs2 |
-    r8 bf16 r r bf r r bf2 |
-    g4 a bf c |
-    r8 a16 r r a r r a2 |
-    r8 gs16 r r gs r r gs2 |
-    r8 bf16 r r bf r r bf2 |
-    g4 a bf c |
-%    }
+%    \repeat volta 2 
+    \bassChorus
+
     % Chorus 3c
 
-    r8 a16 r r a r r a2 |
-    r8 gs16 r r gs r r gs2 |
-    r8 bf16 r r bf r r bf2 |
-    g4 a bf c |
-    r8 a16 r r a r r a2 |
-    r8 gs16 r r gs r r gs2 |
-    r8 bf16 r r bf r r bf2 |
-    g4 a bf c |
+    \bassChorus
 
     \relative c, \breakN
 }
@@ -716,7 +673,7 @@ basslyrics = \lyricmode {
     doot doot doot doo bee
     doot doot doot doot
     doot doot doot doot
-    %% bop bop bop ba doo bop bop
+    wah wah wah wah
 
     % Just because...
 
@@ -745,7 +702,7 @@ basslyrics = \lyricmode {
     doot doot doot doo bee
     doot doot doot doot
     doot doot doot doot
-    %% bop bop bop ba doo bop bop
+    wah wah wah wah
 
     % Just because...
 
