@@ -208,7 +208,7 @@ soprano = \relative c' {
 %    \repeat volta 2 {
         \verseN
 %    }
-    \verseN
+    \relative c'' \verseN
 
     \breakN
 }
@@ -304,10 +304,18 @@ alto = \relative c' {
     f8 f e e ef ef d d   |
     ef8 e f fs16 g16 r2 |
 
-    R1*4
-    R1*4
+    % Chorus 1
 
-    \breakN
+    r8 f16 r r f r r f2 |
+    r8 e16 r r e r r e2 |
+    r8 d16 r r d r r d2 |
+    g4 a bf c |
+    r8 f,16 r r f r r f2 |
+    r8 e16 r r e r r e2 |
+    r8 d16 r r d r r d2 |
+    g4 a bf c |
+
+    \relative c' \breakN
 
     % Music knows it is and always will
 
@@ -321,7 +329,7 @@ alto = \relative c' {
     r8 f16 r r f r r f2 |
     R1 |
 
-    % Well there's Basic Miller Satchmo
+    % Well there's Basie Miller Satchmo
 
     f8 f e e ef ef d d   |
     ef8 ef e e16 f16 r2 |
@@ -329,17 +337,43 @@ alto = \relative c' {
     ef8 e f fs16 g16 r2 |
 
 %    \repeat volta 2 {
-        R1 * 8
+    % Chorus 2
+
+    r8 f16 r r f r r f2 |
+    r8 e16 r r e r r e2 |
+    r8 d16 r r d r r d2 |
+    g4 a bf c |
+    r8 f,16 r r f r r f2 |
+    r8 e16 r r e r r e2 |
+    r8 d16 r r d r r d2 |
+    g4 a bf c |
 %    }
 
-    \breakN
+    \relative c' \breakN
 
 %    \repeat volta 2 {
-        R1*8
-%    }
-    R1*8
+    % Chorus 3
 
-    \breakN
+    r8 f,16 r r f r r f2 |
+    r8 e16 r r e r r e2 |
+    r8 d16 r r d r r d2 |
+    g4 a bf c |
+    r8 f,16 r r f r r f2 |
+    r8 e16 r r e r r e2 |
+    r8 d16 r r d r r d2 |
+    g4 a bf c |
+%    }
+    % Chrous 3c
+    r8 f,16 r r f r r f2 |
+    r8 e16 r r e r r e2 |
+    r8 d16 r r d r r d2 |
+    g4 a bf c |
+    r8 f,16 r r f r r f2 |
+    r8 e16 r r e r r e2 |
+    r8 d16 r r d r r d2 |
+    g4 a bf c |
+
+    \relative c' \breakN
 }
 
 altolyrics = \lyricmode {
@@ -358,6 +392,16 @@ altolyrics = \lyricmode {
     Doo pah doo pah doo pah doo pah
     doo pah doo ba doot
 
+    % Chorus 1
+    Bah bah bah
+    Bah bah bah
+    Bah bah bah
+    wah wah wah wah 
+    Bah bah bah
+    Bah bah bah
+    Bah bah bah
+    wah wah wah wah 
+
     \breakW
 
     Doot doot bah
@@ -373,7 +417,36 @@ altolyrics = \lyricmode {
     Doo pah doo pah doo pah doo pah
     doo pah doo ba doot
 
+    % Chorus 2
+    Bah bah bah
+    Bah bah bah
+    Bah bah bah
+    wah wah wah wah 
+    Bah bah bah
+    Bah bah bah
+    Bah bah bah
+    wah wah wah wah 
+
     \breakW
+
+    % Chorus 3
+    Bah bah bah
+    Bah bah bah
+    Bah bah bah
+    wah wah wah wah 
+    Bah bah bah
+    Bah bah bah
+    Bah bah bah
+    wah wah wah wah 
+    % Chorus 3c
+    Bah bah bah
+    Bah bah bah
+    Bah bah bah
+    wah wah wah wah 
+    Bah bah bah
+    Bah bah bah
+    Bah bah bah
+    wah wah wah wah 
 
     \breakW
 }
@@ -439,7 +512,7 @@ tenor = \relative c {
 %    \repeat volta 2 {
         \verseN
 %    }
-    \verseN
+    \relative c, \verseN
 
     \relative c, \breakN 
 }
@@ -557,7 +630,16 @@ bass =  \relative c,  {
     c8 c b b bf bf a a |
     bf8 b c cs16 d16 r2 |
 
-    \verseN
+    % Chorus 1
+
+    r8 a16 r r a r r a2 |
+    r8 gs16 r r gs r r gs2 |
+    r8 bf16 r r bf r r bf2 |
+    g4 a bf c |
+    r8 a16 r r a r r a2 |
+    r8 gs16 r r gs r r gs2 |
+    r8 bf16 r r bf r r bf2 |
+    g4 a bf c |
 
     \relative c, \breakN
 
@@ -581,15 +663,42 @@ bass =  \relative c,  {
     bf8 b c cs16 d16 r2 |
 
 %    \repeat volta 2 {
-        R1*8
+    % Chorus 2
+
+    r8 a16 r r a r r a2 |
+    r8 gs16 r r gs r r gs2 |
+    r8 bf16 r r bf r r bf2 |
+    g4 a bf c |
+    r8 a16 r r a r r a2 |
+    r8 gs16 r r gs r r gs2 |
+    r8 bf16 r r bf r r bf2 |
+    g4 a bf c |
 %    }
 
     \relative c, \breakN
 
 %    \repeat volta 2 {
-        R1*8
+    % Chorus 3
+
+    r8 a16 r r a r r a2 |
+    r8 gs16 r r gs r r gs2 |
+    r8 bf16 r r bf r r bf2 |
+    g4 a bf c |
+    r8 a16 r r a r r a2 |
+    r8 gs16 r r gs r r gs2 |
+    r8 bf16 r r bf r r bf2 |
+    g4 a bf c |
 %    }
-    R1*8
+    % Chorus 3c
+
+    r8 a16 r r a r r a2 |
+    r8 gs16 r r gs r r gs2 |
+    r8 bf16 r r bf r r bf2 |
+    g4 a bf c |
+    r8 a16 r r a r r a2 |
+    r8 gs16 r r gs r r gs2 |
+    r8 bf16 r r bf r r bf2 |
+    g4 a bf c |
 
     \relative c, \breakN
 }
@@ -616,8 +725,15 @@ basslyrics = \lyricmode {
     Doo pah doo pah doo pah doo pah
     doo pah doo ba doot
 
-    \verseA
-    \verseA
+    % Chorus 1
+    Bah bah bah
+    Bah bah bah
+    Bah bah bah
+    wah wah wah wah 
+    Bah bah bah
+    Bah bah bah
+    Bah bah bah
+    wah wah wah wah 
 
     \breakW
 
@@ -639,18 +755,39 @@ basslyrics = \lyricmode {
     doo pah doo ba doot
 
 %    \repeat volta 2 {
-%%        \verseB
-%%        \verseB
+    % Chorus 2
+    Bah bah bah
+    Bah bah bah
+    Bah bah bah
+    wah wah wah wah 
+    Bah bah bah
+    Bah bah bah
+    Bah bah bah
+    wah wah wah wah 
 %    }
 
     \breakW
 
 %    \repeat volta 2 {
-%%        \verseB
-%%        \verseB
+    % Chorus 3
+    Bah bah bah
+    Bah bah bah
+    Bah bah bah
+    wah wah wah wah 
+    Bah bah bah
+    Bah bah bah
+    Bah bah bah
+    wah wah wah wah 
 %    }
-    \verseC
-    \verseC
+    % Chorus 3c
+    Bah bah bah
+    Bah bah bah
+    Bah bah bah
+    wah wah wah wah 
+    Bah bah bah
+    Bah bah bah
+    Bah bah bah
+    wah wah wah wah 
 
     \breakW
 }
