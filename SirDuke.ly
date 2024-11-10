@@ -2,6 +2,7 @@
 \include "english.ly"
 
 #(set-default-paper-size "letter" )
+#(set-global-staff-size 18)
 
 \paper {
     #(set-default-paper-size "letter" )
@@ -13,6 +14,7 @@
     title = "Sir Duke"
     composer = "Stevie Wonder"
     arranger = "Arr T Roberts"
+    opus = "Rev 1.0"
     tagline = #f
 }
 
