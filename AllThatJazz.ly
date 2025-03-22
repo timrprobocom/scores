@@ -252,13 +252,10 @@ notation = {
     r4 c4~c8 g a g |
     c4 r g r |
 
-
     r4 cs' b a |
     cs4 cs b a |
     cs4 e d cs |
     a4 r d r |
-
-%2 bars
 
     % [E] Big finish
     r4 d'2.~\f |
@@ -312,11 +309,13 @@ notation = {
 
     d8 d4 a8 r a b a |
 
-    d8 d8 r8 fs8~fs4 b4 |
+    d8 d8 r8 fs8~fs4 b,4 |
 
     d1~ |
+    r4 b8 bf a fs' e d |
 
     d2 r2 |
+    b8 bf a fs e d b4 |
     
     d1~ |
 
