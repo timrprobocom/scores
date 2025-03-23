@@ -31,8 +31,8 @@ notation = {
     s1*8 \bar "||" \mark \default
     s1*8 \bar "||" \mark \default \tempo "Straight 8ths"
     s1*8 \bar "||" \mark \default
-    s1*10 \bar "||" \mark \default \tempo Swing \key d \major
-    s1*8 \bar "|."
+    s1*10 \bar "||" \mark \default \key d \major
+    s1*22 \bar "|."
 }
 
 \parallelMusic  #'(clari clarii clariii clarb) {
@@ -300,38 +300,71 @@ notation = {
     a,1-> |
 
     r4 e2.~ |
+    cs4 cs8 a r a b a |
+    cs4 cs8 a r a b a |
+    R1 |
 
-    e4 a8 b a b a b a |
+    e8 a, b a b a b a |
+    cs4 cs8 a r a b a |
+    cs4 cs8 a r a b a |
+    R1 |
 
-    r4 f2.~ |
+    r4 f'2.~ |
+    d8 d4 bf8 r bf c cs |
+    R1 | R1 |
 
-    f4 bf8 c bf c bf c bf |
+    f8 bf, c bf c bf c bf |
+    d8 d4 bf8 r8 d, e f |
+    R1 | R1 |
 
     d8 d4 a8 r a b a |
+    fs8 fs4 d8 r d e f |
+    R1 | R1 |
 
     d8 d8 r8 fs8~fs4 b,4 |
+    fs8 fs4 a8 r a b a |
+    R1 | 
+    R1 |
 
     d1~ |
-    r4 b8 bf a fs' e d |
+    r4 b8->( bf a) fs'->( e d) |
+    R1 |
+    R1 |
 
     d2 r2 |
-    b8 bf a fs e d b4 |
+    b8->( bf a) fs->( e d) b4 |
+    R1 |
+    R1 |
     
     d1~ |
+    R1 |
+    r8 a b c cs fs e d |
+    R1 |
 
     d2 r2 |
+    R1 | 
+    c8 cs r a8~a2 |
+    R1 |
 
-    f4~ \times 2/3 { f e ef } d2 |
-    r8 d e f fs a, b cs  |
+    f4~ \times 2/3 { f8 e ef } d2 |
+    r8 d' e f fs d e f |
+    R1 |
+    R1 |
 
     d1 |
-    d8 d a f fs d a f |
+    fs!8 f fs d r d e f |
+    R1 |
+    R1 |
 
     R1 |
-    fs8 b a fs d a b d |
+    fs8 b( a fs d) a( b d) |
+    R1 |
+    R1 |
     
-    r4 fs, d r4 \bar "|."
-    r4 a d d, \bar "|,"
+    r4 fs, d r4 |
+    r4 a d d, |
+    R1 |
+    R1
 
 }
 
