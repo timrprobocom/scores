@@ -11,7 +11,6 @@ rall = \markup { \italic rall... }
 ritard = \markup { \italic { molto rit. } }
 atempo = \markup { \italic { a tempo } }
 
-
 common = {
   \numericTimeSignature 
   \override Score.BarNumber #'break-visibility = #all-visible
@@ -47,10 +46,10 @@ notation = {
     e4-. e-. e-. e-. |
     c4-. c-. c8-. g( a g) |
 
-    e,4_sim e e e |
-    c,4_sim c c c |
-    g,4_sim g g g |
-    c4_sim c c c |
+    e,4_\simile e e e |
+    c,4_\simile c c c |
+    g,4_\simile g g g |
+    c4_\simile c c c |
 
     e4 e e e |
     c4 c c c |
@@ -58,7 +57,7 @@ notation = {
     c4 c c8 g( a g) |
 
     g,4\mf g g g |
-    e,4\mf e e e |
+    e4\mf e e e |
     c,4\mf c c c |
     c4\mf c c c |
 
@@ -156,8 +155,8 @@ notation = {
     bf4 bf a a |
 
     ef4 r4 r2 |
-    r2 ef'4-> r4 |
-    r2 c4-> r4 |
+    r2 \acciaccatura { b16[\mf c d] } ef4-> r4 |
+    r2 \acciaccatura { g16[\mf a bf] } c4-> r4 |
     r2 af4-> r4 |
 
     d4 r4 r2 |
@@ -203,29 +202,29 @@ notation = {
     c4 r g r |
 
     e8 g r g r2 |
-    e8 g r g~g2 |
+    e!8 g r g~g2 |
     c8 e r e~e2 |
-    c4 c b a |
+    c4 c\f b a |
 
     % [D] bar 33
 
     R1 |
-    R1 |
+    r4 g,8 a b d e d |
     r4 d'2.~ |
     g4 r d' r |
 
     R1 |
-    R1 |
+    g8 r8 r4 r2 |
     d8 g, a g a g a g |
     g4 r d r |
 
     R1 |
-    R1 |
+    r4 af,8 bf c ef g ef |
     r4 ef'2.~ |
     af4 r ef r |
 
     R1 |
-    R1 |
+    af8 r8 r4 r2 |
     ef8 af, bf af bf af bf af |
     af4 r ef' r |
 
@@ -240,7 +239,7 @@ notation = {
     bf4 r a r | 
 
     ef2 r2 |
-    c2 r2 |
+    c,2 r2 |
     a2 r2 |
     fs2 r2 |
 
@@ -252,7 +251,7 @@ notation = {
     c1 |
     r4 c4~c8 g a g |
     r4 c4~c8 g a g |
-    c4 r g r |
+    c,4 r g r |
 
     r4 cs b a |
     cs4 cs b a |
@@ -278,14 +277,14 @@ notation = {
 
 
     fs8 a8 r a8 r2 |
-    fs8 a8 r a8 r a b a |
-    fs8 a8 r a8 r a b a |
-    a,1-> |
+    fs8 a8 r cs8 r a b a |
+    fs8 fs8 r f8 r a b a |
+    a,1 |
 
-    r4 d2.~\f |
-    fs8\f fs r d r d e d |
-    fs8\f fs r d r d e d |
-    d'4\f r a r |
+    r4 d2.~ |
+    fs8 fs r d r d e d |
+    fs8 fs r d r d e d |
+    d'4 r a r |
 
     d8 a b a b a fs f |
     fs8 fs r d r d e f |
@@ -331,7 +330,7 @@ notation = {
     d8 d8 r8 fs8~fs4 b,4 |
     fs8 fs4 a8 r a b a |
     fs8 fs4 a8 r a b a |
-    c4 r b8 a b a |
+    c4 r b8 r b( a) |
 
     d1~ |
     r4 b8->( bf a) fs'->( e d) |
@@ -365,13 +364,13 @@ notation = {
 
     R1 |
     fs8 b( a) fs d a( b) d |
-    d4 r2. |
+    d4 r4 r2 |
     R1 |
     
     r4 fs, d r4 |
-    r2. d4-> |
-    r2. fs,4-> |
-    r2. d4->
+    r2 r4 d4-> |
+    r2 r4 fs,4-> |
+    r2 r4 d4->
 
 }
 
@@ -381,8 +380,8 @@ clarii =  \transpose bf bf { \common  \relative c''  \clarii }
 clariii = \transpose bf bf { \common  \relative c''  \clariii }
 clarb =   \transpose bf bf { \common  \relative c'   \clarb }
 
-xtitle = "All That Jazz"
-xinstrument = "from Chicago"
+xtitle = "All That Jazz (from Chicago)"
+%xinstrument = "from Chicago"
 xcomposer = "Kander & Ebb"
 xarranger = "Arr Roberts"
 
