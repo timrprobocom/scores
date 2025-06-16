@@ -33,7 +33,8 @@ notation = {
     s1*16 \bar "||" \mark \default
     s1*16 \bar "||" \mark \default \key f \major
     s1*16 \bar "||" \mark \default 
-    s1*20 \bar "|."
+    s1*10 \bar "||" \mark \default 
+    s1*12 \bar "|."
 }
 
 \parallelMusic  #'(clari clarii clariii clarb) {
@@ -41,49 +42,49 @@ notation = {
    % First verse
 
    e8 d8 b8 r8 r2 |
-   R1 |
+   r4 e4 e4 e4 |
    r8 b e,4 b'4 r8 e, |
    r8 b e,4 b'4 r8 e, |
 
    r8 b8  b b  e e g4 | 
-   R1 |
+   e4 e4 e4 e4 |
    fs4 g4 r2 |
    fs4 g4 r2 |
 
    a4 d,8 d8~d8 c b4 |
-   R1 |
+   d4 d d d |
    r8 a d,4 a'4 r8 d, |
    r8 a d,4 a'4 r8 d, |
 
    r2 r8 a8~a8 b |
-   R1 |
+   d4 d d d |
    e4 fs4 r2 |
    e4 fs4 r2 |
 
    c4 d a b |
-   R1 |
+   c4 c c c  |
    r8 g c,4 g'4 r8 c, |
    r8 g c,4 g'4 r8 c, |
 
    c4 b a g |
-   R1 |
+   c4 c c c  |
    d4 e4 r2 |
    d4 e4 r2 |
 
    a8 g fs4 r2 |
-   R1 |
+   b4 b b b |
    r8 fs b,4 fs'4 r8 b,8 |
    r8 fs b,4 fs'4 r8 b,8 |
 
    R1 |
-   R1 |
+   b4 b b b |
    cs4 ds4 r2 |
    cs4 ds4 r2 |
 
    % Bar 9 I.... hear the sound of a church bell ring
 
    b'1 |
-   R1 |
+   e'1 |
    r8 b' e,4 b'4 r8 e, |
    r8 b' e,4 b'4 r8 e, |
 
@@ -93,22 +94,22 @@ notation = {
    fs4 g4 r2 |
 
    d4 e4 b4~b8 a |
-   R1 |
+   d,4 d d d |
    r8 a d,4 a'4 r8 d, |
    r8 a d,4 a'4 r8 d, |
 
    fs8 r8 r4 r8 a8~a8 b |
-   R1 |
+   d4 d d d |
    e4 fs4 r2 |
    e4 fs4 r2 |
 
    c4 d a b |
-   R1 | 
+   c4 c c c | 
    r8 g c,4 g'4 r8 c, |
    r8 g c,4 g'4 r8 c, |
 
    c4 b a g |
-   R1 |
+   c4 c c c |
    d4 e4 r2 |
    d4 e4 r2 |
 
@@ -144,8 +145,8 @@ notation = {
    b2 c2) |
    g,4 a b d |
 
-   d'2 e4 e4 |
-   b'2 c4 c4 |
+   d'2 e4-> e4-> |
+   b'2 c4-> c4-> |
    d,4( d'4 c2 |
    g,4 g' f8 f8 e4 |
 
@@ -154,8 +155,8 @@ notation = {
    b2 c2) |
    g,4 a b d |
 
-   e4 d4 e4 e4 |
-   c4 b4 c4 c4 |
+   e4 d4 e4-> e4-> |
+   c4 b4 c4-> c4-> |
    d,4( d'4 c2 |
    g,4 g' f8 f8 e4 |
 
@@ -212,49 +213,49 @@ notation = {
    % She's somehow closer now
 
    e8 d8 b8 r8 r2 |
-   R1 |
+   r4 e, e e |
    r8 b e,4 b'4 r8 e, |
    r8 b e,4 b'4 r8 e, |
 
    r4 b4 e4 g4 |
-   R1 |
+   e4 e e e |
    fs4 g4 r2 |
    fs4 g4 r2 |
 
    a4 d,8 d8~d8 c b4 |
-   R1 |
+   d4 d d d |
    r8 a d,4 a'4 r8 d, |
    r8 a d,4 a'4 r8 d, |
 
    R1 |
-   R1 |
+   d4 d d d |
    e4 fs4 r2 |
    e4 fs4 r2 |
 
    c4 d a b |
-   R1 |
+   c4 c c c |
    r8 g c,4 g'4 r8 c, |
    r8 g c,4 g'4 r8 c, |
 
    c4 b a g |
-   R1 |
+   c4 c c c |
    d4 e4 r2 |
    d4 e4 r2 |
 
    a8 g fs4 r2 |
-   R1 |
+   b4 b b b |
    r8 fs b,4 fs'4 r8 b,8 |
    r8 fs b,4 fs'4 r8 b,8 |
 
    R1 |
-   R1 |
+   b4 b b b |
    cs4 ds4 r2 |
    cs4 ds4 r2 |
 
    % Bar 41 When ... I look in her eyes
 
    b'1~ |
-   R1 | 
+   e1 | 
    r8 b' e,4 b'4 r8 e, |
    r8 b' e,4 b'4 r8 e, |
 
@@ -264,22 +265,22 @@ notation = {
    fs4 g4 r2 |
 
    d4 e4 b4~b8 a |
-   R1 |
+   d4 d d d |
    r8 a d,4 a'4 r8 d, |
    r8 a d,4 a'4 r8 d, |
 
    fs8 r8 r4 r8 a8~a8 b |
-   R1 |
+   d4 d d d |
    e4 fs4 r2 |
    e4 fs4 r2 |
 
    c4 d a b |
-   R1 |
+   c4 c c c |
    r8 g c,4 g'4 r8 c, |
    r8 g c,4 g'4 r8 c, |
 
    c4 b a g |
-   R1 |
+   c4 c c c |
    d4 e4 r2 |
    d4 e4 r2 |
 
@@ -316,7 +317,7 @@ notation = {
    g,4 a b d |
 
    d'2 e4 e4 |
-   b 2 c4 c4 |
+   b'2 c4 c4 |
    d,4( d'4 c2 |
    g,4 g' f8 f8 e4 |
 
@@ -402,7 +403,7 @@ notation = {
    b4 ds b e |
    b4 r b r |
 
-   b1~ |
+   b'1~ |
    b,8 ds a' ds, b4 gs' |
    b8 ds fs ds b4 e |
    b4 r b r |
@@ -424,12 +425,14 @@ notation = {
 
    % I don't know where but she sends me there.   Chord moves to E.
 
+   %%% This is not right.
+
    b'8 b~b b~b a gs a~ |
    R1 |
    e,4 gs a gs |
    e4 b cs b |
      
-   a4 b gs2 |
+   a4 b b8 a gs4 |
    R1 |
    e4 gs a gs |
    e4 b cs b |
@@ -446,7 +449,7 @@ notation = {
 
    % Back to B.
 
-   b8 ds a' ds, b4 gs' |
+   b,8 ds a' ds, b4 gs' |
    fs4 b,4 r2 |
    b8 ds a' ds, b4 gs |
    b4 r b r |
@@ -488,7 +491,7 @@ notation = {
    R1 |
    R1 |
    a4 a4 a8 d,8~d4 |
-   a'4 a4 a8 d,8~d4 |
+   a4 a4 a8 d 8~d4 |
 
    r4 a,2 gs8 a8 |
    R1 |
@@ -508,7 +511,7 @@ notation = {
    a4 g4 f8 d8~d4 |
    R1 |
    a4 a4 a8 d,8~d4 |
-   a'4 a4 a8 d,8~d4 |
+   a4 a4 a8 d 8~d4 |
 
    r4 a'2 gs8 a8 |
    r4 a2 gs8 a8 |
@@ -528,7 +531,7 @@ notation = {
    a4 g4 f8 d8~d4 |
    a4 g4 f8 d8~d4 |
    a4 a4 a8 d,8~d4 |
-   a'4 a4 a8 d,8~d4 |
+   a4 a4 a8 d 8~d4 |
 
    R1 |
    R1 |
@@ -582,7 +585,7 @@ notation = {
    c2 df2 |
    r4 r8 ef8~ef8 df8~df8 c8 |
 
-   r4 af, gf8 gf f4 |
+   r4 af gf8 gf f4 |
    R1 |
    ef,4 ef' df2 |
    df4 c4 df4-> df4-> |
@@ -602,50 +605,65 @@ notation = {
    R1 |
    gf4 gf gf gf |
 
-   gf8 af bf cf df2 |
+   gf,8 af bf cf df2 |
    R1 |
    R1 |
-   R1 |
+   r2 r4 gf4 |
 
    ef8 df bf2. |
-   R1 |
+   r2 df4 gf4 |
    R1 |
    R1 |
 
    af8 bf c df ef2 |
-   R1 |
-   R1 |
-   R1 |
+   af4 ef'8 df c4 af4 |
+   af4 ef'8 df c4 af4 |
+   af1 |
 
    f8 ef c2. |
-   R1 |
-   R1 |
-   R1 |
+   r4 ef af c |
+   r4 ef af c |
+   af1 |
 
    bf8 c d ef f2 |
-   R1 |
-   R1 |
-   R1 |
+   r4 f8 ef d4 bf |
+   r4 f8 ef d4 bf |
+   bf1 |
 
    g8 f d2. |
-   R1 |
-   R1 |
-   R1 |
+   r4 f bf d |
+   r4 f bf d |
+   bf1 |
 
    af8 bf c df ef2 |
-   R1 |
-   R1 |
-   R1 |
+   af4 ef'8 df c4 af4 |
+   af4 ef'8 df c4 af4 |
+   af1 |
 
    f8 ef c2. |
-   R1 |
-   R1 |
-   R1 |
+   r4 ef af c |
+   r4 ef af c |
+   af1 |
 
    R1 |
    R1 |
+   ef,4 ef' df2 |
+   af4 af af af |
+
    R1 |
-   gf4 gf gf gf |
+   R1 |
+   c2 df2 |
+   af4 af af af |
+
+   R1 |
+   R1 |
+   ef,4 ef' df2 |
+   af4 af af af |
+
+   R1 |
+   R1 |
+   c2 df2 |
+   af4 af af af |
 }
 
 
