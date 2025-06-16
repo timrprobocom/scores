@@ -1,4 +1,4 @@
-\version "2.16.0"
+\version "2.20.0"
 \include "english.ly"
 
 \paper {
@@ -17,6 +17,7 @@ common = {
   \override Score.BarNumber #'self-alignment-X = #0
   \override Score.BarNumber #'self-alignment-Y = #1
   \override MultiMeasureRest #'expand-limit = #1
+  \override MultiMeasureRest.expand-limit = #1
   \override BreathingSign.text = \markup { \musicglyph #"scripts.caesura.straight" } 
   \time 4/4
   \tempo "Rock" 4=160
@@ -30,7 +31,9 @@ notation = {
     s1*16 \bar "||" \mark \default
     s1*16 \bar "||" \mark \default
     s1*16 \bar "||" \mark \default
-    s1*16 \bar "|."
+    s1*16 \bar "||" \mark \default \key f \major
+    s1*16 \bar "||" \mark \default 
+    s1*20 \bar "|."
 }
 
 \parallelMusic  #'(clari clarii clariii clarb) {
@@ -206,13 +209,14 @@ notation = {
    b,4 cs ds g |
 
    % [B] Bar 33 second verse same as the first.
+   % She's somehow closer now
 
    e8 d8 b8 r8 r2 |
    R1 |
    r8 b e,4 b'4 r8 e, |
    r8 b e,4 b'4 r8 e, |
 
-   r8 b8  b b  e e g4 | 
+   r4 b4 e4 g4 |
    R1 |
    fs4 g4 r2 |
    fs4 g4 r2 |
@@ -222,7 +226,7 @@ notation = {
    r8 a d,4 a'4 r8 d, |
    r8 a d,4 a'4 r8 d, |
 
-   r2 r8 a8~a8 b |
+   R1 |
    R1 |
    e4 fs4 r2 |
    e4 fs4 r2 |
@@ -247,14 +251,14 @@ notation = {
    cs4 ds4 r2 |
    cs4 ds4 r2 |
 
-   % Bar 41 I.... hear the sound of a church bell ring
+   % Bar 41 When ... I look in her eyes
 
-   b'1 |
+   b'1~ |
    R1 | 
    r8 b' e,4 b'4 r8 e, |
    r8 b' e,4 b'4 r8 e, |
 
-   r4 b8 b8 b8 a8 g4 |
+   b2~b8 a8 g4 |
    R1 |
    fs4 g4 r2 |
    fs4 g4 r2 |
@@ -363,7 +367,7 @@ notation = {
    r4 r8 a8~a gs8~gs fs |
    r4 r8 fs8~fs e8~e ds |
    fs4 r8 b,8~b8 b8~b8 cs8 |
-   b,4 cs ds g |
+   b,4 cs ds gs |
 
    gs4 fs gs-> gs-> |
    e4 ds4 e-> e-> |
@@ -373,10 +377,275 @@ notation = {
    r4 r8 a8~a gs8~gs4 |
    r4 r8 fs8~fs e8~e4 |
    R1 |
-   b,4 cs ds g |
+   b,4 cs ds gs |
 
    % [D] Bar 65 -- second main theme.
+   %  ....  ta tions!
 
+   r2 cs,4 ds4~ |
+   b8 ds a' ds, b4 gs' |
+   b8 ds fs ds b4 e |
+   b,4 r b r |
+     
+   ds1 |
+   b,4 fs' b, gs' |
+   b4 ds b e |
+   b4 r b r |
+
+   R1 |
+   b,8 ds a' ds, b4 gs' |
+   b8 ds fs ds b4 e |
+   b4 r b r |
+     
+   R1 |
+   b,4 fs' b, gs' |
+   b4 ds b e |
+   b4 r b r |
+
+   b1~ |
+   b,8 ds a' ds, b4 gs' |
+   b8 ds fs ds b4 e |
+   b4 r b r |
+     
+   b1 |
+   b,4 fs' b, gs' |
+   b4 ds b e |
+   b4 r b r |
+
+   a2 gs2 |
+   b,8 ds a' ds, b4 gs' |
+   b8 ds fs ds b4 e |
+   b4 r b r |
+     
+   fs2 e2 |
+   b,4 fs' b, gs' |
+   b4 ds b e |
+   b4 r b r |
+
+   % I don't know where but she sends me there.   Chord moves to E.
+
+   b'8 b~b b~b a gs a~ |
+   R1 |
+   e,4 gs a gs |
+   e4 b cs b |
+     
+   a4 b gs2 |
+   R1 |
+   e4 gs a gs |
+   e4 b cs b |
+
+   R1 |
+   d2 cs2 |
+   e4 gs a gs |
+   e4 b cs b |
+     
+   R1 |
+   b2 a4 gs |
+   e4 gs a gs |
+   e4 b cs b |
+
+   % Back to B.
+
+   b8 ds a' ds, b4 gs' |
+   fs4 b,4 r2 |
+   b8 ds a' ds, b4 gs |
+   b4 r b r |
+     
+   b,4 ds b e |
+   b4 fs b gs |
+   R1 |
+   b4 r b r |
+
+   b8 ds a' ds, b4 gs' |
+   b8 ds a' ds, b4 gs' |
+   R1 |
+   b4 r b r |
+     
+   b,4 ds b e |
+   b4 fs' b, gs' |
+   R1 |
+   b4 r b r |
+
+   % [E] bar ?? Third major theme. 
+   % This should be in F# major but screw that.
+   % Gotta keep those love good
+
+   R1 |
+   R1 |
+   f1~ |
+   f1~ |
+
+   R1 |
+   R1 |
+   f1 |
+   f1 |
+
+   R1 |
+   R1 |
+   g1 |
+   g1 |
+
+   R1 |
+   R1 |
+   a4 a4 a8 d,8~d4 |
+   a'4 a4 a8 d,8~d4 |
+
+   r4 a,2 gs8 a8 |
+   R1 |
+   f1~ |
+   f,1~ |
+
+   r8 c,8~c4 d4 f4 |
+   R1 |
+   f1 |
+   f1 |
+
+   r4 g8 g8~g8 g8~g8 g8 |
+   R1 |
+   g1 |
+   g1 |
+
+   a4 g4 f8 d8~d4 |
+   R1 |
+   a4 a4 a8 d,8~d4 |
+   a'4 a4 a8 d,8~d4 |
+
+   r4 a'2 gs8 a8 |
+   r4 a2 gs8 a8 |
+   f1~ |
+   f,1~ |
+
+   r8 c,8~c4 d4 f4 |
+   r8 c,8~c4 d4 f4 |
+   f1 |
+   f1 |
+
+   r4 g8 g8~g8 g8~g8 g8 |
+   r4 g8 g8~g8 g8~g8 g8 |
+   g1 |
+   g1 |
+
+   a4 g4 f8 d8~d4 |
+   a4 g4 f8 d8~d4 |
+   a4 a4 a8 d,8~d4 |
+   a'4 a4 a8 d,8~d4 |
+
+   R1 |
+   R1 |
+   f1~\p |
+   f,1~\p |
+
+   R1 |
+   R1 |
+   f1 |
+   f1 |
+
+   ef'1\f-> |
+   c,1\f-> |
+   a1\f-> |
+   f1\f-> |
+
+   R1 |
+   R1 |
+   R1 |
+   R1 |
+
+  % [F] return to chorus in reverse order.  Bb then Ab then Gb.
+
+   r4 bf' af8 af g4 |
+   R1 |
+   f4 f' ef2 |
+   d'2 ef4-> ef4-> |
+
+   bf,4 c d f |
+   R1 |
+   d2 ef2 |
+   r4 r8 f8~f8 ef8~ef8 d8 |
+
+   r4 bf af8 af g4 |
+   R1 |
+   f,4 f' ef2 |
+   ef4 d4 ef4-> ef4-> |
+
+   bf,4 c d f |
+   R1 |
+   d2 ef2 |
+   r4 r8 f8~f8 ef8~ef8 d8 |
+
+   r4 af gf8 gf f4 |
+   R1 |
+   ef,4 ef' df2 |
+   c2 df4-> df4-> |
+
+   af,4 bf c ef |
+   R1 |
+   c2 df2 |
+   r4 r8 ef8~ef8 df8~df8 c8 |
+
+   r4 af, gf8 gf f4 |
+   R1 |
+   ef,4 ef' df2 |
+   df4 c4 df4-> df4-> |
+
+   af,4 bf c ef |
+   R1 |
+   c2 df2 |
+   r4 r8 ef8~ef8 df8~df8 c8 |
+
+   R1 |
+   R1 |
+   R1 |
+   gf4 gf gf gf |
+
+   R1 |
+   R1 |
+   R1 |
+   gf4 gf gf gf |
+
+   gf8 af bf cf df2 |
+   R1 |
+   R1 |
+   R1 |
+
+   ef8 df bf2. |
+   R1 |
+   R1 |
+   R1 |
+
+   af8 bf c df ef2 |
+   R1 |
+   R1 |
+   R1 |
+
+   f8 ef c2. |
+   R1 |
+   R1 |
+   R1 |
+
+   bf8 c d ef f2 |
+   R1 |
+   R1 |
+   R1 |
+
+   g8 f d2. |
+   R1 |
+   R1 |
+   R1 |
+
+   af8 bf c df ef2 |
+   R1 |
+   R1 |
+   R1 |
+
+   f8 ef c2. |
+   R1 |
+   R1 |
+   R1 |
+
+   R1 |
+   R1 |
+   R1 |
+   gf4 gf gf gf |
 }
 
 
@@ -386,7 +655,7 @@ clariii = \transpose bf bf { \common  \relative c'' \clariii }
 clarb =   \transpose bf bf { \common  \relative c'' \clarb }
 
 xtitle = "Good Vibrations"
-%xinstrument = "from Chicago"
+%xinstrument = "not needed"
 xcomposer = "Brian Wilson"
 xarranger = "Arr Roberts"
 

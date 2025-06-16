@@ -54,7 +54,7 @@ scoreABassClarinetPart = \new Staff \with {
       instrument = "Bb Clarinet 1"
       tagline = ##f
     }
-    \score { \scoreAClarinetIPart }
+    \score { \compressMMRests \scoreAClarinetIPart }
 }
 
 
@@ -66,7 +66,7 @@ scoreABassClarinetPart = \new Staff \with {
       instrument = "Bb Clarinet 2"
       tagline = ##f
     }
-    \score { \scoreAClarinetIIPart }
+    \score { \compressMMRests \scoreAClarinetIIPart }
 }
 
 \bookpart {
@@ -77,7 +77,7 @@ scoreABassClarinetPart = \new Staff \with {
       instrument = "Bb Clarinet 3"
       tagline = ##f
     }
-    \score { \scoreAClarinetIIIPart }
+    \score { \compressMMRests \scoreAClarinetIIIPart }
 }
 
 \bookpart {
@@ -88,5 +88,5 @@ scoreABassClarinetPart = \new Staff \with {
       instrument = "Bass Clarinet"
       tagline = ##f
     }
-    \score { \scoreABassClarinetPart }
+    \score { \compressMMRests \scoreABassClarinetPart }
 }
