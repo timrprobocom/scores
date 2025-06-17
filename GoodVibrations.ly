@@ -6,7 +6,8 @@
 }
 
 simile = \markup { \italic simile }
-subMp = \markup { sub \dynamic mp }
+subMp = \markup { \italic sub \dynamic mp }
+fade = \markup { \italic fade... }
 rall = \markup { \italic rall... }
 ritard = \markup { \italic { molto rit. } }
 atempo = \markup { \italic { a tempo } }
@@ -41,10 +42,10 @@ notation = {
 
    % First verse
 
-   e8 d8 b8 r8 r2 |
-   r4 e4 e4 e4 |
-   r8 b e,4 b'4 r8 e, |
-   r8 b e,4 b'4 r8 e, |
+   e8\mp d8 b8 r8 r2 |
+   r4 e4\mp e4 e4 |
+   r8 b\mp e,4 b'4 r8 e, |
+   r8 b\mp e,4 b'4 r8 e, |
 
    r8 b8  b b  e e g4 | 
    e4 e4 e4 e4 |
@@ -83,10 +84,10 @@ notation = {
 
    % Bar 9 I.... hear the sound of a church bell ring
 
-   b'1 |
-   e'1 |
-   r8 b' e,4 b'4 r8 e, |
-   r8 b' e,4 b'4 r8 e, |
+   b'1\mf |
+   e'1\mf |
+   r8 b'\mf e,4 b'4 r8 e, |
+   r8 b'\mf e,4 b'4 r8 e, |
 
    r4 b8 b8 b8 a8 g4 |
    R1 |
@@ -115,37 +116,37 @@ notation = {
 
    a8 g fs4 r2 |
    R1 | 
-   b4 ds4 fs4 c' |
-   b4 ds4 fs4 c' |
+   b4\< ds4 fs4 c' |
+   b4\< ds4 fs4 c' |
 
    R1 |
    R1 |
-   b4 a g fs |
-   b4 a g fs |
+   b4 a g fs\! |
+   b4 a g fs\! |
 
    % [A] Bar 17 First chorus
 
    R1 |
-   R1 |
-   d4( d'4 c2 |
-   g,4 g' f8 f8 e4 |
+   g4\f g' f8 f8 e4 |
+   d4(\f d'4 c2 |
+   g,4\f g' f8 f8 e4 |
 
    R1 |
-   R1 |
+   g,4 a c d |
    b2 c2) |
-   g,4 a b d |
+   g,4 a c d |
 
    R1 |
-   R1 |
+   g,4 g' f8 f8 e4 |
    d,4( d'4 c2 |
    g,4 g' f8 f8 e4 |
 
    R1 |
-   R1 |
+   g,4 a c d |
    b2 c2) |
-   g,4 a b d |
+   g,4 a c d |
 
-   d'2 e4-> e4-> |
+   d'2\f e4-> e4-> |
    b'2 c4-> c4-> |
    d,4( d'4 c2 |
    g,4 g' f8 f8 e4 |
@@ -153,7 +154,7 @@ notation = {
    r4 r8 f8~f e8~e d |
    r4 r8 d8~d c8~c b |
    b2 c2) |
-   g,4 a b d |
+   g,4 a c d |
 
    e4 d4 e4-> e4-> |
    c4 b4 c4-> c4-> |
@@ -163,7 +164,7 @@ notation = {
    r4 r8 f8~f e8~e e |
    r4 r8 d8~d c8~c c |
    b2 c2) |
-   g,4 a b d |
+   g,4 a c d |
 
    % (Same up a whole step, melody in 3rd)
 
@@ -175,7 +176,7 @@ notation = {
    r4 r8 g8~g fs8~fs e |
    r4 r8 e8~e d8~d cs |
    e4 r8 a,8~a8 a8~a8 b8 |
-   a,4 b cs e |
+   a,4 b d e |
 
    fs4 e4 fs4-> fs4-> |
    d4 cs4 d4-> d4-> |
@@ -185,7 +186,7 @@ notation = {
    r4 r8 g8~g fs8~fs4 |
    r4 r8 e8~e d8~d4 |
    R1 |
-   a,4 b cs e |
+   a,4 b d e |
 
    % (Same up a whole step, melody in 3rd)
 
@@ -197,7 +198,7 @@ notation = {
    r4 r8 a8~a gs8~gs fs |
    r4 r8 fs8~fs e8~e ds |
    fs4 r8 b,8~b8 b8~b8 cs8 |
-   b,4 cs ds g |
+   b,4 cs  e fs |
 
    gs4 fs gs-> gs-> |
    e4 ds4 e-> e-> |
@@ -207,15 +208,15 @@ notation = {
    r4 r8 a8~a gs8~gs4 |
    r4 r8 fs8~fs e8~e4 |
    R1 |
-   b,4 cs ds g |
+   b,4 cs  e fs |
 
    % [B] Bar 33 second verse same as the first.
    % She's somehow closer now
 
-   e8 d8 b8 r8 r2 |
-   r4 e, e e |
-   r8 b e,4 b'4 r8 e, |
-   r8 b e,4 b'4 r8 e, |
+   e8_\subMp d8 b8 r8 r2 |
+   r4 e,_\subMp e e |
+   r8 b_\subMp e,4 b'4 r8 e, |
+   r8 b_\subMp e,4 b'4 r8 e, |
 
    r4 b4 e4 g4 |
    e4 e e e |
@@ -254,10 +255,10 @@ notation = {
 
    % Bar 41 When ... I look in her eyes
 
-   b'1~ |
-   e1 | 
-   r8 b' e,4 b'4 r8 e, |
-   r8 b' e,4 b'4 r8 e, |
+   b'1~\mf |
+   e'1\mf | 
+   r8 b'\mf e,4 b'4 r8 e, |
+   r8 b'\mf e,4 b'4 r8 e, |
 
    b2~b8 a8 g4 |
    R1 |
@@ -265,7 +266,7 @@ notation = {
    fs4 g4 r2 |
 
    d4 e4 b4~b8 a |
-   d4 d d d |
+   d,4 d d d |
    r8 a d,4 a'4 r8 d, |
    r8 a d,4 a'4 r8 d, |
 
@@ -286,37 +287,37 @@ notation = {
 
    a8 g fs4 r2 |
    R1 | 
-   b4 ds4 fs4 c' |
-   b4 ds4 fs4 c' |
+   b4\< ds4 fs4 c' |
+   b4\< ds4 fs4 c' |
 
    R1 |
    R1 |
-   b4 a g fs |
-   b4 a g fs |
+   b4 a g fs\! |
+   b4 a g fs\! |
 
    % [C] Bar 49 Second chorus.
 
    R1 |
-   R1 |
-   d4( d'4 c2 |
-   g,4 g' f8 f8 e4 |
+   g4\f g' f8 f8 e4 |
+   d4(\f d'4 c2 |
+   g,4\f g' f8 f8 e4 |
 
    R1 |
-   R1 |
+   g,4 a c d |
    b2 c2) |
-   g,4 a b d |
+   g,4 a c d |
 
    R1 |
-   R1 |
+   g,4 g' f8 f8 e4 |
    d,4( d'4 c2 |
    g,4 g' f8 f8 e4 |
 
    R1 |
-   R1 |
+   g,4 a c d |
    b2 c2) |
-   g,4 a b d |
+   g,4 a c d |
 
-   d'2 e4 e4 |
+   d'2\f e4 e4 |
    b'2 c4 c4 |
    d,4( d'4 c2 |
    g,4 g' f8 f8 e4 |
@@ -324,7 +325,7 @@ notation = {
    r4 r8 f8~f e8~e d |
    r4 r8 d8~d c8~c b |
    b2 c2) |
-   g,4 a b d |
+   g,4 a c d |
 
    e4 d4 e4 e4 |
    c4 b4 c4 c4 |
@@ -334,7 +335,7 @@ notation = {
    r4 r8 f8~f e8~e e |
    r4 r8 d8~d c8~c c |
    b2 c2) |
-   g,4 a b d |
+   g,4 a c d |
 
    % (Same up a whole step, melody in 3rd)
 
@@ -346,7 +347,7 @@ notation = {
    r4 r8 g8~g fs8~fs e |
    r4 r8 e8~e d8~d cs |
    e4 r8 a,8~a8 a8~a8 b8 |
-   a,4 b cs e |
+   a,4 b d e |
 
    fs4 e4 fs4-> fs4-> |
    d4 cs4 d4-> d4-> |
@@ -356,7 +357,7 @@ notation = {
    r4 r8 g8~g fs8~fs4 |
    r4 r8 e8~e d8~d4 |
    R1 |
-   a,4 b cs e |
+   a,4 b d e |
 
    % (Same up a whole step, melody in 3rd)
 
@@ -368,7 +369,7 @@ notation = {
    r4 r8 a8~a gs8~gs fs |
    r4 r8 fs8~fs e8~e ds |
    fs4 r8 b,8~b8 b8~b8 cs8 |
-   b,4 cs ds gs |
+   b,4 cs  e fss |
 
    gs4 fs gs-> gs-> |
    e4 ds4 e-> e-> |
@@ -378,7 +379,7 @@ notation = {
    r4 r8 a8~a gs8~gs4 |
    r4 r8 fs8~fs e8~e4 |
    R1 |
-   b,4 cs ds gs |
+   b,4 cs  e fss |
 
    % [D] Bar 65 -- second main theme.
    %  ....  ta tions!
@@ -425,20 +426,18 @@ notation = {
 
    % I don't know where but she sends me there.   Chord moves to E.
 
-   %%% This is not right.
-
    b'8 b~b b~b a gs a~ |
-   R1 |
+   e1~ |
    e,4 gs a gs |
    e4 b cs b |
      
    a4 b b8 a gs4 |
-   R1 |
+   e1 |
    e4 gs a gs |
    e4 b cs b |
 
    R1 |
-   d2 cs2 |
+   d'2 cs2 |
    e4 gs a gs |
    e4 b cs b |
      
@@ -449,34 +448,34 @@ notation = {
 
    % Back to B.
 
-   b,8 ds a' ds, b4 gs' |
+   b,8 ds fs ds b4 e |
    fs4 b,4 r2 |
-   b8 ds a' ds, b4 gs |
+   b8 ds a' ds, b4 gs' |
    b4 r b r |
      
-   b,4 ds b e |
-   b4 fs b gs |
-   R1 |
-   b4 r b r |
-
-   b8 ds a' ds, b4 gs' |
-   b8 ds a' ds, b4 gs' |
-   R1 |
-   b4 r b r |
-     
-   b,4 ds b e |
+   b4 ds b e |
    b4 fs' b, gs' |
    R1 |
    b4 r b r |
 
-   % [E] bar ?? Third major theme. 
+   b8 ds fs ds b4 e |
+   b,8 ds a' ds, b4 gs' |
+   R1 |
+   b4 r b r |
+     
+   b4 ds b e |
+   b,4 fs' b, gs' |
+   R1 |
+   b4 r b r |
+
+   % [E] bar 81 Third major theme. 
    % This should be in F# major but screw that.
    % Gotta keep those love good
 
    R1 |
    R1 |
-   f1~ |
-   f1~ |
+   f,1~\mf |
+   f1~\mf |
 
    R1 |
    R1 |
@@ -493,28 +492,28 @@ notation = {
    a4 a4 a8 d,8~d4 |
    a4 a4 a8 d 8~d4 |
 
-   r4 a,2 gs8 a8 |
-   R1 |
+   r4 a,2\mf gs8 a8 |
+   r4 a,2\mf gs8 a8 |
    f1~ |
    f,1~ |
 
    r8 c,8~c4 d4 f4 |
-   R1 |
+   r8 c,8~c4 d4 f4 |
    f1 |
    f1 |
 
    r4 g8 g8~g8 g8~g8 g8 |
-   R1 |
+   r4 g8 g8~g8 g8~g8 g8 |
    g1 |
    g1 |
 
    a4 g4 f8 d8~d4 |
-   R1 |
+   a4 g4 f8 d8~d4 |
    a4 a4 a8 d,8~d4 |
    a4 a4 a8 d 8~d4 |
 
    r4 a'2 gs8 a8 |
-   r4 a2 gs8 a8 |
+   r4 a''2 gs8 a8 |
    f1~ |
    f,1~ |
 
@@ -544,7 +543,7 @@ notation = {
    f1 |
 
    ef'1\f-> |
-   c,1\f-> |
+   c1\f-> |
    a1\f-> |
    f1\f-> |
 
@@ -556,43 +555,43 @@ notation = {
   % [F] return to chorus in reverse order.  Bb then Ab then Gb.
 
    r4 bf' af8 af g4 |
-   R1 |
-   f4 f' ef2 |
+   r4 bf  af8 af g4 |
+   f4( f' ef2 |
    d'2 ef4-> ef4-> |
 
    bf,4 c d f |
-   R1 |
-   d2 ef2 |
+   bf,4 c d f |
+   d2 ef2) |
    r4 r8 f8~f8 ef8~ef8 d8 |
 
    r4 bf af8 af g4 |
-   R1 |
-   f,4 f' ef2 |
+   r4 bf af8 af g4 |
+   f,4( f' ef2 |
    ef4 d4 ef4-> ef4-> |
 
    bf,4 c d f |
-   R1 |
-   d2 ef2 |
+   bf,4 c d f |
+   d2 ef2) |
    r4 r8 f8~f8 ef8~ef8 d8 |
 
    r4 af gf8 gf f4 |
-   R1 |
-   ef,4 ef' df2 |
+   r4 af gf8 gf f4 |
+   ef,4( ef' df2 |
    c2 df4-> df4-> |
 
    af,4 bf c ef |
-   R1 |
-   c2 df2 |
+   af,4 bf c ef |
+   c2 df2) |
    r4 r8 ef8~ef8 df8~df8 c8 |
 
    r4 af gf8 gf f4 |
-   R1 |
-   ef,4 ef' df2 |
+   r4 af gf8 gf f4 |
+   ef,4( ef' df2 |
    df4 c4 df4-> df4-> |
 
    af,4 bf c ef |
-   R1 |
-   c2 df2 |
+   af,4 bf c ef |
+   c2 df2) |
    r4 r8 ef8~ef8 df8~df8 c8 |
 
    R1 |
@@ -605,9 +604,11 @@ notation = {
    R1 |
    gf4 gf gf gf |
 
+   % [G] bar 107 finale.
+
    gf,8 af bf cf df2 |
    R1 |
-   R1 |
+   r2 r4 gf,4 |
    r2 r4 gf4 |
 
    ef8 df bf2. |
@@ -647,22 +648,22 @@ notation = {
 
    R1 |
    R1 |
-   ef,4 ef' df2 |
+   ef,4(_\fade ef' df2 |
+   af4_\fade af af af |
+
+   R1 |
+   R1 |
+   c2 df2) |
    af4 af af af |
 
    R1 |
    R1 |
-   c2 df2 |
+   ef,4( ef' df2 |
    af4 af af af |
 
    R1 |
    R1 |
-   ef,4 ef' df2 |
-   af4 af af af |
-
-   R1 |
-   R1 |
-   c2 df2 |
+   c2 df2) |
    af4 af af af |
 }
 
