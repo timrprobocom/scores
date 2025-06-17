@@ -20,6 +20,10 @@ scoreABassClarinetPart = \new Staff \with {
   midiInstrument = "clarinet"
 } << \notation \clarb >>
 
+\book {
+\paper {
+    bookpart-level-page-numbering = ##t
+}
 
 \bookpart { 
     \header {
@@ -43,8 +47,9 @@ scoreABassClarinetPart = \new Staff \with {
 }
 
 \paper {
-    raggied-bottom = ##t
+    ragged-bottom = ##t
 }
+
 
 \bookpart {
    \header {
@@ -89,4 +94,5 @@ scoreABassClarinetPart = \new Staff \with {
       tagline = ##f
     }
     \score { \compressMMRests \scoreABassClarinetPart }
+}
 }
