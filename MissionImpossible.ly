@@ -1,4 +1,4 @@
-\version "2.16.0"
+\version "2.22.0"
 \include "english.ly"
 
 \paper {
@@ -19,8 +19,8 @@ common = {
   % \override Score.BarNumber #'self-alignment-X = #0
   % \override Score.BarNumber #'self-alignment-Y = #1
   \set Score.skipBars = ##t
-  \compressFullBarRests
-  \override MultiMeasureRest #'expand-limit = #1
+  \compressMMRests
+  \override MultiMeasureRest.expand-limit = #1
   \set Score.markFormatter = #format-mark-box-letters
 }
 

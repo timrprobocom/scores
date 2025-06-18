@@ -3,23 +3,29 @@
 # Monitor the directory for Lilypond changes.
 
 import os
-import glob
 import time
+import glob
 
-def get_all():
-    last = {}
-    for fn in glob.glob("*.ly"):
-        last[fn] = os.stat(fn).st_mtime
-    return last
+def GetTimes():
+    return {fn: os.stat(fn).st_mtime for fn in glob.glob('*.ly')}
 
-def recompile(fn):
-    os.system("lilypond "+fn)
+def Compile(fn):
+    print( "Compiling", fn )
+    os.system(f'lilypond {fn}')
 
-basis = get_all()
+def CheckOnce(times):
+    for fn,time in times.items():
+        pdfn = fn.replace('.ly','.pdf')
+        if os.path.exists(pdfn) and os.stat(pdfn).st_mtime < time:
+            Compile(fn)
+
+basis = GetTimes()
+# This is an issue with older files.
+CheckOnce(basis)
 while 1:
     time.sleep(1)
-    newbasis = get_all()
-    for k in newbasis:
-        if k not in basis or newbasis[k] > basis[k]:
-            recompile(k)
+    newbasis = GetTimes()
+    for k in basis:
+        if k not in newbasis or newbasis[k] > basis[k]:
+            Compile(k)
     basis = newbasis
