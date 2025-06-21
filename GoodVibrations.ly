@@ -21,7 +21,7 @@ common = {
   \override MultiMeasureRest.expand-limit = #1
   \override BreathingSign.text = \markup { \musicglyph #"scripts.caesura.straight" } 
   \time 4/4
-  \tempo "Rock" 4=160
+  \tempo "Pop, Swing" 4=150
   \clef treble 
   \key e \minor
   \set Score.markFormatter = #format-mark-box-letters
@@ -369,7 +369,7 @@ notation = {
    r4 r8 a8~a gs8~gs fs |
    r4 r8 fs8~fs e8~e ds |
    fs4 r8 b,8~b8 b8~b8 cs8 |
-   b,4 cs  e fss |
+   b,4 cs  e fs |
 
    gs4 fs gs-> gs-> |
    e4 ds4 e-> e-> |
@@ -379,13 +379,13 @@ notation = {
    r4 r8 a8~a gs8~gs4 |
    r4 r8 fs8~fs e8~e4 |
    R1 |
-   b,4 cs  e fss |
+   b,4 cs  e fs |
 
    % [D] Bar 65 -- second main theme.
    %  ....  ta tions!
 
    r2 cs,4 ds4~ |
-   b8 ds a' ds, b4 gs' |
+   b4 a' b,4 gs' |
    b8 ds fs ds b4 e |
    b,4 r b r |
      
@@ -395,7 +395,7 @@ notation = {
    b4 r b r |
 
    R1 |
-   b,8 ds a' ds, b4 gs' |
+   b,4 a' b,4 gs' |
    b8 ds fs ds b4 e |
    b4 r b r |
      
@@ -405,7 +405,7 @@ notation = {
    b4 r b r |
 
    b'1~ |
-   b,8 ds a' ds, b4 gs' |
+   b,4 a' b,4 gs' |
    b8 ds fs ds b4 e |
    b4 r b r |
      
@@ -415,7 +415,7 @@ notation = {
    b4 r b r |
 
    a2 gs2 |
-   b,8 ds a' ds, b4 gs' |
+   b,4 a' b, gs' |
    b8 ds fs ds b4 e |
    b4 r b r |
      
@@ -450,7 +450,7 @@ notation = {
 
    b,8 ds fs ds b4 e |
    fs4 b,4 r2 |
-   b8 ds a' ds, b4 gs' |
+   b4 a' b, gs' |
    b4 r b r |
      
    b4 ds b e |
@@ -459,7 +459,7 @@ notation = {
    b4 r b r |
 
    b8 ds fs ds b4 e |
-   b,8 ds a' ds, b4 gs' |
+   b,4 a' b, gs' |
    R1 |
    b4 r b r |
      
