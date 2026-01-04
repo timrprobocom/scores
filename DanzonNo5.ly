@@ -1,5 +1,5 @@
 
-\version "2.16.0"
+\version "2.19.0"
 \include "english.ly"
 
 \paper {
@@ -28,7 +28,7 @@ solo = \relative c'' {
     f8.-> ef16~ef16 d( c d |
     ef2) |
     g2~ |
-    g16 bf8->\f( a16) g8( f8) |
+    g16 bf8->\f( af16) g8( f8) |
     f4\mf~ f16 ef( g f) |
 
     % Bar 10 system 2
@@ -59,7 +59,7 @@ solo = \relative c'' {
 
     e8->-. d-. cs->-. c16( b) |
     bf8 a16 e'~-> e d( c bf) |
-    a16 a b c b8 bf16( a16) |
+    a16 a b! c b8 bf16( a16) |
     gs8.-.\< d'8. b8 |
     e,16( gs) b( d)\! e8\mf\> d\! |
     f8.--\mp  e16~->e d( c e) \bar "||" |
@@ -72,7 +72,7 @@ solo = \relative c'' {
     a8.-- g16~-> g fs( e fs) |
     g4 r16 e'16( b g) |
     fs2~ |
-    \times 2/3 { fs8 cs( as } fs8. e16) |
+    \times 2/3 { fs8 cs'( as } fs8. e16) |
     e4~ e16 d( fs e) |
     d8.( b16) cs16( d fs e) |
     d2 |
@@ -91,11 +91,11 @@ solo = \relative c'' {
 
     % Page 3 system 1 bar 51
 
-    b16(\f\< d fs) b d-. cs8-> e16~\!\ff |
+    b,16(\f\< d fs) b d-. cs8-> e16~\!\ff |
     e16 d( bf a) g( a) bf( d) |
     e16(\> d a g) f( e d f)\! |
     e8->-.\mf e,,16 d''~d c-. b8->-. |
-    a8->-. e16\ff e->~e e( c8) |
+    a8->-. e'16\ff e->~e e( c8) |
     d8->-. d-. f->-. d16-. e~ |
     e16 a8-> a16~->a a-. e8->-. |
     \times 2/3 { r8 f-- f-- } \times 2/3 { e-- e-- d-- } |
@@ -115,7 +115,7 @@ solo = \relative c'' {
 
     R2 |
     R2 |
-    r16 c(\< e a) c( b) a( c)\! |
+    r16 c,(\< e a) c( b) a( c)\! |
     b8-.\ff b16->\> a~->a g( fs8)\! |
     e8--\f r8 r4 |
     b'4.\f b32( a g fs) |
@@ -168,7 +168,7 @@ solo = \relative c'' {
 
     % Page 5 system 2 bar 106
 
-    \times 2/3 { a8 e'( cs } \acciaccatura {a16 c16} a8 g8 ) |
+    \times 2/3 { a8 e'( cs } \acciaccatura {a16 cs16} a8 g8 ) |
     g4~ g16 fs( a g) |
     fs4\> e16( d cs b)\! |
     as8\mp cs16-. fs~->fs fs-. as,8-> |
@@ -228,7 +228,7 @@ solo = \relative c'' {
     g16 g8-> b16~->b b-. g8-> |
     a8-> r8 r4 |
     r16 g,(\< b e) g( fs) e( d)\! |
-    c8\f r8 r4 |
+    cs8\f r8 r4 |
 
     % Page 7 system 2 bar 149
 
@@ -240,9 +240,10 @@ solo = \relative c'' {
     e8 r8 r4 |
 
     % Page 7 system 3 bar 155
-
-    \times 4/6 { r16 fs,(gs) as( b cs) } \times 4/6 { d( e fs) g( a g) } |
-    fs8 r8 r4 |
+%    \override TextSpanner.bound-details.left.text = "rit."
+    \override TextSpanner.bound-details.left.text = \markup { \upright "rit." }
+    \times 4/6 { r16\startTextSpan fs,(gs) as( b cs) } \times 4/6 { d( e fs) g( a g) } |
+    fs8 r8 r4\stopTextSpan |
     \tempo "Poco meno mosso" 4 = 60
     r16 fs(\mf e d e fs cs' b) |
     e,8.\>( fs16 a g fs e)\! |

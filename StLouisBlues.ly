@@ -125,7 +125,10 @@ ten = \markup { \italic ten }
   % Bar 15
   R1 |
   \times 2/3 { r8^"Bluesy solo"( bs cs) } \times 2/3 { e( fs a) } 
-          c\uheel c\uheel c\uheel b\uheel |
+          \acciaccatura a16 c8
+          \acciaccatura a16 c8
+          \acciaccatura a16 c8
+          \acciaccatura a16 b8 |
   a1~ |
   a1~ |
 
@@ -198,38 +201,89 @@ ten = \markup { \italic ten }
   % Bar 27
   b4)   e,4-^    g8--  a4-.   fs8~ |
   fs4)  e4-^     ef8-- ef4-.  d8~ |
-  d4    e,4-^    a8--  a4-.   g8~ |
+  d4)   e,4-^    a8--  a4-.   g8~ |
   gs4)  e,4-^    f'8-- f,4-.  e8~ |
 
   % Bar 28
   fs2             r8 d'4-.  b8-- |
   d2              r8 g4-.   fs8-- |
-  g2              r8 fs'-.  d8-- |
+  g2              r8 fs'4-.  d8-- |
   e8. as16 b8 e,8 r8 b''4-. gs8-- |
 
-  %{
-  b8. b16 a8( b8~ b8.) as,16( b8) e8~ |
-  e8. a16 as8. b16 c4\> gs!8 fs8~\! |
-  fs2\p fs8--\< a4-. fs8-- | a8-- fs4. a8-.\!\f d4-. gs,8-- |
+  % Bar 29
+  d8.  d16(  b8  d8~d2) |
+  a8.  a16(  fs8 g8~g2) |
+  fs8. fs16( d8  fs8~fs2) |
+  b8. b16( a8 b8~ b8.) as,16( b8) e8~ |
+
+  % Bar 30
+  r8. cs16 d8. ds16 e4 c8\> a8~ |
+  r8. gs16 a8. as16 b4 g8\> e8~ |
+  r8. ds16 e8. es16 fs4 d8\> c8~ |
+  e8. a16  as8. b16 c4\> gs!8 fs8~ | 
+
+  % Bar 31
+  a2\!\p e8--\< fs4-. e8-- |
+  e2\!\p c8--\< e4-. c8-- |
+  c2\!\p a8--\< c4-. a8-- |
+  fs2\!\p fs8--\< a4-. fs8-- |
+
+  % Bar 32
+  fs8-- a4-. c8-.\!\f  r8 e4-.  c8-. |
+  e8-- e4-.  fs8-.\!\f r8 c'4-.  g8-. |
+  c8-- c4-.  e8-.\!\f  r8 gs!4-. d8-. |
+  a8-- fs4-.  a8-.\!\f  r8 d4-.  gs,8-- | 
 
   % Bar 33
 
-  c8.-- c16-- a8( c8~c4.) b,16( bf16 |
+  e8.  e16  c8( e8~e2) |
+  b8.  b16  fs8( b8~b2) |
+  fs8. fs16 e8( fs8~fs2) |
+  c8.  c16  a8( c8~c4.) b,16( bf16 |
 
+  % Bar 34
+  r8. c16( d8.) ds16( e4) c8\> b8\!~ |
+  r8. fs16( a8.) as16( b4) g8\> fs8\!~ |
+  r8. e16( fs8.) e16( fs4) ef8\> d8\!~ |
   a16[) r8 a'16]( b8.) b16( c4)\> a8 a8\!~ |
 
+  % Bar 35
+  b2\p   g4. fs8~ |
+  fs2\p  ef4. d8~ |
+  d2\p   a4. gs8~ |
   a4\p e4 f4. e8~ |
 
+  % Bar 36
+  fs4. fs8 r8\f d'4 b8 |
+  d4. d8 r8\f gs4 fs8 |
+  gs4. gs8 r8\f fs'4 d8 |
   e4 b8 e8 \f r8 b'4 gs8 |
 
+  % Bar 37
+  d8. d16( b8 d8~d2) |
+  a8. a16( fs8 gs8~gs2) |
+  fs8. fs16( d8 fs8~fs2) |
   b8. b16( a8 b8~b8.) as16 b8 e,8~ |
 
+  % Bar 38
+  r8. cs16( d8.) ds16( e4) c8( a8~ |
+  r8. gs16( a8.) as16( b4) g8( e8~ |
+  r8. ds16( e8.) es16( fs4) d8( c8~ |
   e8. a16( as8.) b16( c4) gs8( fs8~ |
 
+  % Bar 39
+  a4) r4 b4->-- r4 |
+  e4) a,4-^ gs'4---> b,4-^ |
+  c4) a4-^ ds4---> b4-^ |
   fs4) a,-^ a'->-- b,-^ |
 
+  % Bar 40 top of page 3
+  e2 r8. e,16\f bs'8.( cs16) |
+  gs'2 r8. e16\f es8.( fs16) |
+  d2 r8. e,16\f ds'8.( e16) |
   \times 2/3 { r8 ds( e) } \times 2/3 { as,( b f } e4 ) gs'8.( a16) |
 
+%{
   % Bar 41
   fs4 gs8.( a16) fs4 gs8.( a16) |
 
