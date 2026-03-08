@@ -30,7 +30,7 @@ common = {
 
 notation = {
     s1*8 \mark \default
-    s1*12 \mark \default
+    s1*14 \mark \default
     s1*10 \bar "||" \mark \default
     s1*8 \bar "||" \mark \default
     s1*10 \mark \default
@@ -122,22 +122,32 @@ notation = {
    e,8( g) c e,( g) c e,( g) |
    c,4 e g a |
 
-   r2 r8 c4 c8~ |
+   r2 r8 c4 d8~ |
    c8 e,( g) c~c4 r4 |
    c8 e,( g) c~c4 r4 |
    c4 a g e |
+
+   d2. r4 |
+   g8( b d) g,( b d) g,( b |
+   g8( b d) g,( b d) g,( b |
+   g4 b d b |
+
+   R1 |
+   d8) g,( b d~d4) r4 |
+   d8) g,( b d~d4) r4 |
+   g4 f e d |
 
    }
    \alternative {
      {
        c8 c c c c c c c |
-       g8 g g g a a a a |
-       e8 e e e f f f f |
+       g,8 g g g a a a a |
+       e,8 e e e f f f f |
        c4 c f f |
 
        c8 c c c c c c c |
-       g8 g g g a a a a |
-       e8 e e e f f f f |
+       bf8 bf bf bf a a a a |
+       g8 g g g f f f f |
        fs4 fs f f |
      }
      {
@@ -184,7 +194,7 @@ notation = {
 
      r8 f,( a) c e8 g4 e8 |
      r8 c,( f) a b8 b4. |
-     d4 r4 c,8 f4 g8 |
+     d4 r4 c8 f4 g8 |
      d8) r r g,~g2 |
 
    }
@@ -213,11 +223,11 @@ notation = {
      }     
    }
 
-   % [C] Bar 31 Solo in 3rd
+   % [C] Bar 33 Solo in 3rd
 
    r8 g4. bf2 |
-   r8 e4. fs2 |
-   \acciaccatura { c16 d e f } g8 e4 ef4 c4 d8~ |
+   r8 e'4. fs2 |
+   \acciaccatura { c16 d e f } g8 c,4 ef4 c4 d8~ |
    c4 r ef r |
 
    a1 |
@@ -226,7 +236,7 @@ notation = {
    d4 r g r |
 
    r8 g4. bf2 |
-   \acciaccatura { d16 ds } e8 g a g c a f ef |
+   \acciaccatura { d,16 ds } e8 g a g c a f ef |
    r8 e4. fs2 |
    c,4 r ef r |
 
@@ -361,7 +371,7 @@ notation = {
    d8) g, b d~d4 r4 |
    b8) f  g b~b4 r4 |
    f8) b, d f~f4 r4 |
-   g f e d |
+   g4 f e d |
 
    }
 
@@ -479,17 +489,17 @@ notation = {
    cs8 d ef4 ef4 d8 ef |
    c,4 c'8 c,8 r8 c'8 c,r |
 
-   c2 gs8-> a-> bf-> b-> |
+   c2 c8-> cs-> d-> ef-> |
    gs2 r2 |
    e2 r2 |
    r4 c4 r2 |
 
-   c1~ |
+   e1~ |
    r8 e b' a g ef e b |
    R1 |
    R1 |
 
-   c2. r4 |
+   e2. r4 |
    c8 r8 r4 r2 |
    c8( e b a g ef f b |
    c8( e b a g ef f b |
@@ -509,8 +519,8 @@ notation = {
 
 clari =   \transpose bf bf { \common  \relative c'' \clari }
 clarii =  \transpose bf bf { \common  \relative c'  \clarii }
-clariii = \transpose bf bf { \common  \relative c' \clariii }
-clarb =   \transpose bf bf { \common  \relative c' \clarb }
+clariii = \transpose bf bf { \common  \relative c'  \clariii }
+clarb =   \transpose bf bf { \common  \relative c'  \clarb }
 
 xtitle = "In The Mood"
 %xinstrument = "not needed"
